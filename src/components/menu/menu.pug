@@ -1,10 +1,11 @@
 mixin menu(menuItems)
     nav.menu
         ul.menu__items
-            each item in menuItems 
-                if (item.isSeparator==true)
-                    li.menu__separate-line 
-                else
-                    li.menu__item
-                        a(href=item.url target="_blank")=item.title            
+            if(menuItems)
+                each item in menuItems 
+                    if (item.isSeparator==true)
+                        li.menu__separate-line 
+                    else
+                        li.menu__item
+                            a(href=item.url target="_blank")=item.title            
         block
