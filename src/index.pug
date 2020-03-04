@@ -2,13 +2,14 @@ include ../build/build.pug
 
 html
   head
+    link(rel="stylesheet" href="css/styles.css")
     title Страница
   body
     +page()
       +header()
       +section()
         +image()
-        +article()
+        +article(pageContent)
       +aside-navigation()
         +menu(menuData)
         +button-block()

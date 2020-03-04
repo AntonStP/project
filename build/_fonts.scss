@@ -1,0 +1,125 @@
+/**
+ * заголовок статьи
+ */
+ .HEADING {
+    font-family: $FuturaNewLight;
+    color: $TEXT-COLOR;
+    @include MOBILE() {
+      line-height: 1;
+    }
+    @include DESKTOP() {
+      font-size: 48px;
+      line-height: 1.125;
+    }
+  }
+  /**
+   * номер телефона в заголовке
+   */
+  .PHONE-NUMBER {
+    font-family: $FuturaNewLight;
+    color: $PHONE-COLOR;
+    @include DESKTOP() {
+      font-size: 32px;
+      line-height: 0.844;
+    }
+  }
+  /**
+   * текст в статье
+   */
+  .ARTICLE-CONTENT {
+    font-family: $FuturaNewLight;
+    color: $TEXT-COLOR;
+    @include MOBILE() {
+      font-size: 18.667px;
+      line-height: 1.446;
+    }
+    @include DESKTOP() {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+  /**
+   * выпадающий список
+   */
+  .LANG {
+    font-family: $FuturaNewBook;
+    color: $TEXT-COLOR;
+    @include MOBILE() {
+      font-size: 24px;
+    }
+    @include DESKTOP() {
+      font-size: 21px;
+      line-height: 1.286;
+    }
+  }
+  /**
+   * пункты меню
+   */
+  .MENU-ITEM {
+    font-family: $FuturaNewBook;
+    color: $TEXT-COLOR;
+    @include MOBILE() {
+      font-size: 36px;
+      line-height: 1;
+    }
+    @include DESKTOP() {
+      font-size: 31.5px;
+      line-height: 1.143;
+    }
+  }
+  /**
+   * открытый пункт меню
+   */
+  .MENU-ITEM_SELECTED {
+    font-family: $FuturaNewDemi;
+    color: $TEXT-COLOR;
+    @include MOBILE() {
+      font-size: 36px;
+      line-height: 1;
+    }
+    @include DESKTOP() {
+      font-size: 31.5px;
+      line-height: 1.144;
+    }
+  }
+  /**
+   * кнопки
+   */
+  .BUTTON {
+    font-family: $FuturaNewLight;
+    color: $TEXT-COLOR;
+    @include DESKTOP() {
+      font-size: 21px;
+      line-height: 1.286;
+    }
+  }
+  /**
+   * загрузка услуг
+   */
+  .DOWNLOAD {
+    font-family: $FuturaNewLight;
+    color: $TEXT-COLOR;
+    @include MOBILE() {
+      font-size: 16px;
+      line-height: 1;
+    }
+    @include DESKTOP() {
+      font-size: 14px;
+      line-height: 1.929;
+    }
+  }
+  /**
+   * копирайт
+   */
+  .COPYRIGHT {
+    font-family: $FuturaNewLight;
+    color: $SUBTEXT-COLOR;
+    @include MOBILE() {
+      font-size: 13.333px;
+      line-height: 1.2;
+    }
+    @include DESKTOP() {
+      font-size: 12px;
+      line-height: 2.25;
+    }
+  }
