@@ -10,7 +10,40 @@ html
         +image()
         +article()
       +aside-navigation()
-        +menu()
+        -
+          var menuData = [
+            { title: "Сохранить и преумножить",
+              url: "http://ya.ru"
+            },
+            {
+               title: "Получить финансирование",
+               url: "http://ya.ru"
+            },
+            {
+               title: "Решения для вашего бизнеса",
+               url: "http://ya.ru"
+            },
+            {
+               title: "Расчетно-кассовое обслуживание",
+               url: "http://ya.ru"
+            },
+            {
+               title: "Решение для вашей семьи/Консалтинг",
+               url: "http://ya.ru"
+            },
+            {
+              isSeparator: true
+            },
+            {
+               title: "О нас",
+               url: "http://ya.ru"
+            },
+            {
+               title: "Контактная информация",
+               url: "http://ya.ru"
+            }
+          ];
+        +menu(menuData)
         +button-block()
       +footer()
         +download()
