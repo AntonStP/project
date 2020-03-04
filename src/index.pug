@@ -1,40 +1,17 @@
+include ../build/build.pug
+
 html
   head
     title Страница
   body
-    .page 
-      header.header
-        .logo
-        .number
-        .header__vertical-line
-        .selector-lang
-          select.selector-lang__lang
-            .selector-lang__list
-      section.section
-        img.image
-        article.article
-          h1.heading
-          .article__content
-          .article__content
-          .article__content
-          .article__content
-          .article__content
-            span.article__content-arrow
-      aside.aside-navigation
-        nav.menu
-          ul.menu__items
-            li.menu__item.menu__item_selected
-            li.menu__item
-            li.menu__item
-            li.menu__item
-            li.menu__separate-line
-            li.menu__item
-            li.menu__item
-          .aside-navigation__button-block
-            button.aside__button.aside__button_selected
-            button.aside__button
-      footer.footer
-        .download
-          .icon
-          .link-load
-        .copyright
+    +page()
+      +header()
+      +section()
+        +image()
+        +article()
+      +aside-navigation()
+        +menu()
+        +button-block()
+      +footer()
+        +download()
+        +copyright()
