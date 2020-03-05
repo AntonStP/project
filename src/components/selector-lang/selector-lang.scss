@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     padding: 0 5px;
+
     .selector-lang__list {
         @extend .LANG;
         color: rgba(76, 52, 64,.7);
@@ -19,5 +20,14 @@
         background-position: right;
         padding: 0 5px;
         outline: none;
+/////////////////////////////////////убрать??
+        &:active, &:hover {
+            outline: none
+        }
+        
+        /* make it red instead (with with same width and style) */
+        &:active, &:hover {
+            outline-color: red
+        }
     }
 }

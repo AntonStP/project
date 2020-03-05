@@ -237,10 +237,11 @@ table {
 }
 
 .page {
-  width: 98%;
-  height: 95.9%;
-  margin: 20px;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .main-wrapper {
@@ -314,6 +315,13 @@ table {
   background-position: right;
   padding: 0 5px;
   outline: none;
+  /* make it red instead (with with same width and style) */
+}
+.selector-lang .selector-lang__list:active, .selector-lang .selector-lang__list:hover {
+  outline: none;
+}
+.selector-lang .selector-lang__list:active, .selector-lang .selector-lang__list:hover {
+  outline-color: red;
 }
 
 .image {
