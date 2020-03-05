@@ -1,0 +1,30 @@
+.button-block {
+    width: 100%;
+    height: 20%;
+    background-color: $ASIDE-COLOR;
+    display: flex;
+    justify-content: center;
+    .button-block__button {
+        @extend .BUTTON;
+        font-size: 18px;
+        width: 25%;
+        height: 30%;
+        border: 1px solid;
+        border-color: rgb(179, 170, 175);
+        background-color: $ASIDE-COLOR;
+        align-self: center;
+        &:hover {
+            background-color: #6d5b66;
+            color: white;
+        }
+    }
+    .button-block__button_selected {
+        width: 45%;
+        background-color: #b3aaaf;
+        &:hover {
+            background-color: #6d5b66;
+        }
+        color: white;
+    }
+}
+

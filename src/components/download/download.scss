@@ -1,0 +1,32 @@
+.download {
+    width: 68%;
+    height: 40%;
+    display: flex;
+    .download__icon {   
+        width: 30%;
+        height: 100%;
+        background: url("../image/icon-pdf.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .download__link-load{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        p {
+            @extend .DOWNLOAD;
+            color: $PHONE-COLOR;
+            align-self: center;
+            a {
+                text-decoration: none;
+                border-bottom: 1px dotted $PHONE-COLOR;
+                color: $PHONE-COLOR;
+                &:hover {
+                    color: #3f3339;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

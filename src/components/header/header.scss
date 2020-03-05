@@ -1,5 +1,18 @@
 .header {
-    width: 81.4%;
+    width: 100%;
     height: 20%;
-    background-color: rgba(122,134,211,.3);
+    background-color: $MAIN-COLOR;
+    display: flex;
+    justify-content: space-between;
+    .header__menu {
+        width: 31%;
+        height: 100%;
+        display: flex;
+        .header__vertical-line {
+            width: 2px;
+            height: 40px;
+            background-color: rgba(76,52,64,.4);
+            margin: 70px 20px;
+        }
+    }
 }

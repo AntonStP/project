@@ -1,10 +1,18 @@
-mixin article(content)
+mixin article(heading,content)
     article.article
-        h1.heading=content.title
-        .article__content 
-        .article__content 
-        .article__content 
-        .article__content 
-        .article__content
-            span.article__content-arrow 
-            block 
+        h1.heading=pageHeading.title_1
+        .content-wrapper
+            .article__content
+                p=pageContent.content_1 
+            .article__content 
+                p=pageContent.content_2 
+            .article__content 
+                p=pageContent.content_3
+            .article__content 
+                p=pageContent.content_4 
+            .article__content
+                p=pageContent.content_5
+                    a.forward-link(href="http://ya.ru" target="blank") 
+                        span.last-word в Вене
+                        span.article__content-arrow  &rarr;
+    block 

@@ -1,0 +1,21 @@
+.menu {
+    width: 100%;
+    height: 80%;
+    background-color: $ASIDE-COLOR;
+    .menu__item {
+        padding: 35px 50px 0 50px;
+        max-width: 70%;
+    }
+    a {
+        text-decoration: none;
+        @extend .MENU-ITEM;
+        font-size: 25px;
+    }
+}
+
+.menu__separate-line {
+    width:  70px;
+    height: 1px;
+    background-color: rgba(109, 91, 102,.3);
+    margin: 50px 50px 0 50px;
+}

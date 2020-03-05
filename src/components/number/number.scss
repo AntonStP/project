@@ -1,3 +1,13 @@
 .number{
     @extend .PHONE-NUMBER;
+    width: 70%;
+    height: 100%;
+    background-color: $MAIN-COLOR;
+    display: flex;
+    justify-content: center;
+    p {
+        align-self: center;
+    }
 }
+
+  

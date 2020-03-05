@@ -1,0 +1,11 @@
+.section {
+  clear: both;
+  *zoom: 1;
+}
+.section:before, .section:after {
+  content: "";
+  display: table;
+}
+.section:after {
+  clear: both;
+}
