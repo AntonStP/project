@@ -1,9 +1,9 @@
 .copyright {
     width: 68%;
     height: 20%;
+    margin-left: -5px;
     p {
         @extend .COPYRIGHT;
-        padding-left: 10px;
         color: $SUBTEXT-COLOR;
         text-align: center;
     }

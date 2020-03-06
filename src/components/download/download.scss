@@ -2,9 +2,15 @@
     width: 68%;
     height: 40%;
     display: flex;
+    background-color: khaki;
+    margin-top: -10px;
+    margin-bottom: 6px;
     .download__icon {   
         width: 30%;
         height: 100%;
+        margin-top: -3px;
+        margin-left: -11px;
+        margin-right: 7.6px;
         background: url("../image/icon-pdf.png");
         background-repeat: no-repeat;
         background-position: right;
@@ -25,6 +31,7 @@
                 &:hover {
                     color: #3f3339;
                     font-size: 15px;
+                    cursor: pointer;
                 }
             }
         }

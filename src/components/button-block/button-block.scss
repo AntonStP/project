@@ -4,11 +4,14 @@
     background-color: $ASIDE-COLOR;
     display: flex;
     justify-content: center;
+    padding-left: 7px;
+    padding-top: 4px;
+    box-sizing: border-box;
     .button-block__button {
         @extend .BUTTON;
-        font-size: 18px;
         width: 25%;
-        height: 30%;
+        height: 24%;
+        font-size: 14.66px;
         border: 1px solid;
         border-color: rgb(179, 170, 175);
         background-color: $ASIDE-COLOR;
@@ -16,13 +19,22 @@
         &:hover {
             background-color: #6d5b66;
             color: white;
+            cursor: pointer;
+        }
+        &:active {
+            background-color: #7d5b66;
+            margin-top: 2px;
         }
     }
     .button-block__button_selected {
-        width: 45%;
+        width: 41.5%;
         background-color: #b3aaaf;
         &:hover {
             background-color: #6d5b66;
+        }
+        &:active {
+            background-color: #7d5b66;
+            margin-top: 2px;
         }
         color: white;
     }
