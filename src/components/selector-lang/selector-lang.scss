@@ -1,33 +1,21 @@
 .selector-lang {
-    width: 25%;
+    width: 15%;
     height: 100%;
     background-color: $MAIN-COLOR;
-    display: flex;
-    justify-content: center;
-    padding: 0 5px;
+    padding: 50px 14px;
+    box-sizing: border-box;
 
     .selector-lang__list {
         @extend .LANG;
-        color: rgba(76, 52, 64,.7);
         width: 60px;
         height: 40px;
-        align-self: center;
         border: none;
         background-color: $MAIN-COLOR;
         appearance: none;
         background-image: url("../image/pointer.png");
         background-repeat: no-repeat;
-        background-position: right;
-        padding: 0 5px;
+        background-position: center;
         outline: none;
-/////////////////////////////////////убрать??
-        &:active, &:hover {
-            outline: none
-        }
-        
-        /* make it red instead (with with same width and style) */
-        &:active, &:hover {
-            outline-color: red
-        }
+        text-transform: uppercase;
     }
 }
