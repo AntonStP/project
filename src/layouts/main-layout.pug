@@ -1,0 +1,24 @@
+include ../../build/build.pug
+
+//- mixin pageGenerator(pageH,pageCont,numberPage,menuD)
+block vars
+    //- -
+        //- var pageH = pageHeading.title_1;
+
+html
+    head
+        link(rel="stylesheet" href="css/styles.css")
+        title Страница
+    body
+        +page()
+            +main-wrapper()
+                +header()
+                block content
+            +right-wrapper()   
+                +aside-navigation()
+                    +menu(menuData,currentPage)
+                    +button-block()
+                +footer()
+                    +download()
+                    +copyright()
+    //- block

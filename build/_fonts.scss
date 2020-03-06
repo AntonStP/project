@@ -2,124 +2,143 @@
  * заголовок статьи
  */
  .HEADING {
-    font-family: $FuturaNewLight;
-    color: $TEXT-COLOR;
-    @include MOBILE() {
-      line-height: 1;
-    }
-    @include DESKTOP() {
-      font-size: 48px;
-      line-height: 1.125;
-    }
+  font-family: $FuturaNewLight;
+  color: $TEXT-COLOR;
+  @include MOBILE() {
+    line-height: 1;
   }
-  /**
-   * номер телефона в заголовке
-   */
-  .PHONE-NUMBER {
-    font-family: $FuturaNewLight;
-    color: $PHONE-COLOR;
-    @include DESKTOP() {
-      font-size: 32px;
-      line-height: 0.844;
-    }
+  @include DESKTOP-M() {
+    font-size: 40px;
   }
-  /**
-   * текст в статье
-   */
-  .ARTICLE-CONTENT {
-    font-family: $FuturaNewLight;
-    color: $TEXT-COLOR;
-    @include MOBILE() {
-      font-size: 18.667px;
-      line-height: 1.446;
-    }
-    @include DESKTOP() {
-      font-size: 18px;
-      line-height: 1.5;
-    }
+  @include DESKTOP() {
+    font-size: 48px;
+    line-height: 1.125;
   }
-  /**
-   * выпадающий список
-   */
-  .LANG {
-    font-family: $FuturaNewBook;
-    color: $TEXT-COLOR;
-    @include MOBILE() {
-      font-size: 24px;
-    }
-    @include DESKTOP() {
-      font-size: 17px;
-      line-height: 1.286;
-    }
+}
+/**
+ * номер телефона в заголовке
+ */
+.PHONE-NUMBER {
+  font-family: $FuturaNewLight;
+  color: $PHONE-COLOR;
+  @include DESKTOP() {
+    font-size: 32px;
+    line-height: 0.844;
   }
-  /**
-   * пункты меню
-   */
-  .MENU-ITEM {
-    font-family: $FuturaNewBook;
-    color: $TEXT-COLOR;
-    @include MOBILE() {
-      font-size: 36px;
-      line-height: 1;
-    }
-    @include DESKTOP() {
-      font-size: 21px;
-      line-height: 1.143;
-    }
+}
+/**
+ * текст в статье
+ */
+.ARTICLE-CONTENT {
+  font-family: $FuturaNewLight;
+  color: $TEXT-COLOR;
+  @include MOBILE() {
+    font-size: 18.667px;
+    line-height: 1.446;
   }
-  /**
-   * открытый пункт меню
-   */
-  .MENU-ITEM_SELECTED {
-    font-family: $FuturaNewDemi;
-    color: $TEXT-COLOR;
-    @include MOBILE() {
-      font-size: 36px;
-      line-height: 1;
-    }
-    @include DESKTOP() {
-      font-size: 31.5px;
-      line-height: 1.144;
-    }
+  @include DESKTOP-M() {
+    font-size: 16px;
+    line-height: 1.446;
   }
-  /**
-   * кнопки
-   */
-  .BUTTON {
-    font-family: $FuturaNewLight;
-    color: $TEXT-COLOR;
-    @include DESKTOP() {
-      font-size: 21px;
-      line-height: 1.286;
-    }
+  @include DESKTOP() {
+    font-size: 18px;
+    line-height: 1.5;
   }
-  /**
-   * загрузка услуг
-   */
-  .DOWNLOAD {
-    font-family: $FuturaNewLight;
-    color: $TEXT-COLOR;
-    @include MOBILE() {
-      font-size: 16px;
-      line-height: 1;
-    }
-    @include DESKTOP() {
-      font-size: 14.77px;
-      line-height: 1.929;
-    }
+}
+/**
+ * выпадающий список
+ */
+.LANG {
+  font-family: $FuturaNewBook;
+  color: $TEXT-COLOR;
+  @include MOBILE() {
+    font-size: 24px;
   }
-  /**
-   * копирайт
-   */
-  .COPYRIGHT {
-    font-family: $FuturaNewLight;
-    color: $SUBTEXT-COLOR;
-    @include MOBILE() {
-      font-size: 13.333px;
-      line-height: 1.2;
-    }
-    @include DESKTOP() {
-      font-size: 12px;
-      line-height: 2.25;
-    }
+  @include DESKTOP-M() {
+    line-height: 1.125;
   }
+  @include DESKTOP() {
+    font-size: 17px;
+    line-height: 1.286;
+  }
+}
+/**
+ * пункты меню
+ */
+.MENU-ITEM {
+  font-family: $FuturaNewBook;
+  color: $TEXT-COLOR;
+  @include MOBILE() {
+    font-size: 36px;
+    line-height: 1;
+  }
+  @include DESKTOP() {
+    font-size: 21.66px;
+    line-height: 1.143;
+  }
+}
+/**
+ * открытый пункт меню
+ */
+.MENU-ITEM_SELECTED {
+  font-family: $FuturaNewDemi;
+  color: $TEXT-COLOR;
+  @include MOBILE() {
+    font-size: 36px;
+    line-height: 1;
+  }
+  @include DESKTOP() {
+    font-size: 31.5px;
+    line-height: 1.144;
+  }
+}
+/**
+ * кнопки
+ */
+.BUTTON {
+  font-family: $FuturaNewLight;
+  color: $TEXT-COLOR;
+  @include DESKTOP-M() {
+    font-size: 13px;
+  }
+  @include DESKTOP() {
+    font-size: 15.6px;
+    line-height: 1.286;
+  }
+}
+/**
+ * загрузка услуг
+ */
+.DOWNLOAD {
+  font-family: $FuturaNewLight;
+  color: $TEXT-COLOR;
+  @include MOBILE() {
+    font-size: 16px;
+    line-height: 1;
+  }
+  @include DESKTOP-M() {
+    font-size: 12px;
+  }
+  @include DESKTOP() {
+    font-size: 14.77px;
+    line-height: 1.929;
+  }
+}
+/**
+ * копирайт
+ */
+.COPYRIGHT {
+  font-family: $FuturaNewLight;
+  color: $SUBTEXT-COLOR;
+  @include MOBILE() {
+    font-size: 13.333px;
+    line-height: 1.2;
+  }
+  @include DESKTOP-M() {
+    font-size: 11px;
+  }
+  @include DESKTOP() {
+    font-size: 12px;
+    line-height: 2.25;
+  }
+}

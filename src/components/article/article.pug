@@ -1,19 +1,14 @@
-mixin article(heading,content)
+mixin article(pageContent)
     article.article
-        h1.heading=pageHeading.title_1
+        h1.heading=pageContent.title
         .content-wrapper
-            .article__content
-                p=pageContent.content_1 
-            .article__content 
-                p.
-                    Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом.
-            .article__content 
-                p=pageContent.content_3
-            .article__content 
-                p=pageContent.content_4 
-            .article__content
-                p=pageContent.content_5
-                    a.forward-link(href="http://ya.ru" target="blank") 
-                        span.last-word в Вене
-                        span.article__content-arrow  &rarr;
+            each item in pageContent.texts
+                .article__content
+                    p !{item}
+            //- 
+                .article__content
+                    p=pageCont.content_5
+                        a.forward-link(href="http://ya.ru" target="blank") 
+                            span.last-word в Вене
+                            span.article__content-arrow  &rarr;
     block 

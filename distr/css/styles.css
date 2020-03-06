@@ -27,9 +27,14 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .HEADING, .article .heading {
     line-height: 1;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .HEADING, .article .heading {
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -60,9 +65,15 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .ARTICLE-CONTENT, .article .content-wrapper .article__content {
     font-size: 18.667px;
+    line-height: 1.446;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .ARTICLE-CONTENT, .article .content-wrapper .article__content {
+    font-size: 16px;
     line-height: 1.446;
   }
 }
@@ -80,9 +91,14 @@
   font-family: "FuturaNewBook";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .LANG, .selector-lang .selector-lang__list {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .LANG, .selector-lang .selector-lang__list {
+    line-height: 1.125;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -99,7 +115,7 @@
   font-family: "FuturaNewBook";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .MENU-ITEM, .menu a {
     font-size: 36px;
     line-height: 1;
@@ -107,7 +123,7 @@
 }
 @media screen and (min-width: 1600px) {
   .MENU-ITEM, .menu a {
-    font-size: 21px;
+    font-size: 21.66px;
     line-height: 1.143;
   }
 }
@@ -119,7 +135,7 @@
   font-family: "FuturaNewDemi";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .MENU-ITEM_SELECTED {
     font-size: 36px;
     line-height: 1;
@@ -139,9 +155,14 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .BUTTON, .button-block .button-block__button {
+    font-size: 13px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .BUTTON, .button-block .button-block__button {
-    font-size: 21px;
+    font-size: 15.6px;
     line-height: 1.286;
   }
 }
@@ -153,10 +174,15 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .DOWNLOAD, .download .download__link-load p {
     font-size: 16px;
     line-height: 1;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .DOWNLOAD, .download .download__link-load p {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -173,10 +199,15 @@
   font-family: "FuturaNewLight";
   color: #7c7b7b;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1023px) {
   .COPYRIGHT, .copyright p {
     font-size: 13.333px;
     line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .COPYRIGHT, .copyright p {
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -304,6 +335,7 @@ table {
 .selector-lang .selector-lang__list {
   width: 60px;
   height: 40px;
+  margin-right: auto;
   border: none;
   background-color: #f9f9f8;
   -webkit-appearance: none;
@@ -402,8 +434,11 @@ table {
   padding: 15px 10px 0 30px;
   margin-bottom: 17.8px;
   width: 100%;
-  background-color: yellowgreen;
   box-sizing: border-box;
+  letter-spacing: -0.3px;
+}
+.menu .selected__item-menu {
+  background-color: rebeccapurple;
 }
 .menu a {
   text-decoration: none;
@@ -414,20 +449,6 @@ table {
   height: 0.6px;
   background-color: rgba(109, 91, 102, 0.3);
   margin: 48px 50px 14px 31px;
-}
-
-.Получить_финансирование {
-  font-size: 31.5px;
-  font-family: "FuturaNewBook";
-  color: #4c3440;
-  line-height: 1.143;
-  -moz-transform: matrix(0.6694214876, 0, 0, 0.6666666667, 0, 0);
-  -webkit-transform: matrix(0.6694214876, 0, 0, 0.6666666667, 0, 0);
-  -ms-transform: matrix(0.6694214876, 0, 0, 0.6666666667, 0, 0);
-  position: absolute;
-  left: 1295.201px;
-  top: 177.854px;
-  z-index: 114;
 }
 
 .button-block {
@@ -443,7 +464,6 @@ table {
 .button-block .button-block__button {
   width: 25%;
   height: 24%;
-  font-size: 14.66px;
   border: 1px solid;
   border-color: #b3aaaf;
   background-color: #f2f1f1;
@@ -485,7 +505,6 @@ table {
   width: 68%;
   height: 40%;
   display: flex;
-  background-color: khaki;
   margin-top: -10px;
   margin-bottom: 6px;
 }

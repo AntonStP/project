@@ -1,11 +1,11 @@
-mixin menu(menuItems)
+mixin menu(menuItems,currentPageId)
     nav.menu
         ul.menu__items
             if(menuItems)
                 each item in menuItems 
                     if (item.isSeparator==true)
                         li.menu__separate-line 
-                    else
-                        li.menu__item
-                            a(href=item.url target="_blank")=item.title            
+                    else 
+                        li.menu__item( class=(item.id==currentPageId ? 'active' : '') )
+                            a(href=item.url)=item.title
         block

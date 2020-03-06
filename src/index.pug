@@ -1,20 +1,4 @@
-include ../build/build.pug
+extends layouts/content-layout.pug
 
-html
-  head
-    link(rel="stylesheet" href="css/styles.css")
-    title Страница
-  body
-    +page()
-      +main-wrapper()
-        +header()
-        +section()
-          +image()
-          +article(pageHeading,pageContent)
-      +right-wrapper()   
-        +aside-navigation()
-          +menu(menuData)
-          +button-block()
-        +footer()
-          +download()
-          +copyright()
+append vars
+    -var currentPage = "save_and_multiply";
