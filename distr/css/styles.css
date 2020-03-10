@@ -27,14 +27,9 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .HEADING, .article .heading {
     line-height: 1;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .HEADING, .article .heading {
-    font-size: 40px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -65,15 +60,9 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .ARTICLE-CONTENT, .article .content-wrapper .article__content {
     font-size: 18.667px;
-    line-height: 1.446;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .ARTICLE-CONTENT, .article .content-wrapper .article__content {
-    font-size: 16px;
     line-height: 1.446;
   }
 }
@@ -91,14 +80,9 @@
   font-family: "FuturaNewBook";
   color: #4c3443;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .LANG, .selector-lang .selector-lang__list {
     font-size: 24px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .LANG, .selector-lang .selector-lang__list {
-    line-height: 1.125;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -115,7 +99,7 @@
   font-family: "FuturaNewBook";
   color: #4c3443;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .MENU-ITEM, .menu a {
     font-size: 36px;
     line-height: 1;
@@ -135,7 +119,7 @@
   font-family: "FuturaNewDemi";
   color: #4c3443;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .MENU-ITEM_SELECTED {
     font-size: 36px;
     line-height: 1;
@@ -155,11 +139,6 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .BUTTON, .button-block .button-block__button {
-    font-size: 13px;
-  }
-}
 @media screen and (min-width: 1600px) {
   .BUTTON, .button-block .button-block__button {
     font-size: 15.6px;
@@ -174,15 +153,10 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .DOWNLOAD, .download .download__link-load p {
     font-size: 16px;
     line-height: 1;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .DOWNLOAD, .download .download__link-load p {
-    font-size: 12px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -199,15 +173,10 @@
   font-family: "FuturaNewLight";
   color: #7c7b7b;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1599px) {
   .COPYRIGHT, .copyright p {
     font-size: 13.333px;
     line-height: 1.2;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .COPYRIGHT, .copyright p {
-    font-size: 11px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -285,6 +254,11 @@ table {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1600px) {
+  .right-wrapper {
+    display: none;
+  }
+}
 
 .header {
   width: 100%;
@@ -292,12 +266,17 @@ table {
   background-color: #f9f9f8;
   display: flex;
   justify-content: space-between;
-  z-index: 2;
 }
 .header .header__menu {
   width: 31%;
   height: 100%;
   display: flex;
+}
+@media (max-width: 1600px) {
+  .header .header__menu {
+    width: 100%;
+    position: fixed;
+  }
 }
 .header .header__menu .header__vertical-line {
   width: 0.5px;
@@ -354,7 +333,6 @@ table {
   height: 64%;
   margin-top: -5px;
   float: left;
-  z-index: -1;
 }
 
 .article {
@@ -451,7 +429,7 @@ table {
   text-decoration: none;
   display: inline-block;
   padding-left: 6px;
-  padding-right: 8px;
+  padding-right: 3px;
 }
 .menu .active a {
   font-weight: bold;
@@ -459,7 +437,7 @@ table {
   letter-spacing: 0.7px;
   line-height: 1.02;
   color: rgba(126, 117, 121, 0.7);
-  box-shadow: 0 -8px 0 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 -10px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .menu__separate-line {

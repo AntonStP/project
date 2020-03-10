@@ -7,9 +7,6 @@
   @include MOBILE() {
     line-height: 1;
   }
-  @include DESKTOP-M() {
-    font-size: 40px;
-  }
   @include DESKTOP() {
     font-size: 48px;
     line-height: 1.125;
@@ -36,10 +33,6 @@
     font-size: 18.667px;
     line-height: 1.446;
   }
-  @include DESKTOP-M() {
-    font-size: 16px;
-    line-height: 1.446;
-  }
   @include DESKTOP() {
     font-size: 18px;
     line-height: 1.5;
@@ -53,9 +46,6 @@
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: 24px;
-  }
-  @include DESKTOP-M() {
-    line-height: 1.125;
   }
   @include DESKTOP() {
     font-size: 17px;
@@ -98,9 +88,6 @@
 .BUTTON {
   font-family: $FuturaNewLight;
   color: $TEXT-COLOR;
-  @include DESKTOP-M() {
-    font-size: 13px;
-  }
   @include DESKTOP() {
     font-size: 15.6px;
     line-height: 1.286;
@@ -116,9 +103,6 @@
     font-size: 16px;
     line-height: 1;
   }
-  @include DESKTOP-M() {
-    font-size: 12px;
-  }
   @include DESKTOP() {
     font-size: 14.77px;
     line-height: 1.929;
@@ -133,9 +117,6 @@
   @include MOBILE() {
     font-size: 13.333px;
     line-height: 1.2;
-  }
-  @include DESKTOP-M() {
-    font-size: 11px;
   }
   @include DESKTOP() {
     font-size: 12px;
