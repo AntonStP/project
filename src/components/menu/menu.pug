@@ -7,5 +7,5 @@ mixin menu(menuItems,currentPageId)
                         li.menu__separate-line 
                     else 
                         li.menu__item( class=(item.id==currentPageId ? 'active' : '') )
-                            a(href=item.url)=item.title
+                            a(href=item.url) !{item.title}
         block

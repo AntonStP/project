@@ -1,8 +1,4 @@
-include pageGenerator/pageGenerator.pug
+extends layouts/content-layout.pug
 
-+pageGenerator(pageHeading.title_2,pageContent2,"second",menuData)
-
-
-
-
-
+append vars
+    -var currentPage = "get_financing";

@@ -292,6 +292,7 @@ table {
   background-color: #f9f9f8;
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 .header .header__menu {
   width: 31%;
@@ -353,6 +354,7 @@ table {
   height: 64%;
   margin-top: -5px;
   float: left;
+  z-index: -1;
 }
 
 .article {
@@ -381,13 +383,14 @@ table {
 }
 .article .content-wrapper .article__content {
   max-width: 329px;
+  color: #31242a;
   padding: 9px 5px;
   margin-left: 20px;
   margin-top: 1px;
   letter-spacing: 0.5px;
 }
 .article .content-wrapper .article__content:last-child {
-  color: rgba(76, 52, 64, 0.8);
+  color: rgba(49, 36, 42, 0.8);
 }
 .article .content-wrapper .article__content:nth-child(3), .article .content-wrapper .article__content:nth-child(4), .article .content-wrapper .article__content:nth-child(5) {
   margin-left: 24px;
@@ -404,17 +407,15 @@ table {
   padding-top: 0;
   margin-bottom: 37px;
 }
-
-.forward-link {
-  color: rgba(76, 52, 64, 0.8);
+.article .content-wrapper .article__content .article__content-link {
   text-decoration: none;
-}
-.forward-link:hover {
-  color: #4c3440;
-}
-.forward-link .last-word {
   border-bottom: 1px solid;
-  border-color: rgba(76, 52, 64, 0.8);
+  color: rgba(49, 36, 42, 0.8);
+  border-color: rgba(49, 36, 42, 0.4);
+}
+.article .content-wrapper .article__content .article__content-link:hover {
+  color: rgba(150, 36, 42, 0.8);
+  border-color: rgba(150, 36, 42, 0.4);
 }
 
 .aside-navigation {
@@ -427,28 +428,45 @@ table {
   height: 80%;
   background-color: #f2f1f1;
   padding: 26px;
-  padding-top: 46px;
+  padding-top: 57px;
   box-sizing: border-box;
+  display: flex;
 }
 .menu .menu__item {
-  padding: 15px 10px 0 30px;
-  margin-bottom: 17.8px;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 5px 0 3px 5px;
+  margin: 1px 0 18px 19px;
+  width: 80%;
   letter-spacing: -0.3px;
 }
-.menu .selected__item-menu {
-  background-color: rebeccapurple;
+.menu .menu__item:last-child {
+  padding-top: 9px;
+}
+.menu .menu__item:nth-child(1) {
+  width: 62%;
+}
+.menu .menu__item:nth-child(2) {
+  width: 63%;
 }
 .menu a {
   text-decoration: none;
+  display: inline-block;
+  padding-left: 6px;
+  padding-right: 8px;
+}
+.menu .active a {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  line-height: 1.02;
+  color: rgba(126, 117, 121, 0.7);
+  box-shadow: 0 -8px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .menu__separate-line {
   width: 63px;
   height: 0.6px;
-  background-color: rgba(109, 91, 102, 0.3);
-  margin: 48px 50px 14px 31px;
+  background-color: rgba(126, 117, 121, 0.2);
+  margin: 33px 10px 26px 31px;
 }
 
 .button-block {

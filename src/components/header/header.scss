@@ -4,6 +4,7 @@
     background-color: $MAIN-COLOR;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
     .header__menu {
         width: 31%;
         height: 100%;

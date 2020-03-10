@@ -24,12 +24,13 @@
         .article__content {
             @extend .ARTICLE-CONTENT;
             max-width: 329px;
+            color: rgb(49, 36, 42); 
             padding: 9px 5px;
             margin-left: 20px;
             margin-top: 1px;
             letter-spacing: 0.5px;
             &:last-child {
-                color: rgba(76, 52, 64,.8);
+                color: rgba(49, 36, 42,.8);
             }
             &:nth-child(3),&:nth-child(4),&:nth-child(5) {
                 margin-left: 24px;
@@ -46,20 +47,18 @@
                 padding-top: 0;
                 margin-bottom: 37px;
             }
+            .article__content-link {
+                text-decoration: none;
+                border-bottom: 1px solid;
+                color: rgba(49, 36, 42,.8);
+                border-color: rgba(49, 36, 42,.4);
+                &:hover {
+                    color: rgba(150, 36, 42,.8);
+                    border-color: rgba(150, 36, 42,.4);    
+                }
+            }
         }
         
     }
     
-}
-
-.forward-link {
-    color: rgba(76, 52, 64,.8);
-    text-decoration: none;
-    &:hover {
-        color: rgba(76, 52, 64, 1);
-    }
-    .last-word {
-        border-bottom: 1px solid;
-        border-color: rgba(76, 52, 64,.8);    
-    }
 }
