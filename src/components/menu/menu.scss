@@ -1,6 +1,6 @@
 .menu {
     width: 100%;
-    height: 80%;
+    max-height: 80%;
     background-color: $ASIDE-COLOR;
     padding: 26px;
     padding-top: 57px;
@@ -9,7 +9,7 @@
     .menu__item {
         padding: 5px 0 3px 5px;
         margin: 1px 0 18px 19px;
-        width: 80%;
+        min-width: 80%;
         letter-spacing: -0.3px;
         &:last-child {
             padding-top: 9px;    
@@ -19,7 +19,10 @@
         }
         &:nth-child(2) {
             width: 63%; 
-        }  
+        }
+        &:last-child {
+            width: 53%; 
+        }   
     }
     a {
         text-decoration: none;
@@ -28,7 +31,10 @@
         padding-left: 6px;
         padding-right: 3px;
         &:hover {
-            color: #200a18;    
+            font-weight: bold;
+            font-size: 22px;  
+            color: rgba(126, 117, 121,.9);
+            box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;   
         }
     }
     .active {

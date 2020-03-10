@@ -27,12 +27,12 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .HEADING, .article .heading {
     line-height: 1;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .HEADING, .article .heading {
     font-size: 48px;
     line-height: 1.125;
@@ -46,7 +46,7 @@
   font-family: "FuturaNewLight";
   color: #231f20;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .PHONE-NUMBER, .number {
     font-size: 32px;
     line-height: 0.844;
@@ -60,13 +60,13 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .ARTICLE-CONTENT, .article .content-wrapper .article__content {
     font-size: 18.667px;
     line-height: 1.446;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .ARTICLE-CONTENT, .article .content-wrapper .article__content {
     font-size: 18px;
     line-height: 1.5;
@@ -80,12 +80,12 @@
   font-family: "FuturaNewBook";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .LANG, .selector-lang .selector-lang__list {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .LANG, .selector-lang .selector-lang__list {
     font-size: 17px;
     line-height: 1.286;
@@ -99,13 +99,13 @@
   font-family: "FuturaNewBook";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .MENU-ITEM, .menu a {
     font-size: 36px;
     line-height: 1;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .MENU-ITEM, .menu a {
     font-size: 21.66px;
     line-height: 1.143;
@@ -119,13 +119,13 @@
   font-family: "FuturaNewDemi";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .MENU-ITEM_SELECTED {
     font-size: 36px;
     line-height: 1;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .MENU-ITEM_SELECTED {
     font-size: 31.5px;
     line-height: 1.144;
@@ -139,7 +139,7 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .BUTTON, .button-block .button-block__button {
     font-size: 15.6px;
     line-height: 1.286;
@@ -153,13 +153,13 @@
   font-family: "FuturaNewLight";
   color: #4c3443;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .DOWNLOAD, .download .download__link-load p {
     font-size: 16px;
     line-height: 1;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .DOWNLOAD, .download .download__link-load p {
     font-size: 14.77px;
     line-height: 1.929;
@@ -173,13 +173,13 @@
   font-family: "FuturaNewLight";
   color: #7c7b7b;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 321px) {
   .COPYRIGHT, .copyright p {
     font-size: 13.333px;
     line-height: 1.2;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 320px) {
   .COPYRIGHT, .copyright p {
     font-size: 12px;
     line-height: 2.25;
@@ -263,11 +263,11 @@ table {
   justify-content: space-between;
 }
 .header .header__menu {
-  width: 31%;
+  min-width: 31%;
   height: 100%;
   display: flex;
 }
-@media (max-width: 1599px) {
+@media (max-width: 320px) {
   .header .header__menu {
     width: 100%;
     height: 10vh;
@@ -282,8 +282,8 @@ table {
 }
 
 .logo {
-  width: 19.1%;
-  height: 49.9%;
+  max-width: 19.1%;
+  max-height: 49.9%;
   align-self: center;
   padding: 35px 55px 0 55px;
 }
@@ -337,7 +337,7 @@ table {
   float: left;
 }
 .article .heading {
-  width: 100%;
+  max-width: 100%;
   height: 15%;
   padding-left: 22px;
   padding-top: 42px;
@@ -354,14 +354,36 @@ table {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: flex-start;
+  background-color: darkseagreen;
 }
 .article .content-wrapper .article__content {
+  background-color: goldenrod;
   max-width: 329px;
   color: #31242a;
   padding: 9px 5px;
   margin-left: 20px;
   margin-top: 1px;
   letter-spacing: 0.5px;
+}
+@media (max-height: 899px) {
+  .article .content-wrapper .article__content {
+    font-size: 17px;
+  }
+}
+@media (max-height: 820px) {
+  .article .content-wrapper .article__content {
+    font-size: 16px;
+  }
+}
+@media (max-height: 749px) {
+  .article .content-wrapper .article__content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1340px) {
+  .article .content-wrapper .article__content {
+    font-size: 14px;
+  }
 }
 .article .content-wrapper .article__content:last-child {
   color: rgba(49, 36, 42, 0.8);
@@ -399,7 +421,7 @@ table {
 
 .menu {
   width: 100%;
-  height: 80%;
+  max-height: 80%;
   background-color: #f2f1f1;
   padding: 26px;
   padding-top: 57px;
@@ -409,7 +431,7 @@ table {
 .menu .menu__item {
   padding: 5px 0 3px 5px;
   margin: 1px 0 18px 19px;
-  width: 80%;
+  min-width: 80%;
   letter-spacing: -0.3px;
 }
 .menu .menu__item:last-child {
@@ -421,6 +443,9 @@ table {
 .menu .menu__item:nth-child(2) {
   width: 63%;
 }
+.menu .menu__item:last-child {
+  width: 53%;
+}
 .menu a {
   text-decoration: none;
   display: inline-block;
@@ -428,7 +453,10 @@ table {
   padding-right: 3px;
 }
 .menu a:hover {
-  color: #200a18;
+  font-weight: bold;
+  font-size: 22px;
+  color: rgba(126, 117, 121, 0.9);
+  box-shadow: 0 -10px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
 .menu .active a {
   font-weight: bold;
@@ -458,7 +486,7 @@ table {
 }
 .button-block .button-block__button {
   width: 25%;
-  height: 24%;
+  min-height: 24%;
   border: 1px solid;
   border-color: #b3aaaf;
   background-color: #f2f1f1;
@@ -504,8 +532,8 @@ table {
   margin-bottom: 6px;
 }
 .download .download__icon {
-  width: 30%;
-  height: 100%;
+  min-width: 30%;
+  min-height: 100%;
   margin-top: -3px;
   margin-left: -11px;
   margin-right: 7.6px;
@@ -514,7 +542,7 @@ table {
   background-position: right;
 }
 .download .download__link-load {
-  width: 70%;
+  min-width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -535,7 +563,7 @@ table {
 }
 
 .copyright {
-  width: 68%;
+  min-width: 68%;
   height: 20%;
   margin-left: -5px;
 }

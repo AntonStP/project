@@ -1,9 +1,9 @@
 
-mixin header(params)
+mixin header()
     header.header
         +logo()
         .header__menu
           +number()
           .header__vertical-line
-          +selector-lang()
+          +selector-lang(language)
         block

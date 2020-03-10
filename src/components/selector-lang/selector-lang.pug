@@ -1,7 +1,6 @@
-mixin selector-lang(params)
+mixin selector-lang(langItem)
     .selector-lang
         select.selector-lang__list
-            option(selected value="RU") ru
-            option(value="EN") en
-            option(value="DE") de
+            each item in langItem
+                option(value=item.lang)=item.lang
     block

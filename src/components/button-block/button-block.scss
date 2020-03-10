@@ -10,7 +10,7 @@
     .button-block__button {
         @extend .BUTTON;
         width: 25%;
-        height: 24%;
+        min-height: 24%;
         border: 1px solid;
         border-color: rgb(179, 170, 175);
         background-color: $ASIDE-COLOR;

@@ -1,5 +1,5 @@
 .copyright {
-    width: 68%;
+    min-width: 68%;
     height: 20%;
     margin-left: -5px;
     p {
@@ -7,4 +7,5 @@
         color: $SUBTEXT-COLOR;
         text-align: center;
     }
+ 
 }
