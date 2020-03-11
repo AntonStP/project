@@ -4,10 +4,14 @@
     background-color: $MAIN-COLOR;
     padding: 50px 14px;
     box-sizing: border-box;
+    @media (max-width:321px) {
+        width: 15%;
+        padding: 0;
+    }
 
     .selector-lang__list {
         @extend .LANG;
-        width: 60px;
+        width: 120%;
         height: 40px;
         margin-right: auto;
         border: none;
@@ -15,8 +19,13 @@
         appearance: none;
         background-image: url("../image/pointer.png");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         outline: none;
         text-transform: uppercase;
+        @media (max-width:321px) {
+            width: 70%;
+            font-size: 14px;
+            background-color: #fff;
+        }
     }
 }

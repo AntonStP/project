@@ -1,4 +1,7 @@
 .main-wrapper {
     width: 81%;
     background-color: $MAIN-COLOR;
+    @media (max-width:321px) {
+        width: 100%;
+    }
 }

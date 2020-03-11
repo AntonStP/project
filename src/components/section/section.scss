@@ -9,6 +9,12 @@
         clear: both;
     }
     clear: both;
-    *zoom: 1;    
+    *zoom: 1;  
+    @media (max-width:321px) {
+        width: 100%;
+        display: flex;
+        background-color: gray;
+        flex-direction: column;
+    }  
   }  
   

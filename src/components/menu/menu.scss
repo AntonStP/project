@@ -5,10 +5,10 @@
     padding: 26px;
     padding-top: 57px;
     box-sizing: border-box;
-    display: flex;
     .menu__item {
         padding: 5px 0 3px 5px;
         margin: 1px 0 18px 19px;
+        flex-shrink: 1;
         min-width: 80%;
         letter-spacing: -0.3px;
         &:last-child {

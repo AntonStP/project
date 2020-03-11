@@ -1,6 +1,6 @@
 mixin article(pageContent)
     article.article
-        h1.heading=pageContent.title
+        h1.heading !{pageContent.title}
         .content-wrapper
             each item in pageContent.texts
                 .article__content
