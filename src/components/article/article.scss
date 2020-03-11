@@ -33,23 +33,11 @@
         .article__content {
             @extend .ARTICLE-CONTENT;
             max-width: 329px;
-            color: rgb(49, 36, 42); 
+            color: #000000; 
             padding: 9px 5px;
             margin-left: 20px;
             margin-top: 1px;
             letter-spacing: 0.5px;
-            @media (max-height:899px) {
-                font-size: 17px;
-            }
-            @media (max-height:820px) {
-                font-size: 16px;
-            }
-            @media (max-height:749px) {
-                font-size: 14px;
-            }
-            @media (max-width:1340px) {
-                font-size: 14px;
-            }
             &:first-child {
                 @media (max-width:321px) {
                     margin-bottom: 15px;
@@ -75,9 +63,13 @@
             &:nth-child(5) {
                 padding-top: 0;
                 margin-bottom: 37px;
+                @media (max-width:321px) {
+                    margin-bottom: 50px;
+                }
             }
             @media (max-width:321px) {
                 display: static;
+                font-size: 14px;
                 padding-left: 15px;
                 margin: 0;
                 margin-top: -15px;

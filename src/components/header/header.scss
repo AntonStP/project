@@ -8,6 +8,12 @@
         width: 100%;
         height: 10%;
     }
+    input {
+        display: none;
+        &:checked + .right-wrapper{
+            display: block;
+        }
+    }
     .header__menu-burger {
         background-image: url("../image/menu_burger.png");
         background-repeat: no-repeat;
@@ -16,12 +22,11 @@
         display: none;
         &:hover {
             width: 29px; 
-            cursor: pointer;  
         }
         @media (max-width:321px) {
             display: block;
             position: absolute;
-            right: 9px;
+            right: 25px;
             top: 25px
         }
     }
@@ -31,9 +36,9 @@
         display: flex;
         @media (max-width:321px) {
             width: 98.6%;
-            height: 9%;
+            height: 10.5%;
             position: fixed;
-            padding-top: 6px;
+            padding-top: 11px;
             bottom: 0;
             left: 10px;
             right: 10px;
@@ -49,7 +54,7 @@
             @media (max-width:321px) {
                 width: 1px;
                 height: 28px;
-                margin: 5px 22px 5px 7px;
+                margin: 5px 22px 5px -3px;
             }
         }
     }

@@ -2,7 +2,8 @@
 mixin header()
     header.header
         +logo()
-        .header__menu-burger 
+        input(type="checkbox", id="menu")
+        label.header__menu-burger(for="menu")  dawd
         .header__menu
           +number()
           .header__vertical-line

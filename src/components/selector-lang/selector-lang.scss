@@ -23,6 +23,16 @@
         background-position: right;
         outline: none;
         text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+            color: #8f7585;
+            font-size: 17.8px;
+        }
+        &:active {
+            cursor: pointer;
+            color: #8e75a5;
+            font-size: 16.8px;
+        }
         @media (max-width:321px) {
             width: 70%;
             font-size: 12px;
@@ -30,3 +40,4 @@
         }
     }
 }
+
