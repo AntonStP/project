@@ -1,11 +1,11 @@
 .logo {
-    max-width: 19.1%;
-    max-height: 49.9%;
+    width: 19.2%;
+    height: 51%;
     align-self: center;
-    padding: 35px 55px 0 55px;
+    padding: 39px 55px 0 55px;
     @include MOBILE {
-        min-width: 61%;
-        max-height: 59.9%;
+        width: 61%;
+        height: 59%;
         align-self: flex-start;
         padding: 15px;
         z-index: 2;

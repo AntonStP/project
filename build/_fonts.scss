@@ -103,13 +103,13 @@
  */
 .DOWNLOAD {
   font-family: $FuturaNewLight;
-  color: $TEXT-COLOR;
+  color: $PHONE-COLOR;
   @include MOBILE() {
     font-size: 16px;
     line-height: 1;
   }
   @include DESKTOP() {
-    font-size: 14.77px;
+    font-size: 14.3px;
     line-height: 1.929;
   }
 }

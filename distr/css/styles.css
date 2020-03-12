@@ -170,19 +170,19 @@
 /**
  * загрузка услуг
  */
-.DOWNLOAD, .download .download__link-load p {
+.DOWNLOAD, .download .download__link-load {
   font-family: "FuturaNewLight";
-  color: #291823;
+  color: #231f20;
 }
 @media screen and (max-width: 321px) {
-  .DOWNLOAD, .download .download__link-load p {
+  .DOWNLOAD, .download .download__link-load {
     font-size: 16px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 320px) {
-  .DOWNLOAD, .download .download__link-load p {
-    font-size: 14.77px;
+  .DOWNLOAD, .download .download__link-load {
+    font-size: 14.3px;
     line-height: 1.929;
   }
 }
@@ -379,15 +379,15 @@ table {
 }
 
 .logo {
-  max-width: 19.1%;
-  max-height: 49.9%;
+  width: 19.2%;
+  height: 51%;
   align-self: center;
-  padding: 35px 55px 0 55px;
+  padding: 39px 55px 0 55px;
 }
 @media screen and (max-width: 321px) {
   .logo {
-    min-width: 61%;
-    max-height: 59.9%;
+    width: 61%;
+    height: 59%;
     align-self: flex-start;
     padding: 15px;
     z-index: 2;
@@ -478,7 +478,7 @@ table {
 }
 @media screen and (max-width: 321px) {
   .image {
-    width: 79%;
+    width: 78%;
     margin-top: -121px;
     margin-left: 1px;
     opacity: 0.5;
@@ -501,14 +501,14 @@ table {
   max-width: 100%;
   height: 15%;
   padding-left: 22px;
-  padding-top: 42px;
+  padding-top: 45px;
   letter-spacing: 1.26px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 321px) {
   .article .heading {
-    padding-left: 14px;
-    padding-top: 0;
+    padding-left: 13px;
+    padding-top: 3px;
     font-size: 35px;
     line-height: 1;
   }
@@ -817,46 +817,55 @@ table {
   .download .download__icon {
     width: 43px;
     margin-top: 3px;
-    margin-left: 3px;
+    margin-left: -7px;
+    margin-right: 13px;
     background-size: contain;
   }
 }
 .download .download__link-load {
   min-width: 70%;
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: flex-start;
-}
-.download .download__link-load p {
-  color: #231f20;
-  font-size: 14.3px;
-  margin-left: 6px;
   align-self: center;
+  margin-left: 6px;
+  padding-left: 3px;
+  box-sizing: border-box;
+}
+.download .download__link-load br {
+  display: none;
 }
 @media screen and (max-width: 321px) {
-  .download .download__link-load p {
-    width: 68%;
-    font-size: 11px;
-    margin-left: 6px;
-    padding: 7px 0 3px 0;
-    letter-spacing: 0.8;
-    line-height: 1.1;
-    border-bottom: 1px dotted #231f20;
+  .download .download__link-load br {
+    display: block;
   }
 }
-.download .download__link-load p a {
+.download .download__link-load a {
+  color: #231f20;
   text-decoration: none;
   border-bottom: 1px dotted #231f20;
-  color: #231f20;
 }
-.download .download__link-load p a:hover {
-  color: #3f3339;
+.download .download__link-load a:hover {
   font-size: 15px;
+  color: #3f3339;
   cursor: pointer;
 }
 @media screen and (max-width: 321px) {
-  .download .download__link-load p a {
+  .download .download__link-load a {
     border-bottom: none;
+  }
+}
+@media screen and (max-width: 321px) {
+  .download .download__link-load {
+    min-width: 15px;
+    height: 33px;
+    font-size: 11px;
+    line-height: 1.1;
+    letter-spacing: 0.8;
+    padding: 5px 4px 3px 1px;
+    margin-left: 0;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #231f20;
   }
 }
 
