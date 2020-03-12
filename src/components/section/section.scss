@@ -10,6 +10,8 @@
     }
     clear: both;
     *zoom: 1;  
+
+    background-color: aqua;
     @include MOBILE {
         width: 100%;
         display: flex;

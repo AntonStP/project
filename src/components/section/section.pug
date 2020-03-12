@@ -1,3 +1,9 @@
-mixin section(params)
-    section.main-wrapper__section.section
-        block
+//- mixin section(params)
+//-     section.main-wrapper__section.section
+//-         +image(pagesContent[currentPage])
+//-         +article(pagesContent[currentPage])
+
+mixin section(content, params)
+    section.section&attributes(attributes)
+        +image(content).section__image  
+        +article(content).section__article

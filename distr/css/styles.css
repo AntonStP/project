@@ -37,18 +37,18 @@
 /**
  * заголовок статьи
  */
-.HEADING, .article .heading {
+.HEADING, .article__heading {
   font-family: "FuturaNewLight";
   color: #291823;
 }
 @media screen and (max-width: 321px) {
-  .HEADING, .article .heading {
+  .HEADING, .article__heading {
     font-size: 34px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 320px) {
-  .HEADING, .article .heading {
+  .HEADING, .article__heading {
     font-size: 48px;
     line-height: 1.125;
   }
@@ -77,18 +77,18 @@
 /**
  * текст в статье
  */
-.ARTICLE-CONTENT, .article .content-wrapper .content-wrapper__content {
+.ARTICLE-CONTENT, .article__paragraph {
   font-family: "FuturaNewLight";
   color: #291823;
 }
 @media screen and (max-width: 321px) {
-  .ARTICLE-CONTENT, .article .content-wrapper .content-wrapper__content {
+  .ARTICLE-CONTENT, .article__paragraph {
     font-size: 18.667px;
     line-height: 1.446;
   }
 }
 @media screen and (min-width: 320px) {
-  .ARTICLE-CONTENT, .article .content-wrapper .content-wrapper__content {
+  .ARTICLE-CONTENT, .article__paragraph {
     font-size: 18px;
     line-height: 1.5;
   }
@@ -476,6 +476,9 @@ table {
   margin-top: -5px;
   float: left;
 }
+.image img {
+  width: 100%;
+}
 @media screen and (max-width: 321px) {
   .image {
     width: 78%;
@@ -490,6 +493,9 @@ table {
   width: 69%;
   height: 80%;
   float: left;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background-color: bisque;
 }
 @media screen and (max-width: 321px) {
   .article {
@@ -497,25 +503,26 @@ table {
     min-height: 285%;
   }
 }
-.article .heading {
+.article__heading {
   max-width: 100%;
   height: 15%;
-  padding-left: 22px;
-  padding-top: 45px;
+  background-color: cadetblue;
+  padding: 25px 12px;
   letter-spacing: 1.26px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 321px) {
-  .article .heading {
+  .article__heading {
     padding-left: 13px;
     padding-top: 3px;
     font-size: 35px;
     line-height: 1;
   }
 }
-.article .content-wrapper {
+.article__content-wrapper {
   box-sizing: border-box;
   width: 100%;
+  background-color: coral;
   height: 69%;
   padding-top: 30px;
   display: flex;
@@ -524,48 +531,48 @@ table {
   justify-content: space-around;
   align-content: flex-start;
 }
-.article .content-wrapper .content-wrapper__content {
+.article__paragraph {
   max-width: 329px;
   color: #000000;
   padding: 9px 5px;
+  background-color: darkkhaki;
   margin-left: 20px;
   margin-top: 1px;
   letter-spacing: 0.5px;
 }
 @media screen and (max-width: 321px) {
-  .article .content-wrapper .content-wrapper__content:first-child {
+  .article__paragraph:first-child {
     margin-bottom: 15px;
   }
 }
-.article .content-wrapper .content-wrapper__content:nth-child(3), .article .content-wrapper .content-wrapper__content:nth-child(4), .article .content-wrapper .content-wrapper__content:nth-child(5) {
+.article__paragraph:nth-child(3), .article__paragraph:nth-child(4), .article__paragraph:nth-child(5) {
   margin-left: 24px;
 }
 @media screen and (max-width: 321px) {
-  .article .content-wrapper .content-wrapper__content:nth-child(3), .article .content-wrapper .content-wrapper__content:nth-child(4), .article .content-wrapper .content-wrapper__content:nth-child(5) {
+  .article__paragraph:nth-child(3), .article__paragraph:nth-child(4), .article__paragraph:nth-child(5) {
     margin: 0;
   }
 }
-.article .content-wrapper .content-wrapper__content:nth-child(3) {
+.article__paragraph:nth-child(3) {
   margin-top: -3px;
   padding-bottom: 0;
 }
-.article .content-wrapper .content-wrapper__content:nth-child(4) {
+.article__paragraph:nth-child(4) {
   padding-top: 0;
   margin-top: 10px;
 }
-.article .content-wrapper .content-wrapper__content:last-child {
+.article__paragraph:last-child {
   padding-top: 0;
   margin-bottom: 37px;
   color: rgba(49, 36, 42, 0.8);
 }
 @media screen and (max-width: 321px) {
-  .article .content-wrapper .content-wrapper__content:last-child {
+  .article__paragraph:last-child {
     margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 321px) {
-  .article .content-wrapper .content-wrapper__content {
-    display: static;
+  .article__paragraph {
     font-size: 14px;
     padding-left: 15px;
     margin: 0;
@@ -574,13 +581,13 @@ table {
     line-height: 1.45;
   }
 }
-.article .content-wrapper .content-wrapper__content .content-link {
+.article__paragraph .content-link {
   text-decoration: none;
   border-bottom: 1px solid;
   color: rgba(49, 36, 42, 0.8);
   border-color: rgba(49, 36, 42, 0.4);
 }
-.article .content-wrapper .content-wrapper__content .content-link:hover {
+.article__paragraph .content-link:hover {
   color: rgba(150, 36, 42, 0.8);
   border-color: rgba(150, 36, 42, 0.4);
 }
@@ -900,6 +907,7 @@ table {
 .section {
   clear: both;
   *zoom: 1;
+  background-color: aqua;
 }
 .section:before, .section:after {
   content: "";

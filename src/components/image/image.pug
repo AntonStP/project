@@ -1,3 +1,3 @@
 mixin image(pageContent)
-    img.section__image.image(src=pagesContent[currentPage].image)
-    block
+    .image&attributes(attributes)
+        img(src=pagesContent[currentPage].image)

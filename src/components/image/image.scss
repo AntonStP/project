@@ -3,6 +3,9 @@
     height: 64%;
     margin-top: -5px;
     float: left;
+    img {
+        width: 100%;
+    }
     @include MOBILE {
         width: 78%;
         margin-top: -121px;
