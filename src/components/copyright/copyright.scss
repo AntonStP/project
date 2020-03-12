@@ -2,10 +2,24 @@
     min-width: 68%;
     height: 20%;
     margin-left: -5px;
-    p {
-        @extend .COPYRIGHT;
-        color: $SUBTEXT-COLOR;
-        text-align: center;
+    @extend .COPYRIGHT;
+    color: $SUBTEXT-COLOR;
+    text-align: center;
+    
+    @include MOBILE{
+        text-align: start;
+        position: relative;  
+        top: 3px; 
+        left: -40px;      
+        font-size: 10px; 
+        line-height: 1.45;   
+        min-width: 30%;
+        height: 70%; 
+    } 
+    br {
+        display: none;
+        @include MOBILE{
+            display: block;
+        } 
     }
- 
 }

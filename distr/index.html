@@ -3,19 +3,19 @@
   <head>
     <link rel="stylesheet" href="css/styles.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Страница</title>
+    <title>Raiffeisen Bank</title>
   </head>
   <body>
     <div class="page">
-      <div class="main-wrapper">
-        <header class="header"><img class="logo" src="image/logo.png" alt="logo"/>
-          <input type="checkbox" id="menu"/>
-          <label class="header__menu-burger" for="menu"> dawd</label>
-          <div class="header__menu">
+      <input class="page__input" type="checkbox" id="menu"/>
+      <label class="page__menu-burger" for="menu"> </label>
+      <div class="page__mein-wrapper main-wrapper">
+        <header class="main-wrapper_header header"><img class="logo" src="image/logo.png" alt="logo"/>
+          <div class="header__header-menu header-menu">
             <div class="number"> 
               <p>+7 (495) 662 76 77</p>
             </div>
-            <div class="header__vertical-line"></div>
+            <div class="header-menu__vertical-line"></div>
             <div class="selector-lang">
               <select class="selector-lang__list">
                 <option value="ru">ru</option>
@@ -52,11 +52,11 @@
         <aside class="aside-navigation">
           <nav class="menu">
             <ul class="menu__items">
-              <li class="menu__item active"><a href="index.html">Сохранить и&nbsp;преумножить</a></li>
+              <li class="menu__item _active"><a href="index.html">Сохранить и&nbsp;преумножить</a></li>
               <li class="menu__item"><a href="inner.html">Получить финансирование</a></li>
               <li class="menu__item"><a href="http://ya.ru">Решения для вашего бизнеса</a></li>
               <li class="menu__item"><a href="http://ya.ru">Расчетно-кассовое обслуживание</a></li>
-              <li class="menu__item"><a href="http://ya.ru">Решения для вашей семьи/Консалтинг</a></li>
+              <li class="menu__item"><a href="http://ya.ru">Решения для вашей семьи<br/><span class='menu__item_letter-active'>и консалтинг</span><span class='menu__item_letter-disable'>/Консалтинг</span></a></li>
               <li class="menu__separate-line"> </li>
               <li class="menu__item"><a href="http://ya.ru">О нас</a></li>
               <li class="menu__item"><a href="http://ya.ru">Контактная информация</a></li>
@@ -74,9 +74,8 @@
               <p> <a href="ya.ru">Скачать &laquo;Услуги FWR&raquo;</a></p>
             </div>
           </div>
-          <div class="copyright">
-            <p>© 2009-2017 АО «Райффайзенбанк»</p>
-          </div>
+          <p class="copyright">© 2009-2017 <br/> АО «Райффайзенбанк»
+          </p>
         </footer>
       </div>
     </div>

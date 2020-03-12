@@ -1,7 +1,8 @@
 .main-wrapper {
     width: 81%;
     background-color: $MAIN-COLOR;
-    @media (max-width:321px) {
+    @include MOBILE {
         width: 100%;
+        height: 1045px;
     }
 }

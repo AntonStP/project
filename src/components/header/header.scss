@@ -4,37 +4,15 @@
     background-color: $MAIN-COLOR;
     display: flex;
     justify-content: space-between;
-    @media (max-width:321px) {
+    @include MOBILE {
         width: 100%;
         height: 10%;
     }
-    input {
-        display: none;
-        &:checked + .right-wrapper{
-            display: block;
-        }
-    }
-    .header__menu-burger {
-        background-image: url("../image/menu_burger.png");
-        background-repeat: no-repeat;
-        width: 28px;
-        height: 27px;
-        display: none;
-        &:hover {
-            width: 29px; 
-        }
-        @media (max-width:321px) {
-            display: block;
-            position: absolute;
-            right: 25px;
-            top: 25px
-        }
-    }
-    .header__menu {
+    .header-menu {
         min-width: 31%;
         height: 100%;
         display: flex;
-        @media (max-width:321px) {
+        @include MOBILE {
             width: 98.6%;
             height: 10.5%;
             position: fixed;
@@ -46,12 +24,12 @@
             background-color: #fff;
 
         }
-        .header__vertical-line {
+        .header-menu__vertical-line {
             width: 0.5px;
             height: 40px;
             background-color: rgba(76,52,64,.4);
             margin: 50px 20px;
-            @media (max-width:321px) {
+            @include MOBILE {
                 width: 1px;
                 height: 28px;
                 margin: 5px 22px 5px -3px;

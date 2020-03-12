@@ -4,7 +4,7 @@
     background-color: $MAIN-COLOR;
     padding: 50px 14px;
     box-sizing: border-box;
-    @media (max-width:321px) {
+    @include MOBILE {
         width: 15%;
         background-color: #fff;
         padding: 0;
@@ -33,7 +33,7 @@
             color: #8e75a5;
             font-size: 16.8px;
         }
-        @media (max-width:321px) {
+        @include MOBILE {
             width: 70%;
             font-size: 12px;
             background-color: #fff;

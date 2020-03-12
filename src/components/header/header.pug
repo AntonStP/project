@@ -1,11 +1,9 @@
 
 mixin header()
-    header.header
+    header.main-wrapper_header.header
         +logo()
-        input(type="checkbox", id="menu")
-        label.header__menu-burger(for="menu")  dawd
-        .header__menu
+        .header__header-menu.header-menu
           +number()
-          .header__vertical-line
+          .header-menu__vertical-line
           +selector-lang(language)
         block

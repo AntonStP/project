@@ -3,7 +3,7 @@
     height: 64%;
     margin-top: -5px;
     float: left;
-    @media (max-width:321px) {
+    @include MOBILE {
         width: 79%;
         margin-top: -121px;
         margin-left: 1px;

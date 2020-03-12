@@ -7,6 +7,11 @@
     padding-left: 7px;
     padding-top: 4px;
     box-sizing: border-box;
+    @media (max-width:321px) {
+        height: 25%;
+        padding-top: 32px;
+        padding-left: 0;
+    } 
     .button-block__button {
         @extend .BUTTON;
         width: 25%;
@@ -15,6 +20,11 @@
         border-color: rgb(179, 170, 175);
         background-color: $ASIDE-COLOR;
         align-self: center;
+        @include MOBILE {
+            width: 39.1%;
+            height: 45.5%;
+            align-self: flex-start;
+        } 
         &:hover {
             background-color: #6d5b66;
             color: white;
@@ -28,6 +38,9 @@
     .button-block__button_selected {
         width: 41.5%;
         background-color: #b3aaaf;
+        @include MOBILE {
+            width: 51%;
+        } 
         &:hover {
             background-color: #6d5b66;
         }

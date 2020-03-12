@@ -5,6 +5,11 @@
     padding: 26px;
     padding-top: 57px;
     box-sizing: border-box;
+    @include MOBILE {
+        padding: 0;
+        padding-left: 0;
+        padding-top: 18px;
+    }
     .menu__item {
         max-height: 48px;
         padding: 5px 0 3px 5px;
@@ -12,21 +17,51 @@
         flex-shrink: 1;
         min-width: 80%;
         letter-spacing: -0.3px;
+        @include MOBILE {
+            margin-left: 4px;
+            margin-bottom: 25px;
+            letter-spacing: 0.1;
+        } 
         &:last-child {
             padding-top: 9px;    
         }
         &:nth-child(1) {
-            width: 62%;   
+            width: 62%;  
+            @include MOBILE {
+                margin-bottom: 26px;
+            } 
         }
         &:nth-child(2) {
-            width: 63%; 
+            margin-bottom: 20px;
+            @include MOBILE {
+                margin-bottom: 28px;
+            } 
+        }   
+        &:nth-child(4) {
+            @include MOBILE {
+                margin-bottom: 22px;
+            } 
         }
         &:nth-child(7) {
             max-height: 24px;
+            @include MOBILE {
+                margin-bottom: 7px;
+            } 
         }
         &:last-child {
-            width: 53%; 
-        }   
+        }
+        .menu__item_letter-active, br {
+            display: none;
+            @include MOBILE {
+                display: inline;
+            }
+        }
+        .menu__item_letter-disable {
+            @include MOBILE {
+                display: none;
+            }    
+        }
+
     }
     a {
         text-decoration: none;
@@ -38,10 +73,17 @@
             font-weight: bold;
             font-size: 22px;  
             color: rgba(126, 117, 121,.9);
-            box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;   
+            box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset; 
+            @include MOBILE {
+                font-size: 18px;
+            }  
+        }
+        @include MOBILE {
+            font-size: 18px;
+            line-height: 1.104;
         }
     }
-    .active {
+    ._active {
         a {
             font-weight: bold;
             font-size: 22px;    
@@ -49,7 +91,10 @@
             line-height: 1.02;
             color: rgba(126, 117, 121,.9);
             box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;
-
+            @include MOBILE {
+                font-size: 18px;
+                letter-spacing: 0.75;
+            }
         }
     }
 }
@@ -59,6 +104,10 @@
     height: 0.6px;
     background-color: rgba(126, 117, 121,.2);;
     margin: 33px 10px 26px 31px;
+    @include MOBILE {
+        margin: 30px 0 19px 14px;
+        width:  50px;
+    }
 }
 
 

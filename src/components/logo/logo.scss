@@ -3,7 +3,7 @@
     max-height: 49.9%;
     align-self: center;
     padding: 35px 55px 0 55px;
-    @media (max-width:321px) {
+    @include MOBILE {
         min-width: 61%;
         max-height: 59.9%;
         align-self: flex-start;

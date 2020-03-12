@@ -10,7 +10,7 @@
     }
     clear: both;
     *zoom: 1;  
-    @media (max-width:321px) {
+    @include MOBILE {
         width: 100%;
         display: flex;
         flex-direction: column;
