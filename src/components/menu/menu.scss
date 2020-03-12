@@ -10,7 +10,7 @@
         padding-left: 0;
         padding-top: 18px;
     }
-    .menu__item {
+    .menu-list__menu-item {
         max-height: 48px;
         padding: 5px 0 3px 5px;
         margin: 1px 0 18px 19px;
@@ -50,13 +50,13 @@
         }
         &:last-child {
         }
-        .menu__item_letter-active, br {
+        .menu-list__menu-item_letter-active, br {
             display: none;
             @include MOBILE {
                 display: inline;
             }
         }
-        .menu__item_letter-disable {
+        .menu-list__menu-item_letter-disable {
             @include MOBILE {
                 display: none;
             }    
@@ -99,7 +99,7 @@
     }
 }
 
-.menu__separate-line {
+.menu-list__separate-line {
     width:  63px;
     height: 0.6px;
     background-color: rgba(126, 117, 121,.2);;

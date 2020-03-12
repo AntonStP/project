@@ -1,8 +1,8 @@
 mixin article(pageContent)
-    article.article
-        h1.heading !{pageContent.title}
-        .content-wrapper
+    article.section__article.article
+        h1.article__heading.heading !{pageContent.title}
+        .section__content-wrapper.content-wrapper
             each item in pageContent.texts
-                .article__content
+                .content-wrapper__content
                     p !{item}
     block 

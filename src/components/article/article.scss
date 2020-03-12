@@ -31,7 +31,7 @@
         flex-wrap: wrap;
         justify-content: space-around; 
         align-content: flex-start;
-        .article__content {
+        .content-wrapper__content {
             @extend .ARTICLE-CONTENT;
             max-width: 329px;
             color: #000000; 
@@ -43,9 +43,6 @@
                 @include MOBILE {
                     margin-bottom: 15px;
                 }
-            }
-            &:last-child {
-                color: rgba(49, 36, 42,.8);
             }
             &:nth-child(3),&:nth-child(4),&:nth-child(5) {
                 margin-left: 24px;
@@ -61,9 +58,10 @@
                 padding-top: 0;
                 margin-top: 10px;
             }
-            &:nth-child(5) {
+            &:last-child {
                 padding-top: 0;
                 margin-bottom: 37px;
+                color: rgba(49, 36, 42,.8);
                 @include MOBILE {
                     margin-bottom: 50px;
                 }
@@ -77,7 +75,7 @@
                 letter-spacing: 0.4;
                 line-height: 1.45;
             }
-            .article__content-link {
+            .content-link {
                 text-decoration: none;
                 border-bottom: 1px solid;
                 color: rgba(49, 36, 42,.8);

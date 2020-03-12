@@ -1,11 +1,11 @@
-.copyright {
+.footer__copyright {
     min-width: 68%;
     height: 20%;
     margin-left: -5px;
     @extend .COPYRIGHT;
     color: $SUBTEXT-COLOR;
     text-align: center;
-    
+
     @include MOBILE{
         text-align: start;
         position: relative;  
@@ -16,6 +16,7 @@
         min-width: 30%;
         height: 70%; 
     } 
+    
     br {
         display: none;
         @include MOBILE{
