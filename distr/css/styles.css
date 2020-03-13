@@ -43,8 +43,8 @@
 }
 @media screen and (max-width: 321px) {
   .HEADING, .article__heading {
-    font-size: 34px;
-    line-height: 1;
+    font-size: 35px;
+    line-height: 1.11;
   }
 }
 @media screen and (min-width: 320px) {
@@ -258,6 +258,7 @@ table {
 }
 
 .page {
+  position: relative;
   width: 100vw;
   max-height: 900px;
   overflow-y: auto;
@@ -268,6 +269,7 @@ table {
 @media screen and (max-width: 321px) {
   .page {
     padding: 10px;
+    max-height: 100%;
   }
 }
 .page .page__input {
@@ -471,19 +473,21 @@ table {
 }
 
 .image {
-  width: 31%;
-  height: 64%;
-  margin-top: -5px;
-  float: left;
+  width: 31.4%;
+  height: 66%;
+}
+@media screen and (max-width: 321px) {
+  .image {
+    width: 100%;
+  }
 }
 .image img {
   width: 100%;
 }
 @media screen and (max-width: 321px) {
-  .image {
-    width: 78%;
-    margin-top: -121px;
-    margin-left: 1px;
+  .image img {
+    width: 78.5%;
+    margin-top: -125px;
     opacity: 0.5;
     float: none;
   }
@@ -491,101 +495,67 @@ table {
 
 .article {
   width: 69%;
-  height: 80%;
-  float: left;
-  padding: 20px 10px;
+  height: 100%;
+  padding: 21px 21px;
   box-sizing: border-box;
-  background-color: bisque;
 }
 @media screen and (max-width: 321px) {
   .article {
     width: 100%;
-    min-height: 285%;
+    min-height: 95%;
+    padding: 5px 14px;
   }
 }
 .article__heading {
   max-width: 100%;
   height: 15%;
-  background-color: cadetblue;
-  padding: 25px 12px;
-  letter-spacing: 1.26px;
+  padding: 25px 0;
+  letter-spacing: 1.11px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 321px) {
   .article__heading {
-    padding-left: 13px;
-    padding-top: 3px;
+    height: 9%;
+    padding-top: 0;
     font-size: 35px;
     line-height: 1;
   }
 }
-.article__content-wrapper {
-  box-sizing: border-box;
+.article .section__content-wrapper {
   width: 100%;
-  background-color: coral;
-  height: 69%;
-  padding-top: 30px;
+  height: 80%;
+  padding-top: 22px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-content: flex-start;
+}
+@media screen and (max-width: 321px) {
+  .article .section__content-wrapper {
+    height: 80%;
+    padding-top: 25px;
+  }
 }
 .article__paragraph {
   max-width: 329px;
   color: #000000;
-  padding: 9px 5px;
-  background-color: darkkhaki;
-  margin-left: 20px;
-  margin-top: 1px;
   letter-spacing: 0.5px;
-}
-@media screen and (max-width: 321px) {
-  .article__paragraph:first-child {
-    margin-bottom: 15px;
-  }
-}
-.article__paragraph:nth-child(3), .article__paragraph:nth-child(4), .article__paragraph:nth-child(5) {
-  margin-left: 24px;
-}
-@media screen and (max-width: 321px) {
-  .article__paragraph:nth-child(3), .article__paragraph:nth-child(4), .article__paragraph:nth-child(5) {
-    margin: 0;
-  }
-}
-.article__paragraph:nth-child(3) {
-  margin-top: -3px;
-  padding-bottom: 0;
-}
-.article__paragraph:nth-child(4) {
-  padding-top: 0;
-  margin-top: 10px;
-}
-.article__paragraph:last-child {
-  padding-top: 0;
-  margin-bottom: 37px;
-  color: rgba(49, 36, 42, 0.8);
-}
-@media screen and (max-width: 321px) {
-  .article__paragraph:last-child {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 19px;
+  padding-right: 33px;
 }
 @media screen and (max-width: 321px) {
   .article__paragraph {
+    margin-bottom: 10px;
+    padding-right: 0;
     font-size: 14px;
-    padding-left: 15px;
-    margin: 0;
-    margin-top: -15px;
     letter-spacing: 0.4;
-    line-height: 1.45;
+    line-height: 1.47;
   }
 }
 .article__paragraph .content-link {
   text-decoration: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(49, 36, 42, 0.4);
   color: rgba(49, 36, 42, 0.8);
-  border-color: rgba(49, 36, 42, 0.4);
 }
 .article__paragraph .content-link:hover {
   color: rgba(150, 36, 42, 0.8);
@@ -905,21 +875,24 @@ table {
 }
 
 .section {
-  clear: both;
-  *zoom: 1;
-  background-color: aqua;
-}
-.section:before, .section:after {
-  content: "";
-  display: table;
-}
-.section:after {
-  clear: both;
+  /*   &:before,
+      &:after {
+          content: "";
+          display: table;
+      }
+      &:after {
+          clear: both;
+      }
+      clear: both;
+      *zoom: 1;  
+  */
+  display: flex;
+  width: 100%;
+  height: 82%;
 }
 @media screen and (max-width: 321px) {
   .section {
-    width: 100%;
-    display: flex;
+    height: 78%;
     flex-direction: column;
   }
 }

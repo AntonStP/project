@@ -5,8 +5,8 @@
   font-family: $FuturaNewLight;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 34px;
-    line-height: 1;
+    font-size: 35px;
+    line-height: 1.11;
   }
   @include DESKTOP() {
     font-size: 48px;

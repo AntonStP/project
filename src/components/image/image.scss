@@ -1,16 +1,16 @@
 .image {
-    width: 31%;
-    height: 64%;
-    margin-top: -5px;
-    float: left;
-    img {
+    width: 31.4%;
+    height: 66%;
+    @include MOBILE {
         width: 100%;
     }
-    @include MOBILE {
-        width: 78%;
-        margin-top: -121px;
-        margin-left: 1px;
-        opacity: 0.5;
-        float: none;
+    img {
+        width: 100%;
+        @include MOBILE {
+            width: 78.5%;
+            margin-top: -125px;
+            opacity: 0.5;
+            float: none;
+        }
     }
 }
