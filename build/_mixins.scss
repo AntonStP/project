@@ -1,8 +1,8 @@
 @mixin MOBILE() {
-  @media screen and (max-width: 321px) { @content; }
+  @media screen and (min-width: $MOBILE) and (max-width: $DESKTOP - 1) { @content; }
 }
 
 @mixin DESKTOP() {
-  @media screen and (min-width: $MOBILE) { @content; }
+  @media screen and (min-width: $DESKTOP) { @content; }
 }
 

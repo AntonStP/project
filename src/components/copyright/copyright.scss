@@ -1,20 +1,15 @@
 .footer__copyright {
     min-width: 68%;
     height: 20%;
-    margin-left: -5px;
     @extend .COPYRIGHT;
     color: $SUBTEXT-COLOR;
-    text-align: center;
-
-    @include MOBILE{
-        text-align: start;
-        position: relative;  
-        top: 3px; 
-        left: -40px;      
+    @include MOBILE{  
+        min-width: 50%;
+        height: 85%; 
+        padding: 11px 0 0 15px;
+        box-sizing: border-box;
         font-size: 10px; 
-        line-height: 1.45;   
-        min-width: 30%;
-        height: 70%; 
+        line-height: 1.45;     
     } 
     
     br {

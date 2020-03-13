@@ -1,7 +1,7 @@
 mixin article(pageContent)
     article.article&attributes(attributes)
         h2.article__heading.heading !{pageContent.title}
-        .section__content-wrapper.content-wrapper
+        .article__content-wrapper.content-wrapper
             each item in pageContent.texts
                 p.article__paragraph !{item}
         block 
