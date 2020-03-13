@@ -8,8 +8,8 @@
     padding-top: 4px;
     box-sizing: border-box;
     @media (max-width:321px) {
-        height: 25%;
-        padding-top: 32px;
+        height: 20%;
+        padding-top: 8px;
         padding-left: 0;
     } 
     .button-block__button {
@@ -23,7 +23,6 @@
         @include MOBILE {
             width: 39.1%;
             height: 45.5%;
-            align-self: flex-start;
         } 
         &:hover {
             background-color: #6d5b66;
@@ -36,7 +35,7 @@
         }
     }
     .button-block__button_selected {
-        width: 41.5%;
+        width: 40.5%;
         background-color: #b3aaaf;
         @include MOBILE {
             width: 51%;
