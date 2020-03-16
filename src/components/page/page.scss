@@ -10,18 +10,21 @@
         padding: 10px;
         max-height: 100%;
     }
-    .page__input {
+    &__input {
         display: none;
     }
     @include MOBILE {
         .page__input {
             display: none;
             &:checked ~ .main-wrapper{
-                display: none;
+                display: none;               
             }
             &:checked ~ .right-wrapper{
+                opacity: 0;
                 display: block;
                 overflow-y: hidden;
+                animation: openMenu 0.65s linear 0s;
+                opacity: 1;
             }
             &:checked + .page__menu-burger{
                 background-image: url("../image/close.png");
@@ -30,7 +33,33 @@
             }
         }
     }
-    .page__menu-burger {
+    
+    @keyframes openMenu {
+     
+        10% {
+            opacity: 0.1;
+            transform: scale(0.1,0.1) ;
+        }        
+        40% {
+            opacity: 0.3;
+            transform: scale(0.4,0.4) ;
+        }      
+        70% {
+            opacity: 0.3;
+            transform: scale(0.7,0.7);
+        }
+        80% {
+            opacity: 0.5;
+            transform: scale(0.8,0.8) ;
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1,1);
+        }
+  
+    }
+
+    &__menu-burger {
         background-image: url("../image/menu_burger.png");
         background-repeat: no-repeat;
         width: 28px;

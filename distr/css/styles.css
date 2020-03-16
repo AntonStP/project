@@ -97,17 +97,17 @@
 /**
  * выпадающий список
  */
-.LANG, .selector-lang .selector-lang__list {
+.LANG, .selector-lang .list, .selector-lang__label {
   font-family: "FuturaNewBook";
   color: #291823;
 }
 @media screen and (min-width: 320px) and (max-width: 1599px) {
-  .LANG, .selector-lang .selector-lang__list {
+  .LANG, .selector-lang .list, .selector-lang__label {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .LANG, .selector-lang .selector-lang__list {
+  .LANG, .selector-lang .list, .selector-lang__label {
     font-size: 17px;
     line-height: 1.286;
   }
@@ -272,7 +272,7 @@ table {
     max-height: 100%;
   }
 }
-.page .page__input {
+.page__input {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 1599px) {
@@ -283,8 +283,11 @@ table {
     display: none;
   }
   .page .page__input:checked ~ .right-wrapper {
+    opacity: 0;
     display: block;
     overflow-y: hidden;
+    animation: openMenu 0.65s linear 0s;
+    opacity: 1;
   }
   .page .page__input:checked + .page__menu-burger {
     background-image: url("../image/close.png");
@@ -292,18 +295,40 @@ table {
     top: 23px;
   }
 }
-.page .page__menu-burger {
+@keyframes openMenu {
+  10% {
+    opacity: 0.1;
+    transform: scale(0.1, 0.1);
+  }
+  40% {
+    opacity: 0.3;
+    transform: scale(0.4, 0.4);
+  }
+  70% {
+    opacity: 0.3;
+    transform: scale(0.7, 0.7);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.page__menu-burger {
   background-image: url("../image/menu_burger.png");
   background-repeat: no-repeat;
   width: 28px;
   height: 27px;
   display: none;
 }
-.page .page__menu-burger:hover {
+.page__menu-burger:hover {
   width: 29px;
 }
 @media screen and (min-width: 320px) and (max-width: 1599px) {
-  .page .page__menu-burger {
+  .page__menu-burger {
     display: block;
     position: absolute;
     right: 25px;
@@ -419,59 +444,155 @@ table {
 @media screen and (min-width: 320px) and (max-width: 1599px) {
   .number p {
     font-size: 23px;
-    padding-top: 10px;
+    padding-top: 4px;
     padding-left: 3px;
     letter-spacing: 0.4;
   }
 }
 
 .selector-lang {
-  width: 15%;
+  width: 20%;
   height: 100%;
+  position: relative;
   background-color: #f9f9f8;
-  padding: 50px 14px;
+  padding: 60px 14px;
   box-sizing: border-box;
 }
 @media screen and (min-width: 320px) and (max-width: 1599px) {
   .selector-lang {
     width: 15%;
     background-color: #fff;
-    padding: 0;
+    padding: 13px 0;
   }
 }
-.selector-lang .selector-lang__list {
-  width: 120%;
-  height: 40px;
-  margin-right: auto;
-  border: none;
-  background-color: #f9f9f8;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../image/pointer.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  outline: none;
-  text-transform: uppercase;
+.selector-lang__input {
+  display: none;
 }
-.selector-lang .selector-lang__list:hover {
+.selector-lang__input:checked ~ .list {
+  animation: openList 0.8s ease-out 0s forwards;
+}
+.selector-lang__input:checked + .selector-lang__label {
+  background-color: #fff;
+}
+.selector-lang__input:checked ~ .selector-lang__arrow {
+  background-color: #fff;
+  transform: rotate(180deg);
+  background-position: right;
+}
+.selector-lang__label {
+  display: block;
+  width: 52%;
+  background-color: #f9f9f8;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.selector-lang__label:hover {
   cursor: pointer;
   color: #8f7585;
-  font-size: 17.8px;
+  font-size: 17.1px;
 }
-.selector-lang .selector-lang__list:active {
+@media screen and (min-width: 320px) and (max-width: 1599px) {
+  .selector-lang__label {
+    width: 70%;
+    font-size: 13px;
+    background-color: #fff;
+  }
+  .selector-lang__label:hover {
+    color: #291823;
+    font-size: 13px;
+  }
+}
+.selector-lang .selector-lang__arrow {
+  position: absolute;
+  top: 60px;
+  right: 4px;
+  width: 34px;
+  height: 21px;
+  background-image: url("../image/pointer.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #f9f9f8;
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 1599px) {
+  .selector-lang .selector-lang__arrow {
+    top: 10px;
+    right: -6px;
+    background-color: #fff;
+  }
+}
+.selector-lang .list {
+  width: 120%;
+  height: 62px;
+  background-color: white;
+  text-transform: uppercase;
+  opacity: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 1599px) {
+  .selector-lang .list {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    bottom: 180%;
+    right: 30%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.selector-lang .list .list__item {
+  -webkit-user-select: none;
+          user-select: none;
+}
+.selector-lang .list .list__item:hover {
+  cursor: pointer;
+  color: #a5909d;
+}
+.selector-lang .list .list__item:active {
   cursor: pointer;
   color: #8e75a5;
   font-size: 16.8px;
 }
 @media screen and (min-width: 320px) and (max-width: 1599px) {
-  .selector-lang .selector-lang__list {
-    width: 70%;
-    font-size: 12px;
-    background-color: #fff;
+  .selector-lang .list .list__item {
+    width: 40px;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: 8px;
+    background-color: #f0e3ea;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #aca2a8;
+  }
+  .selector-lang .list .list__item:hover {
+    color: #291823;
+  }
+  .selector-lang .list .list__item:active {
+    color: #291823;
+    font-size: 15px;
   }
 }
 
+@keyframes openList {
+  10% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .image {
   width: 31.4%;
   height: 66%;
@@ -832,7 +953,9 @@ table {
 
 .footer__copyright {
   min-width: 68%;
-  height: 20%;
+  height: 40%;
+  padding: 6px 0 0 27px;
+  box-sizing: border-box;
   color: #7c7b7b;
 }
 @media screen and (min-width: 320px) and (max-width: 1599px) {

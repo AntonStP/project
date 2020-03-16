@@ -1,6 +1,8 @@
 .footer__copyright {
     min-width: 68%;
-    height: 20%;
+    height: 40%;
+    padding: 6px 0 0 27px;
+    box-sizing: border-box;
     @extend .COPYRIGHT;
     color: $SUBTEXT-COLOR;
     @include MOBILE{  

@@ -18,11 +18,14 @@
             </div>
             <div class="header-menu__vertical-line"></div>
             <div class="header-menu__selector-lang selector-lang">
-              <select class="selector-lang__list">
-                <option value="ru">ru</option>
-                <option value="en">en</option>
-                <option value="de">de</option>
-              </select>
+              <input class="selector-lang__input" type="checkbox" id="lang-box"/>
+              <label class="selector-lang__label" for="lang-box"> ru </label>
+              <label class="selector-lang__arrow" for="lang-box">        </label>
+              <ul class="selector-lang__list list">
+                <li class="list__item" data-lang="ru">ru</li>
+                <li class="list__item" data-lang="en">en</li>
+                <li class="list__item" data-lang="de">de</li>
+              </ul>
             </div>
           </div>
         </header>

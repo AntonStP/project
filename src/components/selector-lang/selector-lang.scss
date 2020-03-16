@@ -1,43 +1,137 @@
 .selector-lang {
-    width: 15%;
+    width: 20%;
     height: 100%;
+    position: relative;
     background-color: $MAIN-COLOR;
-    padding: 50px 14px;
+    padding: 60px 14px;
     box-sizing: border-box;
     @include MOBILE {
         width: 15%;
         background-color: #fff;
-        padding: 0;
+        padding: 13px 0;
+    }
+    
+    &__input {
+        display: none;
+        &:checked ~ .list {       
+            animation: openList 0.8s ease-out 0s forwards; 
+        }
+        &:checked + .selector-lang__label {
+            background-color: #fff;
+        }
+        &:checked ~ .selector-lang__arrow  {
+            background-color: #fff;
+            transform: rotate(180deg);
+            background-position: right;
+        }
     }
 
-    .selector-lang__list {
+    &__label {
+        display: block;
+        width: 52%;
         @extend .LANG;
-        width: 120%;
-        height: 40px;
-        margin-right: auto;
-        border: none;
         background-color: $MAIN-COLOR;
-        appearance: none;
-        background-image: url("../image/pointer.png");
-        background-repeat: no-repeat;
-        background-position: right;
-        outline: none;
         text-transform: uppercase;
+        user-select: none;
         &:hover {
             cursor: pointer;
             color: #8f7585;
-            font-size: 17.8px;
-        }
-        &:active {
-            cursor: pointer;
-            color: #8e75a5;
-            font-size: 16.8px;
+            font-size: 17.1px;
         }
         @include MOBILE {
             width: 70%;
-            font-size: 12px;
+            font-size: 13px;
             background-color: #fff;
+            &:hover {
+                color: #291823;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .selector-lang__arrow {
+        position: absolute;
+        top: 60px;
+        right: 4px;
+        width: 34px;
+        height: 21px;
+        background-image: url("../image/pointer.png");
+        background-repeat: no-repeat;
+        background-position: left; 
+        background-color: $MAIN-COLOR;
+        cursor: pointer;
+        @include MOBILE {
+            top: 10px;
+            right: -6px;
+            background-color: #fff;
+        }
+    }
+
+    .list {
+        @extend .LANG;
+        width: 120%;
+        height: 62px;
+        background-color: white;
+        text-transform: uppercase;
+        opacity: 0;
+        @include MOBILE {
+            width: 40px;
+            height: 80px;
+            position: absolute;
+            bottom: 180%;
+            right: 30%;
+            background-color: rgba(0,0,0,.0);
+        }
+        .list__item {
+            user-select: none;
+            &:hover {
+                cursor: pointer;
+                color: #a5909d;
+            }
+            &:active {
+                cursor: pointer;
+                color: #8e75a5;
+                font-size: 16.8px;
+            }
+            @include MOBILE {
+                width: 40px;
+                height: 35px;
+                font-size: 15px;
+                margin-bottom: 8px;
+                background-color: #f0e3ea;
+                padding-top: 10px;
+                box-sizing: border-box;
+                text-align: center;
+                border: 1px solid #aca2a8;
+                &:hover {
+                    color: #291823;
+                }
+                &:active {
+                    color: #291823;
+                    font-size: 15px;
+                }
+            }
         }
     }
 }
 
+@keyframes openList {
+    10% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
