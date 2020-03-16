@@ -20,7 +20,7 @@
   font-family: $FuturaNewLight;
   color: $PHONE-COLOR;
   @include MOBILE() {
-    font-size: 18.667px;
+    font-size: 23px;
     line-height: 1.446;
   }
   @include DESKTOP() {
@@ -35,7 +35,7 @@
   font-family: $FuturaNewLight;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 18.667px;
+    font-size: 14px;
     line-height: 1.446;
   }
   @include DESKTOP() {
@@ -64,7 +64,7 @@
   font-family: $FuturaNewBook;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 36px;
+    font-size: 18px;
     line-height: 1;
   }
   @include DESKTOP() {
@@ -79,11 +79,11 @@
   font-family: $FuturaNewDemi;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 36px;
-    line-height: 1;
+    font-size: 18px;
+    line-height: 1.15;
   }
   @include DESKTOP() {
-    font-size: 31.5px;
+    font-size: 20.5px;
     line-height: 1.144;
   }
 }
@@ -93,6 +93,9 @@
 .BUTTON {
   font-family: $FuturaNewLight;
   color: $TEXT-COLOR;
+  @include MOBILE() {
+    font-size: 12;
+  }
   @include DESKTOP() {
     font-size: 14px;
     line-height: 1.286;
@@ -103,13 +106,13 @@
  */
 .DOWNLOAD {
   font-family: $FuturaNewLight;
-  color: $PHONE-COLOR;
+  color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 16px;
-    line-height: 1;
+    font-size: 11px;
+    line-height: 1.1;
   }
   @include DESKTOP() {
-    font-size: 14.3px;
+    font-size: 14px;
     line-height: 1.929;
   }
 }

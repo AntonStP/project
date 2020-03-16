@@ -14,13 +14,12 @@
         letter-spacing: -0.3px;
         margin-bottom: 28px;
         @include MOBILE {
-            margin-bottom: 36px;
+            margin-bottom: 33px;
             letter-spacing: 0.11px;
         } 
-        &:nth-child(3) {
-            margin-bottom: 25px;
+        &:nth-child(5) {
             @include MOBILE {
-                margin-bottom: 28px;
+                margin-bottom: 37px;
             } 
         }
         &:nth-child(7) {
@@ -62,21 +61,17 @@
             }  
         }
         @include MOBILE {
-            font-size: 18px;
             line-height: 1.104;
         }
     }
     ._active {
         a {
-            font-weight: bold;
-            font-size: 22px;    
-            letter-spacing: 0.7px;
-            line-height: 1.02;
+            @extend .MENU-ITEM_SELECTED;
+            letter-spacing: 0.2px;
             color: rgba(126, 117, 121,.9);
             box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;
             @include MOBILE {
-                font-size: 18px;
-                letter-spacing: 0.75;
+                letter-spacing: 0.15;
             }
         }
     }
@@ -88,7 +83,7 @@
     background-color: rgba(126, 117, 121,.2);
     margin: 35px 0 35px 0;
     @include MOBILE {
-        margin: 2px 0 22px 0;
+        margin: 2px 0 26px 0;
         width:  50px;
     }
 }
