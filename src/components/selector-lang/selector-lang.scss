@@ -14,6 +14,10 @@
     &__input {
         display: none;
         &:checked ~ .list {       
+            -moz-animation: openList 0.8s ease-out 0s forwards; 
+            -o-animation: openList 0.8s ease-out 0s forwards; 
+            -webkit-animation: openList 0.8s ease-out 0s forwards; 
+            -ms-animation: openList 0.8s ease-out 0s forwards; 
             animation: openList 0.8s ease-out 0s forwards; 
         }
         &:checked + .selector-lang__label {
