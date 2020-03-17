@@ -20,7 +20,7 @@
             -ms-animation: openList 0.8s ease-out 0s forwards; 
             animation: openList 0.8s ease-out 0s forwards; 
         }
-        &:checked + .selector-lang__label {
+        &:checked ~ .selector-lang__label {
             background-color: #fff;
         }
         &:checked ~ .selector-lang__arrow  {

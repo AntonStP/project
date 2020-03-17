@@ -5,8 +5,10 @@
     display: flex;
     justify-content: space-between;
     @include MOBILE {
-        width: 100%;
+        width: 93.7%;
         height: auto;
+        position: fixed;
+        top: auto;
     }
     .header-menu {
         min-width: 31%;

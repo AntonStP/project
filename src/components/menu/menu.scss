@@ -11,15 +11,19 @@
     }
 
     .menu-list__menu-item {
-        max-height: 9%;
+        max-height: 8%;
+        position: relative;
         letter-spacing: -0.3px;
-        margin-bottom: 28px;
+        margin-bottom: 31px;
+        &:hover {
+
+        }
         @include MOBILE {
             margin-bottom: 33px;
             letter-spacing: 0.11px;
         } 
         &:nth-child(3) {
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             @include MOBILE {
                 margin-bottom: 35px;
             } 
@@ -44,20 +48,19 @@
         }
 
     }
+    
     a {
         @extend .MENU-ITEM;
         text-decoration: none;
         display: inline-block;
         &:hover {
-            font-weight: bold;
-            font-size: 22px;  
             color: rgba(126, 117, 121,.9);
-            box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset; 
+          /*  box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset; */
             @include MOBILE {
                 font-size: 18px;
                 &:hover {
-                    font-weight: lighter;
-                    box-shadow: none;
+                    font-weight: normal;
+                   /* box-shadow: none;*/
                     color: $TEXT-COLOR;
                 }
             }  
@@ -67,13 +70,28 @@
         }
     }
     ._active {
+        position: relative;
         a {
             @extend .MENU-ITEM_SELECTED;
             letter-spacing: 0.2px;
             color: rgba(126, 117, 121,.9);
-            box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;
+            /*box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;*/
             @include MOBILE {
                 letter-spacing: 0.15;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: -4px;
+            left: 0;
+            width: 80%;
+            height: 9px;
+            background-color: rgba(0,0,0,0.15);
+            @include MOBILE {
+                bottom: 0;
+                width: 90%;
+                height: 8px;
             }
         }
     }
@@ -83,7 +101,7 @@
     width:  63px;
     height: 0.6px;
     background-color: rgba(126, 117, 121,.2);
-    margin: 35px 0 35px 0;
+    margin: 45px 0 31px 0;
     @include MOBILE {
         margin: 35px 0 26px 0;
         width:  50px;

@@ -1,5 +1,4 @@
 .page {
-
     position: relative;
     width: 100%;
     height: 100%;
@@ -8,7 +7,6 @@
     display: flex;
     box-sizing: border-box;
     @include MOBILE {
-        background-color: gold;
         padding: 10px;
         overflow: hidden;
     }
@@ -20,53 +18,48 @@
             display: none;
         }
     }
-    
-    @keyframes openMenu {
-     
-        10% {
-            opacity: 0.1;
-            transform: scale(0.1,0.1) ;
-        }        
-        40% {
-            opacity: 0.3;
-            transform: scale(0.4,0.4) ;
-        }      
-        70% {
-            opacity: 0.3;
-            transform: scale(0.7,0.7);
-        }
-        80% {
-            opacity: 0.5;
-            transform: scale(0.8,0.8) ;
-        }
-        100% {
-            opacity: 1;
-            transform: scale(1,1);
-        }
-  
-    }
 
     &__menu-burger {
-        background-image: url("../image/menu_burger.png");
-        background-repeat: no-repeat;
         width: 28px;
-        height: 27px;
         display: none;
-        &:hover {
-            width: 29px; 
+        .item,
+        .item::before,
+        .item::after {
+            display: block;
+            position: absolute;
+            background-color: #616161;
+            width: 100%;
+            height: 2px;
+        }
+        .item::before {
+            content: '';
+            top: -8px;
+            @include menuChecked {
+                top: 0;
+                transform: rotate(0deg);
+            } 
+        }
+        .item {
+           @include menuChecked {
+                transform: rotate(45deg);
+                transition: transform .5s ease-in-out;
+            }    
+        }
+        .item::after {
+            content: '';
+            top: 8px;
+            @include menuChecked {
+                top: 0;
+                transform: rotate(90deg);
+                transition: transform .5s ease-in-out;
+            } 
         }
         @include MOBILE {
             display: block;
             position: absolute;
             z-index: 3;
             right: 25px;
-            top: 25px;
-        }
-
-        @include checked{
-            background-image: url("../image/close.png");
-            right: 23px;
-            top: 23px;
+            top: 33px;
         }
     }
 }

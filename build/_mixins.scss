@@ -1,3 +1,7 @@
+/***********
+  Adaptive
+***********/
+
 @mixin MOBILE() {
   @media screen and (min-width: $MOBILE) and (max-width: $DESKTOP - 1) { @content; }
 }
@@ -7,7 +11,11 @@
 }
 
 
-@mixin checked{
+/***********
+  Checked Mixin's
+***********/
+
+@mixin menuChecked{
   .page__input:checked ~ &{
       @content;
   }
