@@ -6,7 +6,7 @@
     @include MOBILE {
         width: 50%;
         height: 85%;
-        margin-left: 10px;
+        padding-left: 10px;
     } 
     .download__icon {   
         width: 60%;
@@ -15,9 +15,10 @@
         background-repeat: no-repeat;
         background-position: right;
         @include MOBILE {
-            width: 20%;
+            width: 21%;
             background-size: contain;
             margin-right: 11px;
+            margin-top: -6px;
         } 
     }
     .download__link-load{
@@ -50,8 +51,7 @@
         @include MOBILE {
             @extend .DOWNLOAD;
             min-width: 15px;
-            height: 76%;
-         
+            height: 70%;
             letter-spacing: 0.8;
             margin-left: 5px;
             padding: 12px 0 1px 0;

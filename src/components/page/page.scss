@@ -1,14 +1,16 @@
 .page {
+
     position: relative;
-    width: 100vw;
-    max-height: 900px;
+    width: 100%;
+    height: 100%;
     overflow-x: auto;
     padding: 20px;
     display: flex;
     box-sizing: border-box;
     @include MOBILE {
+        background-color: gold;
         padding: 10px;
-        max-height: 100%;
+        overflow: hidden;
     }
     &__input {
         display: none;
@@ -16,21 +18,6 @@
     @include MOBILE {
         .page__input {
             display: none;
-            &:checked ~ .main-wrapper{
-                display: none;               
-            }
-            &:checked ~ .right-wrapper{
-                opacity: 0;
-                display: block;
-                overflow-y: hidden;
-                animation: openMenu 0.65s linear 0s;
-                opacity: 1;
-            }
-            &:checked + .page__menu-burger{
-                background-image: url("../image/close.png");
-                right: 23px;
-                top: 23px;
-            }
         }
     }
     
@@ -71,8 +58,15 @@
         @include MOBILE {
             display: block;
             position: absolute;
+            z-index: 3;
             right: 25px;
             top: 25px;
+        }
+
+        @include checked{
+            background-image: url("../image/close.png");
+            right: 23px;
+            top: 23px;
         }
     }
 }

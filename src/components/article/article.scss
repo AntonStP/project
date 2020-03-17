@@ -16,7 +16,7 @@
         letter-spacing: 1.11px;
         box-sizing: border-box;
         @include MOBILE {
-            height: 9%;
+            height: auto;
             padding-top: 0;
             line-height: 1;
         }
@@ -32,7 +32,7 @@
         @include MOBILE {
             display: block;
             height: 80%;
-            padding-top: 25px;
+            padding-top: 0;
         }
     }
 

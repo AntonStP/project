@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'FuturaNewBook';
+	font-family: 'FuturaNew';
     src: url('../fonts/FuturaNewBook-Reg.eot');
     src: url('../fonts/FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/FuturaNewBook-Reg.woff2') format('woff2'),
@@ -11,19 +11,19 @@
 }
 
 @font-face {
-	font-family: 'FuturaNewDemi';
+	font-family: 'FuturaNew';
 	src: url('../fonts/FuturaNewDemi-Reg.eot');
 	src: url('../fonts/FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/FuturaNewDemi-Reg.woff2') format('woff2'),
 		url('../fonts/FuturaNewDemi-Reg.woff') format('woff'),
 		url('../fonts/FuturaNewDemi-Reg.ttf') format('truetype'),
 		url('../fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg') format('svg');
-	font-weight: normal;
+	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'FuturaNewLight';
+	font-family: 'FuturaNew';
     src: url('../fonts/FuturaNewLight-Reg.eot');
     src: 
         url('../fonts/FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),

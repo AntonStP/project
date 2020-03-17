@@ -1,34 +1,25 @@
 @charset "UTF-8";
-.Обслуживание_в_московском_офисе_Friedrich_Wilhe {
-  font-size: 18px;
-  font-family: "FuturaNewLight";
-  color: #4c3440;
-  line-height: 1.5;
-  text-align: left;
-  position: absolute;
-  left: 436.88px;
-  top: 348.872px;
-  width: 321px;
-  height: 413px;
-  z-index: 118;
-}
-
+/*
+$FuturaNewLight: 'FuturaNewLight';
+$FuturaNewBook: 'FuturaNewBook';
+$FuturaNewDemi: 'FuturaNewDemi';
+*/
 @font-face {
-  font-family: "FuturaNewBook";
+  font-family: "FuturaNew";
   src: url("../fonts/FuturaNewBook-Reg.eot");
   src: url("../fonts/FuturaNewBook-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewBook-Reg.woff2") format("woff2"), url("../fonts/FuturaNewBook-Reg.woff") format("woff"), url("../fonts/FuturaNewBook-Reg.ttf") format("truetype"), url("../fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "FuturaNewDemi";
+  font-family: "FuturaNew";
   src: url("../fonts/FuturaNewDemi-Reg.eot");
   src: url("../fonts/FuturaNewDemi-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewDemi-Reg.woff2") format("woff2"), url("../fonts/FuturaNewDemi-Reg.woff") format("woff"), url("../fonts/FuturaNewDemi-Reg.ttf") format("truetype"), url("../fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg") format("svg");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
   src: url("../fonts/FuturaNewLight-Reg.eot");
   src: url("../fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewLight-Reg.woff2") format("woff2"), url("../fonts/FuturaNewLight-Reg.woff") format("woff"), url("../fonts/FuturaNewLight-Reg.ttf") format("truetype"), url("../fonts/FuturaNewLight-Reg.svg#FuturaNewLight-Reg") format("svg");
   font-weight: 300;
@@ -38,16 +29,17 @@
  * заголовок статьи
  */
 .HEADING, .article__heading {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
+  font-weight: 300;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .HEADING, .article__heading {
     font-size: 35px;
     line-height: 1.11;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .HEADING, .article__heading {
     font-size: 48px;
     line-height: 1.125;
@@ -58,16 +50,17 @@
  * номер телефона в заголовке
  */
 .PHONE-NUMBER, .number p {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
+  font-weight: 300;
   color: #231f20;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .PHONE-NUMBER, .number p {
     font-size: 23px;
     line-height: 1.446;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .PHONE-NUMBER, .number p {
     font-size: 32px;
     line-height: 0.844;
@@ -78,16 +71,17 @@
  * текст в статье
  */
 .ARTICLE-CONTENT, .article__paragraph {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
+  font-weight: 300;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .ARTICLE-CONTENT, .article__paragraph {
     font-size: 14px;
     line-height: 1.446;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .ARTICLE-CONTENT, .article__paragraph {
     font-size: 18px;
     line-height: 1.5;
@@ -98,15 +92,16 @@
  * выпадающий список
  */
 .LANG, .selector-lang .list, .selector-lang__label {
-  font-family: "FuturaNewBook";
+  font-family: "FuturaNew";
+  font-weight: normal;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .LANG, .selector-lang .list, .selector-lang__label {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .LANG, .selector-lang .list, .selector-lang__label {
     font-size: 17px;
     line-height: 1.286;
@@ -117,16 +112,17 @@
  * пункты меню
  */
 .MENU-ITEM, .menu a {
-  font-family: "FuturaNewBook";
+  font-family: "FuturaNew";
+  font-weight: normal;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .MENU-ITEM, .menu a {
     font-size: 18px;
     line-height: 1;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .MENU-ITEM, .menu a {
     font-size: 21.66px;
     line-height: 1.143;
@@ -137,16 +133,17 @@
  * открытый пункт меню
  */
 .MENU-ITEM_SELECTED, .menu ._active a {
-  font-family: "FuturaNewDemi";
+  font-family: "FuturaNew";
+  font-weight: 500;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .MENU-ITEM_SELECTED, .menu ._active a {
     font-size: 18px;
     line-height: 1.15;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .MENU-ITEM_SELECTED, .menu ._active a {
     font-size: 20.5px;
     line-height: 1.144;
@@ -157,15 +154,16 @@
  * кнопки
  */
 .BUTTON, .button-block .button-block__button {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
+  font-weight: 300;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .BUTTON, .button-block .button-block__button {
-    font-size: 12;
+    font-size: 16px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .BUTTON, .button-block .button-block__button {
     font-size: 14px;
     line-height: 1.286;
@@ -176,16 +174,17 @@
  * загрузка услуг
  */
 .DOWNLOAD, .download .download__link-load {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
+  font-weight: 300;
   color: #291823;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .DOWNLOAD, .download .download__link-load {
-    font-size: 11px;
-    line-height: 1.1;
+    font-size: 10.5px;
+    line-height: 1.2;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .DOWNLOAD, .download .download__link-load {
     font-size: 14px;
     line-height: 1.929;
@@ -196,16 +195,17 @@
  * копирайт
  */
 .COPYRIGHT, .footer__copyright {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNew";
+  font-weight: 300;
   color: #7c7b7b;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .COPYRIGHT, .footer__copyright {
-    font-size: 13.333px;
-    line-height: 1.2;
+    font-size: 10px;
+    line-height: 1.3;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .COPYRIGHT, .footer__copyright {
     font-size: 12px;
     line-height: 2.25;
@@ -264,40 +264,26 @@ table {
 
 .page {
   position: relative;
-  width: 100vw;
-  max-height: 900px;
+  width: 100%;
+  height: 100%;
   overflow-x: auto;
   padding: 20px;
   display: flex;
   box-sizing: border-box;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .page {
+    background-color: gold;
     padding: 10px;
-    max-height: 100%;
+    overflow: hidden;
   }
 }
 .page__input {
   display: none;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .page .page__input {
     display: none;
-  }
-  .page .page__input:checked ~ .main-wrapper {
-    display: none;
-  }
-  .page .page__input:checked ~ .right-wrapper {
-    opacity: 0;
-    display: block;
-    overflow-y: hidden;
-    animation: openMenu 0.65s linear 0s;
-    opacity: 1;
-  }
-  .page .page__input:checked + .page__menu-burger {
-    background-image: url("../image/close.png");
-    right: 23px;
-    top: 23px;
   }
 }
 @keyframes openMenu {
@@ -332,23 +318,30 @@ table {
 .page__menu-burger:hover {
   width: 29px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .page__menu-burger {
     display: block;
     position: absolute;
+    z-index: 3;
     right: 25px;
     top: 25px;
   }
+}
+.page__input:checked ~ .page__menu-burger {
+  background-image: url("../image/close.png");
+  right: 23px;
+  top: 23px;
 }
 
 .main-wrapper {
   width: 81%;
   background-color: #f9f9f8;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .main-wrapper {
     width: 100%;
-    height: 1045px;
+    height: 91%;
+    overflow: auto;
   }
 }
 
@@ -357,11 +350,22 @@ table {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .right-wrapper {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .page__input:checked ~ .right-wrapper {
+    transform: translateX(0);
+    z-index: 2;
   }
 }
 
@@ -372,26 +376,28 @@ table {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .header {
     width: 100%;
-    height: 10%;
+    height: auto;
   }
 }
 .header .header-menu {
   min-width: 31%;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .header .header-menu {
-    width: 98.6%;
+    width: 100%;
     height: 10.5%;
     position: fixed;
-    padding-top: 11px;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-left: 28px;
     bottom: 0;
-    left: 10px;
-    right: 10px;
+    left: 0;
     box-sizing: border-box;
     background-color: #fff;
   }
@@ -402,11 +408,11 @@ table {
   background-color: rgba(76, 52, 64, 0.4);
   margin: 50px 19px 50px 22px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .header .header-menu .header-menu__vertical-line {
     width: 1px;
-    height: 28px;
-    margin: 5px 22px 5px -3px;
+    height: 29px;
+    margin: 1px 22px 5px 18px;
   }
 }
 
@@ -416,7 +422,7 @@ table {
   align-self: center;
   padding: 39px 55px 0 55px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .logo {
     width: 61%;
     height: 59%;
@@ -427,29 +433,23 @@ table {
 }
 
 .number {
-  width: 70%;
+  width: 66%;
   height: 100%;
-  display: flex;
-  justify-content: center;
   background-color: #f9f9f8;
+  padding-top: 56px;
+  box-sizing: border-box;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .number {
-    width: 69%;
-    justify-content: flex-start;
-    padding-left: 14px;
+    padding-top: 0;
+    padding-left: 0;
     background-color: #fff;
   }
 }
-.number p {
-  padding-top: 56px;
-  padding-left: 5px;
-  box-sizing: border-box;
-}
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .number p {
-    padding-top: 4px;
-    padding-left: 3px;
+    padding-top: 0;
+    padding-left: 0;
     letter-spacing: 0.4;
   }
 }
@@ -462,11 +462,11 @@ table {
   padding: 60px 14px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .selector-lang {
-    width: 15%;
+    width: 16%;
+    padding: 8px 0;
     background-color: #fff;
-    padding: 13px 0;
   }
 }
 .selector-lang__input {
@@ -496,9 +496,9 @@ table {
   color: #8f7585;
   font-size: 17.1px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .selector-lang__label {
-    width: 70%;
+    width: 50%;
     font-size: 13px;
     background-color: #fff;
   }
@@ -519,21 +519,22 @@ table {
   background-color: #f9f9f8;
   cursor: pointer;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .selector-lang .selector-lang__arrow {
-    top: 10px;
-    right: -6px;
+    top: 6px;
+    left: 42%;
+    width: 20px;
     background-color: #fff;
   }
 }
 .selector-lang .list {
   width: 120%;
   height: 62px;
-  background-color: white;
+  background-color: #fff;
   text-transform: uppercase;
   opacity: 0;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .selector-lang .list {
     width: 40px;
     height: 80px;
@@ -556,7 +557,7 @@ table {
   color: #8e75a5;
   font-size: 16.8px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .selector-lang .list .list__item {
     width: 40px;
     height: 35px;
@@ -600,7 +601,7 @@ table {
   width: 31.4%;
   height: 66%;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .image {
     width: 100%;
   }
@@ -608,10 +609,10 @@ table {
 .image img {
   width: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .image img {
     width: 78.5%;
-    margin-top: -125px;
+    margin-top: -110px;
     opacity: 0.5;
   }
 }
@@ -622,7 +623,7 @@ table {
   padding: 21px 21px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .article {
     width: 100%;
     min-height: 95%;
@@ -636,9 +637,9 @@ table {
   letter-spacing: 1.11px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .article__heading {
-    height: 9%;
+    height: auto;
     padding-top: 0;
     line-height: 1;
   }
@@ -652,11 +653,11 @@ table {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .article__content-wrapper {
     display: block;
     height: 80%;
-    padding-top: 25px;
+    padding-top: 0;
   }
 }
 .article__paragraph {
@@ -666,7 +667,7 @@ table {
   margin-bottom: 19px;
   padding-right: 33px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .article__paragraph {
     margin-bottom: 10px;
     padding-right: 0;
@@ -683,7 +684,7 @@ table {
   color: rgba(150, 36, 42, 0.8);
   border-color: rgba(150, 36, 42, 0.4);
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .article__paragraph .content-link:hover {
     color: rgba(49, 36, 42, 0.8);
     border-color: rgba(49, 36, 42, 0.4);
@@ -696,7 +697,7 @@ table {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .aside-navigation {
     height: 84.7%;
   }
@@ -709,10 +710,11 @@ table {
   padding: 62px 25px 3px 56px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu {
-    height: 80%;
+    height: 85%;
     padding: 25px 30px 0 14px;
+    background-color: #f9f9f8;
   }
 }
 .menu .menu-list__menu-item {
@@ -720,18 +722,21 @@ table {
   letter-spacing: -0.3px;
   margin-bottom: 28px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu .menu-list__menu-item {
     margin-bottom: 33px;
     letter-spacing: 0.11px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
-  .menu .menu-list__menu-item:nth-child(5) {
-    margin-bottom: 37px;
+.menu .menu-list__menu-item:nth-child(3) {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  .menu .menu-list__menu-item:nth-child(3) {
+    margin-bottom: 35px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu .menu-list__menu-item:nth-child(7) {
     margin-bottom: 18px;
   }
@@ -739,12 +744,12 @@ table {
 .menu .menu-list__menu-item .menu-list__menu-item_letter-active, .menu .menu-list__menu-item br {
   display: none;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu .menu-list__menu-item .menu-list__menu-item_letter-active, .menu .menu-list__menu-item br {
     display: inline;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu .menu-list__menu-item .menu-list__menu-item_letter-disable {
     display: none;
   }
@@ -759,7 +764,7 @@ table {
   color: rgba(126, 117, 121, 0.9);
   box-shadow: 0 -10px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu a:hover {
     font-size: 18px;
   }
@@ -769,7 +774,7 @@ table {
     color: #291823;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu a {
     line-height: 1.104;
   }
@@ -779,7 +784,7 @@ table {
   color: rgba(126, 117, 121, 0.9);
   box-shadow: 0 -10px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu ._active a {
     letter-spacing: 0.15;
   }
@@ -791,9 +796,9 @@ table {
   background-color: rgba(126, 117, 121, 0.2);
   margin: 35px 0 35px 0;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .menu-list__separate-line {
-    margin: 2px 0 26px 0;
+    margin: 35px 0 26px 0;
     width: 50px;
   }
 }
@@ -810,9 +815,10 @@ table {
 }
 @media (max-width: 321px) {
   .button-block {
-    height: 20%;
-    padding-top: 8px;
+    height: 15%;
+    padding-top: 13px;
     padding-left: 0;
+    background-color: #f9f9f8;
   }
 }
 .button-block .button-block__button {
@@ -823,10 +829,10 @@ table {
   background-color: #f2f1f1;
   align-self: center;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .button-block .button-block__button {
-    width: 39.1%;
-    height: 45.5%;
+    width: 39%;
+    height: 67%;
   }
 }
 .button-block .button-block__button:hover {
@@ -843,7 +849,7 @@ table {
   background-color: #b3aaaf;
   color: white;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .button-block .button-block__button_selected {
     width: 51%;
   }
@@ -863,12 +869,13 @@ table {
   box-sizing: border-box;
   background-color: #f8f7f7;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .footer {
-    height: 11%;
+    height: 15.3%;
     display: flex;
     justify-content: center;
-    padding: 1px 0 0 6px;
+    padding: 19px 0 0 6px;
+    background-color: #f9f9f8;
   }
 }
 
@@ -878,11 +885,11 @@ table {
   display: flex;
   margin-bottom: 6px;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .download {
     width: 50%;
     height: 85%;
-    margin-left: 10px;
+    padding-left: 10px;
   }
 }
 .download .download__icon {
@@ -892,11 +899,12 @@ table {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .download .download__icon {
-    width: 20%;
+    width: 21%;
     background-size: contain;
     margin-right: 11px;
+    margin-top: -6px;
   }
 }
 .download .download__link-load {
@@ -908,7 +916,7 @@ table {
 .download .download__link-load br {
   display: none;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .download .download__link-load br {
     display: block;
   }
@@ -922,7 +930,7 @@ table {
   color: #723f59;
   cursor: pointer;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .download .download__link-load a {
     border-bottom: none;
   }
@@ -930,10 +938,10 @@ table {
     color: #231f20;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .download .download__link-load {
     min-width: 15px;
-    height: 76%;
+    height: 70%;
     letter-spacing: 0.8;
     margin-left: 5px;
     padding: 12px 0 1px 0;
@@ -949,7 +957,7 @@ table {
   box-sizing: border-box;
   color: #7c7b7b;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .footer__copyright {
     min-width: 50%;
     height: 85%;
@@ -960,7 +968,7 @@ table {
 .footer__copyright br {
   display: none;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .footer__copyright br {
     display: block;
   }
@@ -982,7 +990,7 @@ table {
   width: 100%;
   height: 82%;
 }
-@media screen and (min-width: 320px) and (max-width: 1599px) {
+@media screen and (min-width: 320px) and (max-width: 999px) {
   .section {
     height: 78%;
     flex-direction: column;

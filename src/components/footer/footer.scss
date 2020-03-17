@@ -5,9 +5,10 @@
     box-sizing: border-box;
     background-color: #f8f7f7;
     @include MOBILE {
-        height: 11%;
+        height: 15.3%;
         display: flex;
         justify-content: center;
-        padding: 1px 0 0 6px;
+        padding: 19px 0 0 6px;
+        background-color: $MAIN-COLOR;
     } 
 }

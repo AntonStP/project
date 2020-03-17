@@ -1,9 +1,16 @@
+/*
 $FuturaNewLight: 'FuturaNewLight';
 $FuturaNewBook: 'FuturaNewBook';
 $FuturaNewDemi: 'FuturaNewDemi';
+*/
+
+$FuturaNew: 'FuturaNew';
 
 $MOBILE: 320px;
-$DESKTOP: 1600px;
+$DESKTOP: 1000px;
+$HEIGTHDESIGNDESC:900;
+$WIDTHMOBDESIGN: 320;
+
 
 // -----------------------
 
@@ -13,17 +20,3 @@ $PHONE-COLOR: #231f20;
 $MAIN-COLOR: #f9f9f8;
 $ASIDE-COLOR: #f2f1f1;
 
-.Обслуживание_в_московском_офисе_Friedrich_Wilhe {
-    font-size: 18px;
-    font-family: "FuturaNewLight";
-    color: rgb(76, 52, 64);
-    line-height: 1.5;
-    text-align: left;
-    position: absolute;
-    left: 436.88px;
-    top: 348.872px;
-    width: 321px;
-    height: 413px;
-    z-index: 118;
-  }
-  

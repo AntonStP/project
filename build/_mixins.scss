@@ -6,3 +6,9 @@
   @media screen and (min-width: $DESKTOP) { @content; }
 }
 
+
+@mixin checked{
+  .page__input:checked ~ &{
+      @content;
+  }
+}

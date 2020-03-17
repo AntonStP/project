@@ -6,9 +6,9 @@
     padding: 60px 14px;
     box-sizing: border-box;
     @include MOBILE {
-        width: 15%;
+        width: 16%;
+        padding: 8px 0;
         background-color: #fff;
-        padding: 13px 0;
     }
     
     &__input {
@@ -43,7 +43,7 @@
             font-size: 17.1px;
         }
         @include MOBILE {
-            width: 70%;
+            width: 50%;
             font-size: 13px;
             background-color: #fff;
             &:hover {
@@ -65,8 +65,9 @@
         background-color: $MAIN-COLOR;
         cursor: pointer;
         @include MOBILE {
-            top: 10px;
-            right: -6px;
+            top: 6px;
+            left: 42%;
+            width: 20px;
             background-color: #fff;
         }
     }
@@ -75,7 +76,7 @@
         @extend .LANG;
         width: 120%;
         height: 62px;
-        background-color: white;
+        background-color: #fff;
         text-transform: uppercase;
         opacity: 0;
         @include MOBILE {

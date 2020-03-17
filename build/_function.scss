@@ -1,0 +1,9 @@
+@function widthCalc($num) {
+ // @return $WINOWSWIDE*;
+  @return ($num*100)/$WIDTHMOBDESIGN * 1vw;
+}
+
+@function heightCalc($num) {
+//  @return $WINOWHEIGHT*$num;
+  @return ($num*100)/$HEIGTHDESIGNDESC * 1vh;
+}

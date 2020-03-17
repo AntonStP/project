@@ -2,7 +2,8 @@
  * заголовок статьи
  */
  .HEADING {
-  font-family: $FuturaNewLight;
+  font-family: $FuturaNew;
+  font-weight: 300;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: 35px;
@@ -17,7 +18,8 @@
  * номер телефона в заголовке
  */
 .PHONE-NUMBER {
-  font-family: $FuturaNewLight;
+  font-family: $FuturaNew;
+  font-weight: 300;
   color: $PHONE-COLOR;
   @include MOBILE() {
     font-size: 23px;
@@ -32,7 +34,8 @@
  * текст в статье
  */
 .ARTICLE-CONTENT {
-  font-family: $FuturaNewLight;
+  font-family: $FuturaNew;
+  font-weight: 300;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: 14px;
@@ -47,7 +50,8 @@
  * выпадающий список
  */
 .LANG {
-  font-family: $FuturaNewBook;
+  font-family: $FuturaNew;
+  font-weight: normal;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: 12px;
@@ -61,7 +65,8 @@
  * пункты меню
  */
 .MENU-ITEM {
-  font-family: $FuturaNewBook;
+  font-family: $FuturaNew;
+  font-weight: normal;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: 18px;
@@ -76,7 +81,8 @@
  * открытый пункт меню
  */
 .MENU-ITEM_SELECTED {
-  font-family: $FuturaNewDemi;
+  font-family: $FuturaNew;
+  font-weight: 500;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: 18px;
@@ -91,10 +97,11 @@
  * кнопки
  */
 .BUTTON {
-  font-family: $FuturaNewLight;
+  font-family: $FuturaNew;
+  font-weight: 300;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 12;
+    font-size: 16px;
   }
   @include DESKTOP() {
     font-size: 14px;
@@ -105,11 +112,12 @@
  * загрузка услуг
  */
 .DOWNLOAD {
-  font-family: $FuturaNewLight;
+  font-family: $FuturaNew;
+  font-weight: 300;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: 11px;
-    line-height: 1.1;
+    font-size: 10.5px;
+    line-height: 1.2;
   }
   @include DESKTOP() {
     font-size: 14px;
@@ -120,11 +128,12 @@
  * копирайт
  */
 .COPYRIGHT {
-  font-family: $FuturaNewLight;
+  font-family: $FuturaNew;
+  font-weight: 300;
   color: $SUBTEXT-COLOR;
   @include MOBILE() {
-    font-size: 13.333px;
-    line-height: 1.2;
+    font-size: 10px;
+    line-height: 1.3;
   }
   @include DESKTOP() {
     font-size: 12px;
