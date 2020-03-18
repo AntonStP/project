@@ -1,11 +1,11 @@
 mixin menu(menuItems,currentPageId)
     nav.aside-navigation__menu.menu
-        ul.menu__menu-list.menu-list
+        ul.menu__list
             if(menuItems)
                 each item in menuItems 
                     if (item.isSeparator==true)
-                        li.menu-list__separate-line 
+                        li.menu__separate-line 
                     else 
-                        li.menu-list__menu-item.menu-item( class=(item.id==currentPageId ? '_active' : '') )
-                            a.menu-item__link(href=item.url) !{item.title}
+                        li.menu__item( class=(item.id==currentPageId ? '_active' : '') )
+                            a.menu__link(href=item.url) !{item.title}
         block

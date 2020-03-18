@@ -1,13 +1,13 @@
 .button-block {
     width: 100%;
-    height: 20%;
+    height: vhD(156);
     background-color: $ASIDE-COLOR;
     display: flex;
     justify-content: center;
     padding-left: 7px;
     padding-top: 4px;
     box-sizing: border-box;
-    @media (max-width:321px) {
+    @include MOBILE {
         height: 15%;
         padding-top: 13px;
         padding-left: 0;
@@ -16,13 +16,13 @@
     .button-block__button {
         @extend .BUTTON;
         width: 25%;
-        min-height: 24%;
+        min-height: vhD(35);
         border: 1px solid;
         border-color: rgb(179, 170, 175);
         background-color: $ASIDE-COLOR;
         align-self: center;
         @include MOBILE {
-            width: 39%;
+            width: vwM(115);
             height: 67%;
         } 
         &:hover {
@@ -39,7 +39,7 @@
         width: 40.5%;
         background-color: #b3aaaf;
         @include MOBILE {
-            width: 51%;
+            width: vwM(155);
         } 
         &:hover {
             background-color: #6d5b66;

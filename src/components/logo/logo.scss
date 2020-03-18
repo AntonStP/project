@@ -1,8 +1,7 @@
 .logo {
     width: 19.2%;
-    height: 51%;
-    align-self: center;
-    padding: 39px 55px 0 55px;
+    height: vhD(80);
+    padding: 56px 55px 0 55px;
     @include MOBILE {
         width: 60%;
         height: 59%;

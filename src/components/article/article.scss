@@ -1,17 +1,17 @@
 .article {
     width: 69%;
-    height: 100%;
+    height: vhD(705);
     padding: 21px 21px;
     box-sizing: border-box;
     @include MOBILE {
-        width: 100%;
+        width: vwM(300);
         min-height: 95%;
         padding: 48px 14px;
     }
     &__heading {
         @extend .HEADING;
         max-width: 100%;
-        height: 15%;
+        height: vhD(100);
         padding: 25px 0;
         letter-spacing: 1.11px;
         box-sizing: border-box;
@@ -23,7 +23,7 @@
     }
     &__content-wrapper {
         width: 100%;
-        height: 80%;
+        height: vhD(530);
         padding-top: 22px;
         display: flex;
         flex-direction: column;

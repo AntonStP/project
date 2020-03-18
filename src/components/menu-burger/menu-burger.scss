@@ -1,0 +1,39 @@
+.menu-burger {
+    width: 28px;
+    display: none;
+    @include MOBILE {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        right: 27px;
+        top: 24px;
+        .menu-burger__item {
+            display: block;
+            background-color: #616161;
+            width: 28px;
+            height: 2px;
+            margin: 0 0 6px 0;
+            transform-origin: 100% 50%;
+            transition: transform .5s ease-in-out;
+            &:first-child {
+                @include menuChecked {
+                    transform: rotate(-45deg);
+                    margin-bottom: 10px;
+                } 
+            }
+            &:nth-child(2) {
+                @include menuChecked {
+                    transform: scaleX(0);      
+                } 
+
+            }
+            &:last-child {
+                @include menuChecked {
+                    transform: rotate(45deg);
+                }
+                margin-bottom: 0; 
+            }
+        }
+    }
+    
+}

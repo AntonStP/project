@@ -1,9 +1,15 @@
-@function vw($num) {
- // @return $WINOWSWIDE*;
-  @return ($num * 100) / $WIDTH_MOB-DESIGN * 1vw;
+@function vwM($size) {
+  @return ($size * 100) / $DES-W-MOB * 1vw;
 }
 
-@function vh($num) {
-//  @return $WINOWHEIGHT*$num;
-  @return ($num * 100 ) / $HEIGT_DESC-DESIGN * 1vh;
+@function vwT($size) {
+    @return ($size * 100 ) / $DES-W-TAB * 1vw;
+  }
+
+@function vhTL($size) {
+  @return ($size * 100 ) / $DES-H-TAB-L * 1vh;
+}
+
+@function vhD($size) {
+  @return ($size * 100 ) / $DES-H-DESK * 1vh;
 }

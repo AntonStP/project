@@ -1,12 +1,12 @@
 .selector-lang {
     width: 20%;
-    height: 100%;
+    height: vhD(155);
     position: relative;
     background-color: $MAIN-COLOR;
     padding: 60px 14px;
     box-sizing: border-box;
     @include MOBILE {
-        width: 16%;
+        width: vwM(46);
         padding: 8px 0;
         background-color: #fff;
     }
@@ -33,6 +33,7 @@
     &__label {
         display: block;
         width: 52%;
+        height: vhD(21);
         @extend .LANG;
         background-color: $MAIN-COLOR;
         text-transform: uppercase;
@@ -43,7 +44,7 @@
             font-size: 17.1px;
         }
         @include MOBILE {
-            width: 50%;
+            width: vwM(23);
             font-size: 13px;
             background-color: #fff;
             &:hover {
@@ -58,16 +59,16 @@
         top: 60px;
         right: 4px;
         width: 34px;
-        height: 21px;
+        height: vhD(21);
         background-image: url("../image/pointer.png");
         background-repeat: no-repeat;
         background-position: left; 
         background-color: $MAIN-COLOR;
         cursor: pointer;
         @include MOBILE {
-            top: 6px;
+            top: 8px;
             left: 42%;
-            width: 20px;
+            width: vwM(20);
             background-color: #fff;
         }
     }
@@ -75,16 +76,16 @@
     .list {
         @extend .LANG;
         width: 120%;
-        height: 62px;
+        height: vhD(62);
         background-color: #fff;
         text-transform: uppercase;
         opacity: 0;
         @include MOBILE {
-            width: 40px;
+            width: vwM(40);
             height: 80px;
             position: absolute;
-            bottom: 180%;
-            right: 30%;
+            bottom: 150%;
+            right: 15%;
             background-color: rgba(0,0,0,.0);
         }
         .list__item {
@@ -99,7 +100,7 @@
                 font-size: 16.8px;
             }
             @include MOBILE {
-                width: 40px;
+                width: vwM(40);
                 height: 35px;
                 margin-bottom: 8px;
                 background-color: #f0e3ea;

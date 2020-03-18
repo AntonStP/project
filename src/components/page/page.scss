@@ -1,6 +1,7 @@
 .page {
     position: relative;
     width: 100%;
+    min-height: 100%;
     height: 100%;
     overflow-x: auto;
     padding: 20px;
@@ -16,47 +17,6 @@
     @include MOBILE {
         .page__input {
             display: none;
-        }
-    }
-
-    &__menu-burger {
-        width: 28px;
-        display: none;
-        @include MOBILE {
-            display: block;
-            position: absolute;
-            z-index: 3;
-            right: 25px;
-            top: 33px;
-        }
-        .menu-burger__item {
-            display: block;
-            position: absolute;
-            background-color: #616161;
-            width: 100%;
-            height: 2px;
-            &:first-child {
-                top: -8px;
-                @include menuChecked {
-                    top: 0;
-                    transform: rotate(45deg);
-                    transition: transform .5s ease-in-out;
-                } 
-            }
-            &:nth-child(2) {
-               @include menuChecked {
-                    transform: scaleX(0);
-                    transform-origin: center 10%;
-                }    
-            }
-            &:last-child {
-                top: 8px;
-                @include menuChecked {
-                    top: 0;
-                    transform: rotate(-45deg);
-                    transition: transform .5s ease-in-out;
-                } 
-            }
         }
     }
 }

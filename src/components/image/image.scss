@@ -2,12 +2,12 @@
     width: 31.4%;
     height: 66%;
     @include MOBILE {
-        width: 100%;
+        width: vwM(300);
     }
     img {
         width: 100%;
         @include MOBILE {
-            width: 78.5%;
+            width: vwM(235);
             margin-top: -20px;
             opacity: 0.35;
         }

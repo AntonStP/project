@@ -1,22 +1,24 @@
 .header {
     width: 100%;
-    height: 18%;
+    height: vhD(155);
     background-color: $MAIN-COLOR;
     display: flex;
     justify-content: space-between;
     @include MOBILE {
-        width: 93.7%;
+        width: vwM(300);
         height: auto;
         position: fixed;
+        z-index: 1;
         top: auto;
+        background: linear-gradient(0deg, rgba(249,249,248,.5), rgba(249,249,248,.9), rgba(249,249,248,.9), rgba(249,249,248,1));
     }
     .header-menu {
         min-width: 31%;
-        height: 100%;
+        height: vhD(155);
         display: flex;
         justify-content: flex-end;
         @include MOBILE {
-            width: 100%;
+            width: vwM(320);
             height: 10.5%;
             position: fixed;
             justify-content: flex-start;
@@ -29,12 +31,12 @@
 
         }
         .header-menu__vertical-line {
-            width: 0.5px;
-            height: 40px;
+            width: 1px;
+            height: vhD(40);
             background-color: rgba(76,52,64,.4);
-            margin: 50px 19px 50px 22px;
+            margin: 50px 18px 50px 22px;
             @include MOBILE {
-                width: 1px;
+                width: vwM(1);
                 height: 29px;
                 margin: 1px 22px 5px 18px;
             }

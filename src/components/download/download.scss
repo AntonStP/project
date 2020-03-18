@@ -1,21 +1,21 @@
 .download {
     width: 85%;
-    height: 50%;
+    height: vhD(45);
     display: flex;
     margin-bottom: 6px;
     @include MOBILE {
-        width: 50%;
+        width: vwM(150);
         height: 85%;
         padding-left: 10px;
     } 
     .download__icon {   
         width: 60%;
-        min-height: 100%;
+        min-height: vhD(45);
         background: url("../image/icon-pdf.png");
         background-repeat: no-repeat;
         background-position: right;
         @include MOBILE {
-            width: 21%;
+            width: vwM(30);
             background-size: contain;
             margin-right: 11px;
             margin-top: -6px;
@@ -23,7 +23,7 @@
     }
     .download__link-load{
         min-width: 70%;
-        height: 100%;
+        height: vhD(45);
         padding: 10px 14px;
         box-sizing: border-box;
         @extend .DOWNLOAD;
@@ -49,8 +49,7 @@
             }                
         }
         @include MOBILE {
-            @extend .DOWNLOAD;
-            min-width: 15px;
+            width: vwM(70);
             height: 70%;
             letter-spacing: 0.8;
             margin-left: 5px;
