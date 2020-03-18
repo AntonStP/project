@@ -2,9 +2,11 @@
     width: 100%;
     height: vhD(156);
     background-color: $ASIDE-COLOR;
+    background-color: mediumorchid;
     display: flex;
     justify-content: center;
     padding-left: 7px;
+    flex-shrink: 22;
     padding-top: 4px;
     box-sizing: border-box;
     @include MOBILE {
