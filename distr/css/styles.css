@@ -4,12 +4,6 @@ $FuturaNewLight: 'FuturaNewLight';
 $FuturaNewBook: 'FuturaNewBook';
 $FuturaNewDemi: 'FuturaNewDemi';
 */
-/***********
-  Adaptive
-***********/
-/***********
-  Checked Mixin's
-***********/
 @font-face {
   font-family: "FuturaNew";
   src: url("../fonts/FuturaNewBook-Reg.eot");
@@ -117,19 +111,19 @@ $FuturaNewDemi: 'FuturaNewDemi';
 /**
  * пункты меню
  */
-.MENU-ITEM, .menu a {
+.MENU-ITEM, .menu .menu-list__menu-item .menu-item__link {
   font-family: "FuturaNew";
   font-weight: normal;
   color: #291823;
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
-  .MENU-ITEM, .menu a {
+  .MENU-ITEM, .menu .menu-list__menu-item .menu-item__link {
     font-size: 18px;
     line-height: 1;
   }
 }
 @media screen and (min-width: 1280px) {
-  .MENU-ITEM, .menu a {
+  .MENU-ITEM, .menu .menu-list__menu-item .menu-item__link {
     font-size: 21.66px;
     line-height: 1.143;
   }
@@ -138,19 +132,19 @@ $FuturaNewDemi: 'FuturaNewDemi';
 /**
  * открытый пункт меню
  */
-.MENU-ITEM_SELECTED, .menu ._active a {
+.MENU-ITEM_SELECTED, .menu ._active .menu-item__link {
   font-family: "FuturaNew";
   font-weight: 500;
   color: #291823;
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
-  .MENU-ITEM_SELECTED, .menu ._active a {
+  .MENU-ITEM_SELECTED, .menu ._active .menu-item__link {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 @media screen and (min-width: 1280px) {
-  .MENU-ITEM_SELECTED, .menu ._active a {
+  .MENU-ITEM_SELECTED, .menu ._active .menu-item__link {
     font-size: 20.5px;
     line-height: 1.144;
   }
@@ -295,36 +289,6 @@ table {
   width: 28px;
   display: none;
 }
-.page__menu-burger .item,
-.page__menu-burger .item::before,
-.page__menu-burger .item::after {
-  display: block;
-  position: absolute;
-  background-color: #616161;
-  width: 100%;
-  height: 2px;
-}
-.page__menu-burger .item::before {
-  content: "";
-  top: -8px;
-}
-.page__input:checked ~ .page__menu-burger .item::before {
-  top: 0;
-  transform: rotate(0deg);
-}
-.page__input:checked ~ .page__menu-burger .item {
-  transform: rotate(45deg);
-  transition: transform 0.5s ease-in-out;
-}
-.page__menu-burger .item::after {
-  content: "";
-  top: 8px;
-}
-.page__input:checked ~ .page__menu-burger .item::after {
-  top: 0;
-  transform: rotate(90deg);
-  transition: transform 0.5s ease-in-out;
-}
 @media screen and (min-width: 320px) and (max-width: 1279px) {
   .page__menu-burger {
     display: block;
@@ -333,6 +297,33 @@ table {
     right: 25px;
     top: 33px;
   }
+}
+.page__menu-burger .menu-burger__item {
+  display: block;
+  position: absolute;
+  background-color: #616161;
+  width: 100%;
+  height: 2px;
+}
+.page__menu-burger .menu-burger__item:first-child {
+  top: -8px;
+}
+.page__input:checked ~ .page__menu-burger .menu-burger__item:first-child {
+  top: 0;
+  transform: rotate(45deg);
+  transition: transform 0.5s ease-in-out;
+}
+.page__input:checked ~ .page__menu-burger .menu-burger__item:nth-child(2) {
+  transform: scaleX(0);
+  transform-origin: center 10%;
+}
+.page__menu-burger .menu-burger__item:last-child {
+  top: 8px;
+}
+.page__input:checked ~ .page__menu-burger .menu-burger__item:last-child {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease-in-out;
 }
 
 .main-wrapper {
@@ -759,39 +750,38 @@ table {
     display: none;
   }
 }
-.menu a {
+.menu .menu-list__menu-item .menu-item__link {
   text-decoration: none;
   display: inline-block;
 }
-.menu a:hover {
+.menu .menu-list__menu-item .menu-item__link:hover {
   color: rgba(126, 117, 121, 0.9);
   /*  box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset; */
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
-  .menu a:hover {
+  .menu .menu-list__menu-item .menu-item__link:hover {
     font-size: 18px;
   }
-  .menu a:hover:hover {
+  .menu .menu-list__menu-item .menu-item__link:hover:hover {
     font-weight: normal;
     /* box-shadow: none;*/
     color: #291823;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
-  .menu a {
+  .menu .menu-list__menu-item .menu-item__link {
     line-height: 1.104;
   }
 }
 .menu ._active {
   position: relative;
 }
-.menu ._active a {
+.menu ._active .menu-item__link {
   letter-spacing: 0.2px;
   color: rgba(126, 117, 121, 0.9);
-  /*box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;*/
 }
 @media screen and (min-width: 320px) and (max-width: 1279px) {
-  .menu ._active a {
+  .menu ._active .menu-item__link {
     letter-spacing: 0.15;
   }
 }

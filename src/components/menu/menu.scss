@@ -47,35 +47,35 @@
             }    
         }
 
+        .menu-item__link {
+            @extend .MENU-ITEM;
+            text-decoration: none;
+            display: inline-block;
+            &:hover {
+                color: rgba(126, 117, 121,.9);
+              /*  box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset; */
+                @include MOBILE {
+                    font-size: 18px;
+                    &:hover {
+                        font-weight: normal;
+                       /* box-shadow: none;*/
+                        color: $TEXT-COLOR;
+                    }
+                }  
+            }
+            @include MOBILE {
+                line-height: 1.104;
+            }
+        }
+
     }
     
-    a {
-        @extend .MENU-ITEM;
-        text-decoration: none;
-        display: inline-block;
-        &:hover {
-            color: rgba(126, 117, 121,.9);
-          /*  box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset; */
-            @include MOBILE {
-                font-size: 18px;
-                &:hover {
-                    font-weight: normal;
-                   /* box-shadow: none;*/
-                    color: $TEXT-COLOR;
-                }
-            }  
-        }
-        @include MOBILE {
-            line-height: 1.104;
-        }
-    }
     ._active {
         position: relative;
-        a {
+        .menu-item__link {
             @extend .MENU-ITEM_SELECTED;
             letter-spacing: 0.2px;
             color: rgba(126, 117, 121,.9);
-            /*box-shadow: 0 -10px 0 0 rgba(0, 0, 0, .2) inset;*/
             @include MOBILE {
                 letter-spacing: 0.15;
             }
