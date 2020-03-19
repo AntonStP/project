@@ -1,4 +1,5 @@
 .selector-lang {
+
     width: 20%;
     height: vhD(155);
     position: relative;
@@ -38,23 +39,21 @@
         background-color: $MAIN-COLOR;
         text-transform: uppercase;
         user-select: none;
-        &:hover {
-            cursor: pointer;
-            color: #8f7585;
-            font-size: 17.1px;
+        @include HOVER() {
+            &:hover {
+                cursor: pointer;
+                color: #8f7585;
+                font-size: 17.1px;
+            }    
         }
         @include MOBILE {
             width: vwM(23);
             font-size: 13px;
             background-color: #fff;
-            &:hover {
-                color: #291823;
-                font-size: 13px;
-            }
         }
     }
 
-    .selector-lang__arrow {
+    &__arrow {
         position: absolute;
         top: 60px;
         right: 4px;
@@ -72,71 +71,44 @@
             background-color: #fff;
         }
     }
+}
 
-    .list {
-        @extend .LANG;
-        width: 120%;
-        height: vhD(62);
-        background-color: #fff;
-        text-transform: uppercase;
-        opacity: 0;
-        @include MOBILE {
-            width: vwM(40);
-            height: 80px;
-            position: absolute;
-            bottom: 150%;
-            right: 15%;
-            background-color: rgba(0,0,0,.0);
-        }
-        .list__item {
-            user-select: none;
+.list {
+    @extend .LANG;
+    width: 120%;
+    height: vhD(62);
+    background-color: #fff;
+    text-transform: uppercase;
+    opacity: 0;
+    @include MOBILE {
+        width: vwM(40);
+        height: 80px;
+        position: absolute;
+        bottom: 150%;
+        right: 15%;
+        background-color: rgba(0,0,0,.0);
+    }
+
+    &__item {
+        user-select: none;
+        @include HOVER() {
             &:hover {
                 cursor: pointer;
                 color: #a5909d;
-            }
-            &:active {
-                cursor: pointer;
-                color: #8e75a5;
-                font-size: 16.8px;
-            }
-            @include MOBILE {
-                width: vwM(40);
-                height: 35px;
-                margin-bottom: 8px;
-                background-color: #f0e3ea;
-                padding-top: 10px;
-                box-sizing: border-box;
-                text-align: center;
-                border: 1px solid #aca2a8;
-                &:hover {
-                    color: #291823;
-                }
-                &:active {
-                    color: #291823;
-                    font-size: 15px;
-                }
-            }
+            }   
+        }           
+        @include MOBILE {
+            width: vwM(40);
+            height: 35px;
+            margin-bottom: 8px;
+            background-color: #f0e3ea;
+            padding-top: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #aca2a8;
         }
     }
 }
 
-@keyframes openList {
-    10% {
-        opacity: 0.1;
-    }
-    40% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.7;
-    }
-    90% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
+

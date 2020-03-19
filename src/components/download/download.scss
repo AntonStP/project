@@ -2,29 +2,34 @@
     width: 85%;
     height: vhD(45);
     display: flex;
+    justify-content: flex-start;
     margin-bottom: 6px;
+    background-color: cornsilk;
     @include MOBILE {
         width: vwM(150);
+        background-color: cornsilk;
         height: 85%;
         padding-left: 10px;
     } 
     .download__icon {   
-        width: 60%;
-        min-height: vhD(45);
+        width: 30%;
+        height: vhD(45);
         background: url("../image/icon-pdf.png");
         background-repeat: no-repeat;
         background-position: right;
+        background-color: white;
         @include MOBILE {
             width: vwM(30);
             background-size: contain;
-            margin-right: 11px;
+            margin-right: 5px;
             margin-top: -6px;
         } 
     }
     .download__link-load{
-        min-width: 70%;
+        width: 100%;
         height: vhD(45);
         padding: 10px 14px;
+        background-color: darkkhaki;
         box-sizing: border-box;
         @extend .DOWNLOAD;
         br {
@@ -49,11 +54,11 @@
             }                
         }
         @include MOBILE {
-            width: vwM(70);
+            width: vwM(71);
             height: 70%;
             letter-spacing: 0.8;
             margin-left: 5px;
-            padding: 12px 0 1px 0;
+            padding: 12px 0 1px 5px;
             box-sizing: border-box;
             border-bottom: 1px dotted $PHONE-COLOR;
         }

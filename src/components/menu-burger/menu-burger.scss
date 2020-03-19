@@ -4,7 +4,7 @@
     @include MOBILE {
         display: block;
         position: absolute;
-        z-index: 3;
+        z-index: $menu-burger_z;
         right: 27px;
         top: 24px;
         .menu-burger__item {

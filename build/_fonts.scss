@@ -7,7 +7,7 @@
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: vwM(35);
-    line-height: 1.11;
+    line-height: 1.07;
   }
   @include TABLET() {
     font-size: vwT(36);
@@ -150,7 +150,7 @@
   font-weight: 300;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(12);
+    font-size: vwM(16);
     line-height: 1.168;
   }
   @include TABLET() {

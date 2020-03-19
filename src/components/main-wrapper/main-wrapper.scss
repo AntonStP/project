@@ -2,7 +2,7 @@
     width: 81%;
     background-color: $MAIN-COLOR;
     @include MOBILE {
-        width: 100%;
+        width: vwM(350);
         height: 91%;
         overflow: auto;
     }

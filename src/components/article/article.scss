@@ -1,12 +1,12 @@
 .article {
     width: 69%;
     height: vhD(705);
-    padding: 21px 21px;
+    padding: 21px 24px;
     box-sizing: border-box;
     @include MOBILE {
         width: vwM(300);
-        min-height: 95%;
-        padding: 48px 14px;
+        height: auto;
+        padding: 0px 14px;
     }
     &__heading {
         @extend .HEADING;
@@ -16,9 +16,8 @@
         letter-spacing: 1.11px;
         box-sizing: border-box;
         @include MOBILE {
-            height: auto;
+            height: 2.7em;
             padding-top: 0;
-            line-height: 1;
         }
     }
     &__content-wrapper {

@@ -8,7 +8,7 @@
         width: vwM(300);
         height: auto;
         position: fixed;
-        z-index: 1;
+        z-index: $header_z;
         top: auto;
         background: linear-gradient(0deg, rgba(249,249,248,.5), rgba(249,249,248,.9), rgba(249,249,248,.9), rgba(249,249,248,1));
     }

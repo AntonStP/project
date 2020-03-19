@@ -14,10 +14,5 @@
     &__input {
         display: none;
     }
-    @include MOBILE {
-        .page__input {
-            display: none;
-        }
-    }
 }
     

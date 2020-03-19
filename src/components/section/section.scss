@@ -3,7 +3,7 @@
     width: 100%;
     height: vhD(705);
     @include MOBILE {
-        height: 78%;
+        height: auto;
         flex-direction: column;
     }  
   }  
