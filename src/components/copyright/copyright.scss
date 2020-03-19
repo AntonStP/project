@@ -4,11 +4,10 @@
     padding: 7px 0 0 7px;
     box-sizing: border-box;
     @extend .COPYRIGHT;
-    color: $SUBTEXT-COLOR;
     @include MOBILE{  
         min-width: vwM(150);
         height: 85%; 
-        padding: 11px 0 0 15px;
+        padding: 12px 0 0 19px;
         box-sizing: border-box;   
     } 
     
@@ -18,4 +17,5 @@
             display: block;
         } 
     }
+    
 }

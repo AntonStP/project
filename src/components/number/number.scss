@@ -9,13 +9,21 @@
         padding-left: 0;
         background-color: #fff;
     }
+    @include TABLET-L {
+        width: 200px;
+        height: vhTL(25);
+        padding-top: 0;
+        z-index: 2;
+    }
+
     p {
         @extend .PHONE-NUMBER;
         @include MOBILE {
             padding-top: 0;
             padding-left: 0;
             letter-spacing: 0.4;
-
         }
+     
     }
+    
 }

@@ -11,6 +11,12 @@
         padding: 8px 0;
         background-color: #fff;
     }
+    @include TABLET-L {
+        width: 35px;
+        height: vhTL(25);
+        padding: 0;
+
+    }
     
     &__input {
         display: none;
@@ -28,6 +34,9 @@
             background-color: #fff;
             transform: rotate(180deg);
             background-position: right;
+            @include TABLET-L {
+                background-position: center;    
+            }
         }
     }
 
@@ -51,6 +60,17 @@
             font-size: 13px;
             background-color: #fff;
         }
+        @include TABLET-L {
+            width: 17px;
+            height: vhTL(25);
+            padding-top: 7px;
+            box-sizing: border-box;
+            &:hover {
+                cursor: pointer;
+                color: $TEXT-COLOR;
+                font-size: 13px;
+            } 
+        }
     }
 
     &__arrow {
@@ -70,6 +90,13 @@
             width: vwM(20);
             background-color: #fff;
         }
+        @include TABLET-L {
+            width: 20px;
+            height: vhTL(25);
+            top: 0;
+            right: 0;
+            background-position: center;
+        }
     }
 }
 
@@ -87,6 +114,10 @@
         bottom: 150%;
         right: 15%;
         background-color: rgba(0,0,0,.0);
+    }
+    @include TABLET-L {
+        width: 35px;
+        height: vhTL(73);
     }
 
     &__item {
@@ -107,6 +138,11 @@
             text-align: center;
             border: 1px solid #aca2a8;
         }
+        @include TABLET-L {
+            margin-bottom: 10px;
+            border-top: 1px solid #aca2a8;
+        }
+        
     }
 }
 

@@ -1,4 +1,5 @@
 .right-wrapper {
+    
     width: 18.6%;
     display: flex;
     flex-direction: column;
@@ -18,4 +19,20 @@
             z-index: $right-wrapper_z;
         }
     }
+    @include TABLET-L {
+        width: 220px;
+        min-height: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        position: absolute;
+        right: 20px;
+        z-index: $right-wrapper_z;
+        transition: transform .9s ease-in-out;
+        background-color: royalblue;
+        transform: translate(150%);
+        @include menuChecked {
+            transform: translateX(0%);
+        }
+    }
+    
 }

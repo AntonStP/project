@@ -6,5 +6,8 @@
         height: auto;
         flex-direction: column;
     }  
+    @include TABLET-L {
+        height: vhTL(510);
+    }
   }  
   

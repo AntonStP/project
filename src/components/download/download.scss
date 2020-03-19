@@ -1,37 +1,36 @@
 .download {
+
     width: 85%;
     height: vhD(45);
     display: flex;
     justify-content: flex-start;
     margin-bottom: 6px;
-    background-color: cornsilk;
     @include MOBILE {
         width: vwM(150);
-        background-color: cornsilk;
         height: 85%;
+        padding-top: 10px;
         padding-left: 10px;
+        box-sizing: border-box;
     } 
-    .download__icon {   
+
+    &__icon {   
         width: 30%;
         height: vhD(45);
         background: url("../image/icon-pdf.png");
         background-repeat: no-repeat;
         background-position: right;
-        background-color: white;
         @include MOBILE {
             width: vwM(30);
+            box-sizing: border-box;
             background-size: contain;
-            margin-right: 5px;
-            margin-top: -6px;
         } 
     }
-    .download__link-load{
+
+    &__link-load{
         width: 100%;
         height: vhD(45);
         padding: 10px 14px;
-        background-color: darkkhaki;
         box-sizing: border-box;
-        @extend .DOWNLOAD;
         br {
             display: none;
             @include MOBILE {
@@ -39,30 +38,28 @@
             } 
         }
         a {
-            color: $PHONE-COLOR;
+            @extend .DOWNLOAD;
             text-decoration: none;
             border-bottom: 1px dotted $PHONE-COLOR;
-            &:hover {
-                color: #723f59;
-                cursor: pointer;
+            @include HOVER() {
+                &:hover {
+                    color: #723f59;
+                    cursor: pointer;
+                }    
             }
             @include MOBILE {
                 border-bottom: none;  
-                &:hover {
-                    color: $PHONE-COLOR;
-                }
             }                
         }
         @include MOBILE {
             width: vwM(71);
             height: 70%;
             letter-spacing: 0.8;
-            margin-left: 5px;
-            padding: 12px 0 1px 5px;
+            margin-left: 14px;
+            padding: 2px 0 1px 1px;
             box-sizing: border-box;
             border-bottom: 1px dotted $PHONE-COLOR;
-        }
-            
-        
+        }           
     }
+    
 }

@@ -1,10 +1,17 @@
 .image {
+
     width: 31%;
     height: vhD(543);
     @include MOBILE {
         width: vwM(300);
         height: vhD(484);
     }
+    @include TABLET-L {
+        width: 340px;
+        height: vhTL(500);
+        margin-top: -3.5%;
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -13,5 +20,10 @@
             margin-top: -10px;
             opacity: 0.35;
         }
+        @include TABLET-L {
+            width: 335px;
+            height: vhTL(485);
+        }
     }
+    
 }

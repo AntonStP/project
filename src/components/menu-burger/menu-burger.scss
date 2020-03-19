@@ -1,39 +1,56 @@
 .menu-burger {
+    
     width: 28px;
     display: none;
-    @include MOBILE {
+    position: absolute;
+    z-index: $menu-burger_z;
+    right: 27px;
+    top: 24px;
+    .menu-burger__item {
         display: block;
-        position: absolute;
-        z-index: $menu-burger_z;
-        right: 27px;
-        top: 24px;
-        .menu-burger__item {
-            display: block;
-            background-color: #616161;
-            width: 28px;
-            height: 2px;
-            margin: 0 0 6px 0;
-            transform-origin: 100% 50%;
-            transition: transform .5s ease-in-out;
-            &:first-child {
-                @include menuChecked {
-                    transform: rotate(-45deg);
+        background-color: #616161;
+        width: 28px;
+        height: 2px;
+        margin: 0 0 6px 0;
+        transform-origin: 100% 50%;
+        transition: transform .5s ease-in-out;
+        &:first-child {
+            @include menuChecked {
+                transform: rotate(-45deg);
+                @include MOBILE {
                     margin-bottom: 10px;
-                } 
-            }
-            &:nth-child(2) {
-                @include menuChecked {
-                    transform: scaleX(0);      
-                } 
-
-            }
-            &:last-child {
-                @include menuChecked {
-                    transform: rotate(45deg);
                 }
-                margin-bottom: 0; 
+                @include TABLET-L {
+                    margin-bottom: 5px;
+                }
+            } 
+        }
+        &:nth-child(2) {
+            @include menuChecked {
+                transform: scaleX(0);      
+            } 
+        }
+        &:last-child {
+            @include menuChecked {
+                transform: rotate(45deg);
             }
+            margin-bottom: 0; 
+        }
+        @include TABLET-L {
+            width: 15px;
+            height: 1px;
+            margin: 0 0 4px 0;
         }
     }
-    
+    @include MOBILE {
+        display: block;
+    }
+    @include TABLET-L {
+        width: 15px;
+        top: 60px;
+        right: 105px;
+        display: block;
+
+    }
 }
+    

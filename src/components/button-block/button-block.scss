@@ -14,7 +14,7 @@
         padding-left: 0;
         background-color: $MAIN-COLOR;
     } 
-    .button-block__button {
+    &__button {
         @extend .BUTTON;
         width: 25%;
         min-height: vhD(35);
@@ -36,8 +36,10 @@
             margin-top: 2px;
         }
     }
-    .button-block__button_selected {
+
+    &__button_selected {
         width: 40.5%;
+        color: white;
         background-color: #b3aaaf;
         @include MOBILE {
             width: vwM(155);
@@ -49,7 +51,7 @@
             background-color: #7d5b66;
             margin-top: 2px;
         }
-        color: white;
     }
+    
 }
 
