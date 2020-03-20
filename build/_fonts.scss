@@ -34,7 +34,7 @@
     line-height: 1.446;
   }
   @include TABLET() {
-    font-size: vwT(24);
+    font-size: vwT(33);
     line-height: 0.854;
   }
   @include TABLET-L() {
@@ -82,7 +82,7 @@
     line-height: 1.125;
   }
   @include TABLET() {
-    font-size: vwT(12);
+    font-size: vwT(16);
     line-height: 1.125;
   }
   @include TABLET-L() {

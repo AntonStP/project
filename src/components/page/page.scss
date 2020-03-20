@@ -12,9 +12,12 @@
         padding: 10px;
         overflow: hidden;
     }
-    @include TABLET-L {
+    @include TABLET {
         min-height: 100%;
         height: 100%;
+        overflow: hidden;
+    }
+    @include TABLET-L {
         overflow: hidden;
     }
 

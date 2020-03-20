@@ -9,6 +9,10 @@
         padding-left: 0;
         background-color: #fff;
     }
+    @include TABLET {
+        width: 200px;
+        height: vwT(180);
+    }
     @include TABLET-L {
         width: 200px;
         height: vhTL(24);

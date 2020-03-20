@@ -11,11 +11,15 @@
         padding: 8px 0;
         background-color: #fff;
     }
+    @include TABLET {
+        width: 55px;
+        height: vwT(180);
+        padding: 60px 0 0 0;
+    }
     @include TABLET-L {
         width: 55px;
         height: vhTL(24);
         padding: 0;
-
     }
     
     &__input {
@@ -31,8 +35,7 @@
             &::after {
                 transform: rotate(50deg);
             }
-        }
-        
+        }  
     }
 
     &__label {
@@ -55,6 +58,11 @@
             width: vwM(23);
             font-size: 13px;
             background-color: #fff;
+        }
+        @include MOBILE {
+            width: vwT(23);
+            font-size: 13px;
+            background-color: red;
         }
         @include TABLET-L {
             width: 63%;
@@ -82,6 +90,11 @@
                 top: 48%;
                 left: 20px;
             }
+            @include TABLET {
+                width: 7px;
+                top: 28%;
+                left: 18px;
+            }
             @include TABLET-L {
                 width: 6px;
                 top: 45%;
@@ -102,6 +115,11 @@
                 width: 6px;
                 top: 48%;
                 left: 24px;
+            }
+            @include TABLET {
+                width: 7px;
+                top: 28%;
+                left: 22px;
             }
             @include TABLET-L {
                 width: 6px;
@@ -130,6 +148,9 @@
         right: 15%;
         background-color: rgba(0,0,0,.0);
     }
+    @include TABLET {
+        height: 70px;
+    }
     @include TABLET-L {
         width: 35px;
         height: vhTL(73);
@@ -152,6 +173,10 @@
             box-sizing: border-box;
             text-align: center;
             border: 1px solid #aca2a8;
+        }
+        @include TABLET {
+            margin-bottom: 10px;
+            border-top: 1px solid #aca2a8;
         }
         @include TABLET-L {
             margin-bottom: 10px;

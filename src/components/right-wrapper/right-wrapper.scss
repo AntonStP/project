@@ -19,6 +19,21 @@
             z-index: $right-wrapper_z;
         }
     }
+    @include TABLET {
+        width: 220px;
+        min-height: 94.79%;
+        height: 94.79%;
+        box-sizing: border-box;
+        position: absolute;
+        right: 20px;
+        box-shadow: -20px 0 15px -8px rgba(0, 0, 0,.15);
+        z-index: $right-wrapper_z;
+        transition: transform .7s ease-in-out;
+        transform: translate(150%);
+        @include menuChecked {
+            transform: translateX(0);
+        }
+    }
     @include TABLET-L {
         width: 220px;
         min-height: 94.79%;
@@ -61,6 +76,9 @@
         position: absolute;
         transform: rotate(-45deg);
         background-color: #616161;
+    }
+    @include TABLET {
+        display: block;
     }
     @include TABLET-L {
         display: block;

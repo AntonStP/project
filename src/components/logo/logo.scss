@@ -9,6 +9,13 @@
         padding: 17px;
         z-index: 2;
     }
+    @include TABLET {
+        width: 180px;
+        height: vhTL(50);
+        align-self: flex-end;
+        padding: 0;
+        z-index: 2;
+    }
     @include TABLET-L {
         width: 182px;
         height: vhTL(61);
