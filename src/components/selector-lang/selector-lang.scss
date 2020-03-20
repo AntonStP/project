@@ -1,10 +1,10 @@
 .selector-lang {
 
-    width: 20%;
+    width: 80px;
     height: vhD(155);
     position: relative;
     background-color: $MAIN-COLOR;
-    padding: 60px 14px;
+    padding: 60px 0 0 14px;
     box-sizing: border-box;
     @include MOBILE {
         width: vwM(46);
@@ -12,7 +12,7 @@
         background-color: #fff;
     }
     @include TABLET-L {
-        width: 35px;
+        width: 55px;
         height: vhTL(25);
         padding: 0;
 
@@ -20,30 +20,31 @@
     
     &__input {
         display: none;
-        &:checked ~ .list {       
-            -moz-animation: openList 0.8s ease-out 0s forwards; 
+        &:checked ~ .list {      
+            /*-moz-animation: openList 0.8s ease-out 0s forwards; 
             -o-animation: openList 0.8s ease-out 0s forwards; 
             -webkit-animation: openList 0.8s ease-out 0s forwards; 
             -ms-animation: openList 0.8s ease-out 0s forwards; 
-            animation: openList 0.8s ease-out 0s forwards; 
+            animation: openList 0.8s ease-out 0s forwards; */
+            opacity: 1;
         }
         &:checked ~ .selector-lang__label {
             background-color: #fff;
-        }
-        &:checked ~ .selector-lang__arrow  {
-            background-color: #fff;
-            transform: rotate(180deg);
-            background-position: right;
-            @include TABLET-L {
-                background-position: center;    
+            &::before {
+                transform: rotate(-50deg);
+            }
+            &::after {
+                transform: rotate(50deg);
             }
         }
+        
     }
 
     &__label {
-        display: block;
-        width: 52%;
+        width: 90%;
         height: vhD(21);
+        display: block;
+        position: relative;
         @extend .LANG;
         background-color: $MAIN-COLOR;
         text-transform: uppercase;
@@ -61,7 +62,7 @@
             background-color: #fff;
         }
         @include TABLET-L {
-            width: 17px;
+            width: 100%;
             height: vhTL(25);
             padding-top: 7px;
             box-sizing: border-box;
@@ -71,42 +72,41 @@
                 font-size: 13px;
             } 
         }
+        &::before {
+            content: '';    
+            position: absolute; 
+            top: 48%; 
+            left: 26px;
+            width: 8px;
+            height: 1.4px;
+            background: #7c7b7b;
+            transform: rotate(50deg);
+            transition: transform .1s ease-in-out;
+        }
+        &::after {
+            content: '';    
+            position: absolute; 
+            top: 48%; 
+            left: 31.6px;
+            width: 8px;
+            height: 1.4px;
+            background: #7c7b7b;
+            transform: rotate(-50deg);
+            transition: transform .1s ease-in-out;
+        }
     }
 
-    &__arrow {
-        position: absolute;
-        top: 60px;
-        right: 4px;
-        width: 34px;
-        height: vhD(21);
-        background-image: url("../image/pointer.png");
-        background-repeat: no-repeat;
-        background-position: left; 
-        background-color: $MAIN-COLOR;
-        cursor: pointer;
-        @include MOBILE {
-            top: 8px;
-            left: 42%;
-            width: vwM(20);
-            background-color: #fff;
-        }
-        @include TABLET-L {
-            width: 20px;
-            height: vhTL(25);
-            top: 0;
-            right: 0;
-            background-position: center;
-        }
-    }
+   
 }
 
 .list {
     @extend .LANG;
-    width: 120%;
+    width: 90%;
     height: vhD(62);
     background-color: #fff;
     text-transform: uppercase;
     opacity: 0;
+    transition: opacity 1.2s ease-in-out;
     @include MOBILE {
         width: vwM(40);
         height: 80px;

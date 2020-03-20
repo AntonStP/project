@@ -2,7 +2,6 @@ mixin selector-lang(langItem)
     .header-menu__selector-lang.selector-lang
         input.selector-lang__input(type="checkbox", id="lang-box")
         label.selector-lang__label(for="lang-box")  ru 
-        label.selector-lang__arrow(for="lang-box")         
         ul.selector-lang__list.list
             each item in langItem
                 li(class="list__item", data-lang=item.data)=item.lang

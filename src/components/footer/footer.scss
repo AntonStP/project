@@ -12,4 +12,7 @@
         padding: 19px 0 0 6px;
         background-color: $MAIN-COLOR;
     } 
+    @include TABLET-L {
+        height: vhTL(112);
+    }
 }

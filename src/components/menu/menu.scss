@@ -13,8 +13,7 @@
 }
 
 
-.menu-item {
-
+.menu__item {
     max-height: vhD(42);
     position: relative;
     letter-spacing: -0.3px;
@@ -37,14 +36,12 @@
         letter-spacing: 0.11px;
     
     } 
-
     &:nth-child(3) {
         margin-bottom: 31px;
         @include MOBILE {
             margin-bottom: 33px;
         } 
     }
-
     &:nth-child(7) {
         margin-bottom: 27px;
         @include MOBILE {
@@ -53,19 +50,19 @@
     }
         
     //изменение слов в 5 item в моб. и деск. версии
-    .menu-list__menu-item_letter-active, br {
+    .menu-item_letter-active, br {
         display: none;
         @include MOBILE {
             display: inline;
         }
     }
-    .menu-list__menu-item_letter-disable {
+    .menu-item_letter-disable {
         @include MOBILE {
             display: none;
         }    
     }
 
-    .menu-item__link {
+    .menu__link {
         @extend .MENU-ITEM;
         text-decoration: none;
         display: inline-block;
@@ -87,7 +84,7 @@
     
 ._active {
     position: relative;
-    .menu-item__link {
+    .menu__link {
         @extend .MENU-ITEM_SELECTED;
         letter-spacing: 0.2px;
         color: rgba(126, 117, 121,.9);
@@ -112,7 +109,7 @@
 }
 
 
-.menu-list__separate-line {
+.menu__separate-line {
     width:  63px;
     height: vhD(0.6);
     background-color: rgba(126, 117, 121,.2);

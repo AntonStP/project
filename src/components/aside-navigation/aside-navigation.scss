@@ -4,4 +4,7 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+    @include TABLET-L {
+        height: vhTL(616);
+    }
 }
