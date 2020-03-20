@@ -13,7 +13,7 @@
     }
     @include TABLET-L {
         width: 55px;
-        height: vhTL(25);
+        height: vhTL(24);
         padding: 0;
 
     }
@@ -21,11 +21,6 @@
     &__input {
         display: none;
         &:checked ~ .list {      
-            /*-moz-animation: openList 0.8s ease-out 0s forwards; 
-            -o-animation: openList 0.8s ease-out 0s forwards; 
-            -webkit-animation: openList 0.8s ease-out 0s forwards; 
-            -ms-animation: openList 0.8s ease-out 0s forwards; 
-            animation: openList 0.8s ease-out 0s forwards; */
             opacity: 1;
         }
         &:checked ~ .selector-lang__label {
@@ -62,9 +57,9 @@
             background-color: #fff;
         }
         @include TABLET-L {
-            width: 100%;
-            height: vhTL(25);
-            padding-top: 7px;
+            width: 63%;
+            height: vhTL(24);
+            padding-top: 5px;
             box-sizing: border-box;
             &:hover {
                 cursor: pointer;
@@ -82,6 +77,11 @@
             background: #7c7b7b;
             transform: rotate(50deg);
             transition: transform .1s ease-in-out;
+            @include TABLET-L {
+                width: 6px;
+                top: 45%;
+                left: 20px;
+            }
         }
         &::after {
             content: '';    
@@ -93,6 +93,11 @@
             background: #7c7b7b;
             transform: rotate(-50deg);
             transition: transform .1s ease-in-out;
+            @include TABLET-L {
+                width: 6px;
+                top: 45%;
+                left: 24px;
+            }
         }
     }
 

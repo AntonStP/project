@@ -102,7 +102,7 @@
         background-color: rgba(0,0,0,0.15);
         @include MOBILE {
             bottom: 0;
-            width: vwM(260);
+            width: 90%;
             height: 8px;
         }
     }

@@ -14,7 +14,7 @@
     }
     @include TABLET-L {
         height: vhTL(160);
-        padding: 34px 125px 0 0;
+        padding: 34px 103px 0 0;
         box-sizing: border-box;
     }
 }
@@ -37,7 +37,7 @@
         background-color: #fff;
     }
     @include TABLET-L {
-        height: vhTL(25);
+        height: vhTL(24);
         justify-content: flex-start;
     }
     
@@ -53,8 +53,8 @@
             margin: 1px 22px 5px 18px;
         }
         @include TABLET-L {
-            height: vhTL(30);
-            margin: -2px 12px 5px 18px;
+            height: vhTL(25);
+            margin: 0 20px 5px 10px;
         }
         
     }

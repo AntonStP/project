@@ -1,8 +1,10 @@
 mixin menu-burger(params)
     input.page__input(type="checkbox", id="menu")
-    label.page__menu-burger.menu-burger(for="menu") меню
-        span.menu-burger__item
-        span.menu-burger__item
-        span.menu-burger__item
+    label.page__menu-label.menu-label(for="menu") 
+        .menu-burger
+            span.menu-burger__item
+            span.menu-burger__item
+            span.menu-burger__item
+        .menu-burger__word Меню
     block   
 

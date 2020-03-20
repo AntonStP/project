@@ -1,6 +1,5 @@
-.menu-burger {
-    
-    width: 28px;
+.menu-label {
+    width: 70px;
     display: none;
     position: absolute;
     z-index: $menu-burger_z;
@@ -16,13 +15,10 @@
         transition: transform .5s ease-in-out;
         &:first-child {
             @include menuChecked {
-                transform: rotate(-45deg);
+                transform: rotate(-45deg); 
                 @include MOBILE {
                     margin-bottom: 10px;
-                }
-                @include TABLET-L {
-                    margin-bottom: 5px;
-                }
+                }                           
             } 
         }
         &:nth-child(2) {
@@ -33,24 +29,44 @@
         &:last-child {
             @include menuChecked {
                 transform: rotate(45deg);
+                @include TABLET-L {
+                    margin-top: 5px;
+                }
             }
             margin-bottom: 0; 
         }
         @include TABLET-L {
-            width: 15px;
+            width: 14px;
             height: 1px;
-            margin: 0 0 4px 0;
+            margin: 0 0 3px 0;
         }
     }
     @include MOBILE {
+        width: 30px;
         display: block;
     }
     @include TABLET-L {
-        width: 15px;
+        width: 65px;
         top: 60px;
-        right: 105px;
-        display: block;
-
+        right: 54px;
+        display: flex;
+    }
+    .menu-burger__word {
+        font-family: 'FuturaNew';
+        font-size: vhTL(12.5);
+        text-transform: uppercase;
+        opacity: 1;
+        transition: opacity .6s ease-in;
+        @include menuChecked {
+            opacity: 0; 
+        }
+        @include MOBILE {
+            display: none;
+        }
     }
 }
     
+.menu-burger {
+    width: 50%; 
+    align-self: center;   
+}   
