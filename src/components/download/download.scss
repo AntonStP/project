@@ -12,6 +12,11 @@
         padding-left: 10px;
         box-sizing: border-box;
     } 
+    @include TABLET-L {
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 0;
+    }
 
     &__icon {   
         width: 30%;
@@ -24,6 +29,11 @@
             box-sizing: border-box;
             background-size: contain;
         } 
+        @include TABLET-L {
+            width: 40%;
+            transform: scale(0.75);
+            background-position: right;
+        }
     }
 
     &__link-load{
@@ -59,7 +69,11 @@
             padding: 2px 0 1px 1px;
             box-sizing: border-box;
             border-bottom: 1px dotted $PHONE-COLOR;
-        }           
+        }  
+        @include TABLET-L {
+            margin-left: 0;
+            padding-left: 5px;
+        }         
     }
     
 }

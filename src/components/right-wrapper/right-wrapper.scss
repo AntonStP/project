@@ -26,13 +26,44 @@
         box-sizing: border-box;
         position: absolute;
         right: 20px;
+        box-shadow: -20px 0 15px -8px rgba(0, 0, 0,.15);
         z-index: $right-wrapper_z;
         transition: transform .7s ease-in-out;
-        background-color: royalblue;
         transform: translate(150%);
         @include menuChecked {
             transform: translateX(0%);
         }
     }
     
+}
+
+.label-exit {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    &::after {
+        content: '';
+        width: 16px;
+        height: 1px;
+        top: 7px;
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: #616161;
+    }
+    &::before {
+        content: '';
+        width: 16px;
+        height: 1px;
+        top: 7px;
+        position: absolute;
+        transform: rotate(-45deg);
+        background-color: #616161;
+    }
+    @include TABLET-L {
+        display: block;
+    }
+   
 }

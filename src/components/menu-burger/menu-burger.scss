@@ -5,6 +5,11 @@
     z-index: $menu-burger_z;
     right: 27px;
     top: 24px;
+    opacity: 1;
+        transition: opacity .3s ease-in;
+        @include menuChecked {
+            opacity: 0; 
+        }
     .menu-burger__item {
         display: block;
         background-color: #616161;
@@ -55,11 +60,6 @@
         font-family: 'FuturaNew';
         font-size: vhTL(12.5);
         text-transform: uppercase;
-        opacity: 1;
-        transition: opacity .6s ease-in;
-        @include menuChecked {
-            opacity: 0; 
-        }
         @include MOBILE {
             display: none;
         }

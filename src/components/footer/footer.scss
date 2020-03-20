@@ -13,6 +13,8 @@
         background-color: $MAIN-COLOR;
     } 
     @include TABLET-L {
-        height: vhTL(112);
+        height: vhTL(108);
+        padding: 20px 10px 0 35px;
+        background-color: #f8f7f7;
     }
 }

@@ -77,6 +77,11 @@
             background: #7c7b7b;
             transform: rotate(50deg);
             transition: transform .1s ease-in-out;
+            @include MOBILE {
+                width: 6px;
+                top: 48%;
+                left: 20px;
+            }
             @include TABLET-L {
                 width: 6px;
                 top: 45%;
@@ -93,6 +98,11 @@
             background: #7c7b7b;
             transform: rotate(-50deg);
             transition: transform .1s ease-in-out;
+            @include MOBILE {
+                width: 6px;
+                top: 48%;
+                left: 24px;
+            }
             @include TABLET-L {
                 width: 6px;
                 top: 45%;
