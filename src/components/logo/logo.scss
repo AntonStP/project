@@ -4,22 +4,21 @@
     padding: 56px 55px 0 55px;
     @include MOBILE {
         width: 60%;
-        height: 59%;
         align-self: flex-start;
         padding: 17px;
         z-index: 2;
     }
     @include TABLET {
         width: 180px;
-        height: vhTL(50);
+        height: vhTL(46);
         align-self: flex-end;
-        padding: 0;
+        padding: 0 0 0 10px;
         z-index: 2;
     }
     @include TABLET-L {
         width: 182px;
-        height: vhTL(61);
-        padding: 0 55px 0 34px;
+        height: vhTL(50);
+        padding: 0;
         z-index: 2;
     }
 }

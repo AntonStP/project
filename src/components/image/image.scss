@@ -6,9 +6,13 @@
         width: vwM(300);
         height: vhD(484);
     }
+    @include TABLET {
+        width: vwT(300);
+        height: 380px;
+    }
     @include TABLET-L {
         width: 340px;
-        height: vhTL(500);
+        height: vhTL(400);
         margin-top: -3.5%;
     }
 
@@ -20,9 +24,13 @@
             margin-top: -10px;
             opacity: 0.35;
         }
+        @include TABLET {
+            width: vwT(300);
+            height: 380px;
+        }
         @include TABLET-L {
             width: 335px;
-            height: vhTL(485);
+            height: vhTL(400);
         }
     }
     

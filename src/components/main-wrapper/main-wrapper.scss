@@ -22,7 +22,7 @@
         height: 100%;
         @include menuChecked {
             &::after {
-                display: none;
+                display: block;
             }
         }
     }

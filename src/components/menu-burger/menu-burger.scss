@@ -6,7 +6,10 @@
     right: 27px;
     top: 24px;
     @include menuChecked {
-        display: none;
+        display: flex;
+        @include DESKTOP {
+            display: none;
+        }
     }
     .menu-burger__item {
         display: block;
@@ -28,9 +31,6 @@
             @include menuChecked {
                 transform: scaleX(0);      
             }
-            @include TABLET {
-                opacity: 0;
-            } 
         }
         &:last-child {
             @include menuChecked {
@@ -42,7 +42,7 @@
             margin-bottom: 0; 
         }
         @include TABLET {
-            width: 15px;
+            width: 14px;
             height: 1px;
             margin: 0 0 3px 0;
         }
@@ -57,25 +57,27 @@
         display: block;
     }
     @include TABLET {
-        width: 60px;
+        width: 69px;
         top: 80px;
         right: 40px;
         display: flex;
+        z-index: $menu-burger_z-T;
     }
     @include TABLET-L {
         width: 65px;
         top: 60px;
         right: 54px;
         display: flex;
+        z-index: $menu-burger_z-T;
     }
-    .menu-burger__word {
+    .menu-label__word {
         font-family: 'FuturaNew';
         text-transform: uppercase;
         @include MOBILE {
             display: none;
         }
         @include TABLET {
-            font-size: vwT(17);
+            font-size: vwT(12);
         }
         @include TABLET-L {
             font-size: vhTL(12.5);

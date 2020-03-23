@@ -29,6 +29,9 @@
             box-sizing: border-box;
             background-size: contain;
         } 
+        @include TABLET {
+            width: 27%;
+        }
         @include TABLET-L {
             width: 40%;
             transform: scale(0.75);
@@ -70,7 +73,12 @@
             box-sizing: border-box;
             border-bottom: 1px dotted $PHONE-COLOR;
         }  
+        @include TABLET {
+            padding-top: 15px;
+            padding-left: 17px;
+        }  
         @include TABLET-L {
+            width: 170px;
             margin-left: 0;
             padding-left: 5px;
         }         

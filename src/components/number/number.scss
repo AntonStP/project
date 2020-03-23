@@ -10,8 +10,8 @@
         background-color: #fff;
     }
     @include TABLET {
-        width: 200px;
-        height: vwT(180);
+        width: vwT(190);
+        height: 30px;
     }
     @include TABLET-L {
         width: 200px;
@@ -27,6 +27,7 @@
             padding-left: 0;
             letter-spacing: 0.4;
         }
+       
         @include TABLET-L {
             padding-top: 2px;
             z-index: 2;

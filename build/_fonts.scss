@@ -11,7 +11,7 @@
   }
   @include TABLET() {
     font-size: vwT(36);
-    line-height: 1.125;
+    line-height: 0.6;  
   }
   @include TABLET-L() {
     font-size: vhTL(36);
@@ -28,18 +28,17 @@
 .PHONE-NUMBER {
   font-family: $FuturaNew;
   font-weight: 300;
+  line-height: 0.854;
   color: $PHONE-COLOR;
   @include MOBILE() {
     font-size: vwM(23);
     line-height: 1.446;
   }
   @include TABLET() {
-    font-size: vwT(33);
-    line-height: 0.854;
+    font-size: vwT(24);
   }
   @include TABLET-L() {
     font-size: vhTL(24);
-    line-height: 0.854;
   }
   @include DESKTOP() {
     font-size: vhD(32);
@@ -52,18 +51,16 @@
 .ARTICLE-CONTENT {
   font-family: $FuturaNew;
   font-weight: 300;
+  line-height: 1.446;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: vwM(14);
-    line-height: 1.446;
   }
   @include TABLET() {
     font-size: vwT(14);
-    line-height: 1.446;
   }
   @include TABLET-L() {
     font-size: vhTL(14);
-    line-height: 1.446;
   }
   @include DESKTOP() {
     font-size: vhD(18);
@@ -76,18 +73,16 @@
 .LANG {
   font-family: $FuturaNew;
   font-weight: normal;
+  line-height: 1.125;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: vwM(12);
-    line-height: 1.125;
   }
   @include TABLET() {
-    font-size: vwT(16);
-    line-height: 1.125;
+    font-size: vwT(12);
   }
   @include TABLET-L() {
-    font-size: vhTL(13);
-    line-height: 1.125;
+    font-size: vhTL(12);
   }
   @include DESKTOP() {
     font-size: vhD(17);
@@ -148,14 +143,13 @@
 .BUTTON {
   font-family: $FuturaNew;
   font-weight: 300;
+  line-height: 1.168;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: vwM(16);
-    line-height: 1.168;
   }
   @include TABLET() {
     font-size: vwT(16);
-    line-height: 1.168;
   }
   @include TABLET-L() {
     font-size: vhTL(12);
@@ -172,6 +166,7 @@
 .DOWNLOAD {
   font-family: $FuturaNew;
   font-weight: 300;
+  line-height: 1.929;
   color: $TEXT-COLOR;
   @include MOBILE() {
     font-size: vwM(10.5);
@@ -179,15 +174,13 @@
   }
   @include TABLET() {
     font-size: vwT(14);
-    line-height: 1.929;
   }
   @include TABLET-L() {
     font-size: vhTL(10.5);
-    line-height: 1.929;
+    line-height: 1.729;
   }
   @include DESKTOP() {
     font-size: vhD(14);
-    line-height: 1.929;
   }
 }
 /**
@@ -196,6 +189,7 @@
 .COPYRIGHT {
   font-family: $FuturaNew;
   font-weight: 300;
+  line-height: 2.25;
   color: $SUBTEXT-COLOR;
   @include MOBILE() {
     font-size: vwM(10);
@@ -207,10 +201,8 @@
   }
   @include TABLET-L() {
     font-size: vhTL(9);
-    line-height: 2.25;
   }
   @include DESKTOP() {
     font-size: vhD(12);
-    line-height: 2.25;
   }
 }

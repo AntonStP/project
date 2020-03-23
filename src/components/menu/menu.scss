@@ -1,4 +1,20 @@
 .menu {
+
+    @mixin item-active {
+        .menu__item_active &{
+            @content;
+        }
+        
+    }
+
+    @mixin item-hover {
+        @include HOVER{
+            .menu__item:hover  &{
+                @content;
+            }
+                
+        }
+    }
     width: 100%;
     height: vhD(585);
     background-color: $ASIDE-COLOR;
@@ -10,126 +26,109 @@
         padding: 25px 30px 0 14px;
         background-color: $MAIN-COLOR;
     }
+    @include TABLET {
+        padding: 64px 75px 0 75px;
+    }
     @include TABLET-L {
-        height: vhTL(500);
-        padding: 44px 38px 0 44px;
+        height: vhTL(520);
+        padding: 44px 32px 0 44px;
         background-color: $ASIDE-COLOR;
     }
-}
 
-
-.menu__item {
-    max-height: vhD(42);
-    position: relative;
-    letter-spacing: -0.3px;
-    margin-bottom: 31px;
-    @include HOVER() {
-        &:hover {
-            &::after {
-                position: absolute;
-                content: '';
-                bottom: -4px;
-                left: 0;
-                width: 90%;
-                height: vhD(9);
-                background-color: rgba(0,0,0,0.15);   
-            }    
-        }
-    }  
-    @include MOBILE {
-        margin-bottom: 33px;
-        letter-spacing: 0.11px;
-    } 
-    @include TABLET-L {
-        margin-bottom: 25px;
-        letter-spacing: 0.11px;
-    } 
-    &:nth-child(3) {
+    &__item {
+        
+        max-height: vhD(42);
+        position: relative;
+        letter-spacing: -0.3px;
         margin-bottom: 31px;
+
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 90%;
+            height: vhD(9);
+            background-color: rgba(0,0,0,0.15);
+            opacity: 0;
+            @include MOBILE {
+                bottom: 0;
+                width: 90%;
+                height: 8px;
+            }
+
+        }
+
         @include MOBILE {
             margin-bottom: 33px;
+            letter-spacing: 0.11px;
         } 
-    }
-    &:nth-child(7) {
-        margin-bottom: 27px;
-        @include MOBILE {
-            margin-bottom: 17px;
+        @include TABLET {
+            margin-bottom: 45px;
+            letter-spacing: 0.11px;
         } 
-    }
-        
-    //изменение слов в 5 item в моб. и деск. версии
-    .menu-item_letter-active, br {
-        display: none;
-        @include MOBILE {
-            display: inline;
+        @include TABLET-L {
+            margin-bottom: 35px;
+            letter-spacing: 0.11px;
+        } 
+
+        //изменение слов в 5 item в моб. и деск. версии
+        &_letter-active, br {
+            display: none;
+            @include MOBILE {
+                display: inline;
+            }
+        }
+        &_letter-disable {
+            @include MOBILE {
+                display: none;
+            }    
+        }
+
+        &_active {
+            position: relative;
+
+            &:after{
+                opacity: 1;
+            }
         }
     }
-    .menu-item_letter-disable {
-        @include MOBILE {
-            display: none;
-        }    
-    }
 
-    .menu__link {
+    &__link {
         @extend .MENU-ITEM;
         text-decoration: none;
         display: inline-block;
-        @include HOVER() {
-            &:hover {
-                font-size: vhD(20.5);
-                font-weight: 500;
-                line-height: 1.144;
-                letter-spacing: 0.2;
-                color: rgba(126, 117, 121,.9);
-            }
+        white-space: pre-wrap;
+        transition: .3s ease-in-out;
+        @include item-hover {
+            font-weight: 500;
+            // letter-spacing: 0.2;
+            color: rgba(126, 117, 121,.9);
         }
         @include MOBILE {
             line-height: 1.104;
         }
-    }
 
-}
-    
-._active {
-    position: relative;
-    .menu__link {
-        @extend .MENU-ITEM_SELECTED;
-        letter-spacing: 0.2px;
-        color: rgba(126, 117, 121,.9);
-        @include MOBILE {
-            letter-spacing: 0.15;
+        @include item-active() {
+            @extend .MENU-ITEM_SELECTED;
+            // letter-spacing: 0.2px;
+            color: rgba(126, 117, 121,.9);
+            @include MOBILE {
+                letter-spacing: 0.15;
+            }
         }
     }
-    &::after {
-        position: absolute;
-        content: '';
-        bottom: -4px;
-        left: 0;
-        width: 90%;
-        height: vhD(9);
-        background-color: rgba(0,0,0,0.15);
+    &__separate-line {
+        width:  63px;
+        height: vhD(0.6);
+        background-color: rgba(126, 117, 121,.2);
+        margin: 45px 0 31px 0;
         @include MOBILE {
-            bottom: 0;
-            width: 90%;
-            height: 8px;
+            margin: 43px 0 26px 0;
+            width: vwM(50);
+        }
+        @include TABLET-L {
+            width: 50px;
         }
     }
 }
-
-
-.menu__separate-line {
-    width:  63px;
-    height: vhD(0.6);
-    background-color: rgba(126, 117, 121,.2);
-    margin: 45px 0 31px 0;
-    @include MOBILE {
-        margin: 43px 0 26px 0;
-        width: vwM(50);
-    }
-    @include TABLET-L {
-        width: 50px;
-    }
-}
-
-
-  

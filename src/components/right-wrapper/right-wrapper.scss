@@ -20,9 +20,9 @@
         }
     }
     @include TABLET {
-        width: 220px;
-        min-height: 94.79%;
-        height: 94.79%;
+        width: vwT(320);
+        min-height: 96%;
+        height: 96%;
         box-sizing: border-box;
         position: absolute;
         right: 20px;
@@ -55,7 +55,7 @@
 .label-exit {
     display: none;
     position: absolute;
-    top: 45px;
+    top: 30px;
     right: 20px;
     width: 18px;
     height: 18px;

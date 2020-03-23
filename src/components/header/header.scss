@@ -10,16 +10,16 @@
         position: fixed;
         z-index: $header_z;
         top: auto;
-        background: linear-gradient(0deg, rgba(249,249,248,.5), rgba(249,249,248,.9), rgba(249,249,248,.9), rgba(249,249,248,1));
+        background: linear-gradient(0deg, rgba(249,249,248,0), rgba(249,249,248,.9), rgba(249,249,248,.9), rgba(249,249,248,1));
     }
     @include TABLET {
-        height: vwT(180);
+        height: vwT(100);
         padding: 0 90px 0 40px;
         box-sizing: border-box;
     }
     @include TABLET-L {
         height: vhTL(160);
-        padding: 34px 103px 0 0;
+        padding: 34px 103px 0 34px;
         box-sizing: border-box;
     }
 }
@@ -62,7 +62,7 @@
             margin: 1px 22px 5px 18px;
         }
         @include TABLET {
-            height: vwT(40);
+            height: vwT(32);
             margin: 50px 20px 5px 20px;
         }
         @include TABLET-L {

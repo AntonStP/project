@@ -1,5 +1,5 @@
 @function vwM($size) {
-  @return ($size * 100) / $DES-W-MOB * 1vw;
+  @return ($size * 100) / $DES-W-MOB * 1vh;
 }
 
 @function vwT($size) {

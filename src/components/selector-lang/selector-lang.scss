@@ -43,6 +43,8 @@
         height: vhD(21);
         display: block;
         position: relative;
+        padding: 0 0 0 10px;
+        box-sizing: border-box;
         @extend .LANG;
         background-color: $MAIN-COLOR;
         text-transform: uppercase;
@@ -55,19 +57,18 @@
             }    
         }
         @include MOBILE {
-            width: vwM(23);
+            width: vwM(33);
             font-size: 13px;
             background-color: #fff;
         }
-        @include MOBILE {
-            width: vwT(23);
-            font-size: 13px;
-            background-color: red;
+        @include TABLET {
+            width: vwT(45);
+            height: 15px;
         }
         @include TABLET-L {
-            width: 63%;
+            width: 83%;
             height: vhTL(24);
-            padding-top: 5px;
+            padding: 6px 0 0 5px;
             box-sizing: border-box;
             &:hover {
                 cursor: pointer;
@@ -79,7 +80,7 @@
             content: '';    
             position: absolute; 
             top: 48%; 
-            left: 26px;
+            left: 33px;
             width: 8px;
             height: 1.4px;
             background: #7c7b7b;
@@ -88,24 +89,24 @@
             @include MOBILE {
                 width: 6px;
                 top: 48%;
-                left: 20px;
+                left: 30px;
             }
             @include TABLET {
-                width: 7px;
-                top: 28%;
-                left: 18px;
+                width: 6px;
+                top: 40%;
+                left: 27px;
             }
             @include TABLET-L {
                 width: 6px;
                 top: 45%;
-                left: 20px;
+                left: 22.5px;
             }
         }
         &::after {
             content: '';    
             position: absolute; 
             top: 48%; 
-            left: 31.6px;
+            left: 37.8px;
             width: 8px;
             height: 1.4px;
             background: #7c7b7b;
@@ -114,17 +115,17 @@
             @include MOBILE {
                 width: 6px;
                 top: 48%;
-                left: 24px;
+                left: 34px;
             }
             @include TABLET {
-                width: 7px;
-                top: 28%;
-                left: 22px;
+                width: 6px;
+                top: 40%;
+                left: 30.5px;
             }
             @include TABLET-L {
                 width: 6px;
                 top: 45%;
-                left: 24px;
+                left: 27px;
             }
         }
     }
@@ -135,25 +136,30 @@
 .list {
     @extend .LANG;
     width: 90%;
-    height: vhD(62);
+    height: vhD(68);
+    padding: 3px 0 0 10px;
+    box-sizing: border-box;
     background-color: #fff;
     text-transform: uppercase;
     opacity: 0;
-    transition: opacity 1.2s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     @include MOBILE {
         width: vwM(40);
         height: 80px;
         position: absolute;
-        bottom: 150%;
+        bottom: 90%;
         right: 15%;
+        padding-left: 10px;
         background-color: rgba(0,0,0,.0);
     }
     @include TABLET {
-        height: 70px;
+        width: vwT(45);
+        height: 55px;
     }
     @include TABLET-L {
-        width: 35px;
-        height: vhTL(73);
+        width: 83%;
+        height: vhTL(65 );
+        padding: 3px 0 0 5px;
     }
 
     &__item {
@@ -166,21 +172,15 @@
         }           
         @include MOBILE {
             width: vwM(40);
-            height: 35px;
-            margin-bottom: 8px;
-            background-color: #f0e3ea;
-            padding-top: 10px;
+            height: 22px;
+            background-color: #fff;
             box-sizing: border-box;
-            text-align: center;
-            border: 1px solid #aca2a8;
         }
         @include TABLET {
-            margin-bottom: 10px;
-            border-top: 1px solid #aca2a8;
+            margin-bottom: 5px;
         }
         @include TABLET-L {
             margin-bottom: 10px;
-            border-top: 1px solid #aca2a8;
         }
         
     }

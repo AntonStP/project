@@ -14,8 +14,11 @@
         padding-left: 0;
         background-color: $MAIN-COLOR;
     } 
+    @include TABLET {
+        padding-left: 4px;
+    }
     @include TABLET-L {
-        height: vhTL(140);
+        height: vhTL(80);
     }
     &__button {
         @extend .BUTTON;
@@ -29,9 +32,13 @@
             width: vwM(115);
             height: 67%;
         } 
+        @include TABLET {
+            width: vwT(80);
+            height: 40px;
+        }
         @include TABLET-L {
             height: vhTL(30);
-            width: 60px;
+            width: 70px;
         }
         &:hover {
             background-color: #6d5b66;
@@ -45,15 +52,19 @@
     }
 
     &__button_selected {
-        width: 40.5%;
+        width: 41.5%;
         color: white;
         background-color: #b3aaaf;
         @include MOBILE {
             width: vwM(155);
         } 
+        @include TABLET {
+            width: vwT(130);
+            height: 40px;
+        }
         @include TABLET-L {
+            width: 105px;
             height: vhTL(30);
-            width: 95px;
         }
         &:hover {
             background-color: #6d5b66;

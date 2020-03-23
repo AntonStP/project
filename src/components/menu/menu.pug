@@ -6,6 +6,6 @@ mixin menu(menuItems,currentPageId)
                     if (item.isSeparator==true)
                         li.menu__separate-line 
                     else 
-                        li.menu__item( class=(item.id==currentPageId ? '_active' : '') )
+                        li.menu__item( class=(item.id==currentPageId ? 'menu__item_active' : '') )
                             a.menu__link(href=item.url) !{item.title}
         block

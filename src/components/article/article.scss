@@ -9,6 +9,11 @@
         height: auto;
         padding: 0px 14px;
     }
+    @include TABLET {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 97px;
+    }
     @include TABLET-L {
         height: auto;
         padding: 0 0 0 65px;
@@ -25,7 +30,10 @@
             height: 2.7em;
             padding-top: 0;
         }
-        @include TABLET-L { 
+        @include TABLET { 
+            height: 50px;
+            padding: 0;
+            letter-spacing: 0.8;
         }
     }
 
@@ -42,6 +50,10 @@
             height: 80%;
             padding-top: 0;
         }
+        @include TABLET { 
+            height: 400px;
+            padding-top: 12px;
+        }
         @include TABLET-L { 
             height: vhTL(412);
             padding-top: 12px;
@@ -57,9 +69,16 @@
         padding-right: 33px;
         @include MOBILE {
             margin-bottom: 10px;
-            padding-right: 0;
+            padding-right: 5px;
             letter-spacing: 0.4;
             line-height: 1.47;
+        }
+        @include TABLET { 
+            max-width: 250px;
+            padding-right: 75px;
+            margin-bottom: 16px;
+            letter-spacing: 0.4;
+            line-height: 1.49;
         }
         @include TABLET-L { 
             max-width: 250px;
@@ -69,7 +88,7 @@
             line-height: 1.49;
         }
 
-        .content-link {
+        a{
             text-decoration: none;
             border-bottom: 1px solid rgba(49, 36, 42,.4);
             color: rgba(49, 36, 42,.8);
@@ -80,6 +99,8 @@
                 }    
             }
         }
+
+        
     }
-    
+
 }
