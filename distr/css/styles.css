@@ -1179,7 +1179,6 @@ table {
   text-decoration: none;
   display: inline-block;
   white-space: pre-wrap;
-  transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 767px) {
   .menu__link {
