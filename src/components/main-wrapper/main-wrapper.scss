@@ -13,7 +13,7 @@
         z-index: $main-wrapper-after-z;
     }
     @include MOBILE {
-        width: vwM(350);
+        width: 100%;
         height: 91%;
         overflow: auto;
     }

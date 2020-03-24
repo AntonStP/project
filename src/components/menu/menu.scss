@@ -22,7 +22,7 @@
     box-sizing: border-box;
     @include MOBILE {
         height: 85%;
-        padding: 25px 30px 0 14px;
+        padding: vhM(25) vhM(30) 0 vhM(14);
         background-color: $MAIN-COLOR;
     }
     @include TABLET {
@@ -41,8 +41,8 @@
         letter-spacing: vhD(-0.3);
         margin-bottom: vhD(31);
         @include MOBILE {
-            margin-bottom: 33px;
-            letter-spacing: 0.11px;
+            margin-bottom: vhM(33);
+            letter-spacing: vhM(0.11);
         } 
         @include TABLET {
             margin-bottom: vwT(45);
@@ -121,8 +121,8 @@
         background-color: rgba(126, 117, 121,.2);
         margin: vhD(45) 0 vhD(30) 0;
         @include MOBILE {
-            margin: 43px 0 26px 0;
-            width: vwM(50);
+            margin: vhM(43) 0 vhM(26) 0;
+            width: vhM(50);
         }
         @include TABLET-L {
             width: vhTL(50);

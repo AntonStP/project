@@ -4,12 +4,12 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: vhD(2);
-    padding: vhD(4) 0 0 vhD(5);
+    padding: vhD(4) 0 0 0;
     @include MOBILE {
-        width: vwM(150);
+        width: vhM(130);
         height: 85%;
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-top: vhM(10);
+        padding-left: 0;
         box-sizing: border-box;
     } 
     @include TABLET-L {
@@ -23,7 +23,8 @@
         width: vhD(48);
         height: vhD(35);
         @include MOBILE {
-            width: vwM(30);
+            width: vhM(30);
+            margin-top: 4px;
             box-sizing: border-box;
             background-size: contain;
         } 
@@ -45,11 +46,11 @@
         padding: vhD(6) vhD(14);
         box-sizing: border-box;
         @include MOBILE {
-            width: vwM(71);
+            width: vhM(71);
             height: 70%;
             letter-spacing: 0.8;
-            margin-left: 14px;
-            padding: 2px 0 1px 1px;
+            margin-left: vhM(10);
+            padding: vhM(2) 0 vhM(1) vhM(1);
             box-sizing: border-box;
             border-bottom: 1px dotted $PHONE-COLOR;
         }  

@@ -3,9 +3,9 @@
     position: absolute;
     z-index: $menu-burger_z;
     @include MOBILE {
-        width: 30px;
-        right: 27px;
-        top: 24px;
+        width: vhM(30);
+        right: vhM(26);
+        top: vhM(24);
         display: block;
     }
     @include TABLET {
@@ -36,9 +36,9 @@
         transform-origin: 100% 50%;
         transition: transform .5s ease-in-out;
         @include MOBILE {
-            width: 28px;
-            height: 2px;
-            margin: 0 0 6px 0;    
+            width: vhM(28);
+            height: vhM(2);
+            margin: 0 0 vhM(6) 0;    
         }
         @include TABLET {
             width: vwT(14);
@@ -54,7 +54,7 @@
             @include menuChecked {
                 transform: rotate(-45deg); 
                 @include MOBILE {
-                    margin-bottom: 10px;
+                    margin-bottom: vhM(10);
                 }                           
             } 
         }

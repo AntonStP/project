@@ -6,8 +6,8 @@
     box-sizing: border-box;
     background-color: $MAIN-COLOR;
     @include MOBILE {
-        width: vwM(46);
-        padding: 8px 0;
+        width: vhM(46);
+        padding: vhM(8) 0;
         background-color: #fff;
     }
     @include TABLET {
@@ -57,7 +57,7 @@
             }    
         }
         @include MOBILE {
-            width: vwM(33);
+            width: vhM(33);
             font-size: 13px;
             background-color: #fff;
         }
@@ -87,7 +87,7 @@
             transition: transform .1s ease-in-out;
             @include MOBILE {
                 width: 6px;
-                top: 48%;
+                top: 7px;
                 left: 30px;
             }
             @include TABLET {
@@ -114,7 +114,7 @@
             transition: transform .1s ease-in-out;
             @include MOBILE {
                 width: 6px;
-                top: 48%;
+                top: 7px;
                 left: 34px;
             }
             @include TABLET {
@@ -145,12 +145,12 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     @include MOBILE {
-        width: vwM(40);
-        height: 80px;
+        width: vhM(40);
+        height: vhM(80);
         position: absolute;
         bottom: 90%;
         right: 15%;
-        padding-left: 10px;
+        padding-left: vhM(10);
         background-color: rgba(0,0,0,.0);
     }
     @include TABLET {
@@ -173,8 +173,8 @@
             }   
         }           
         @include MOBILE {
-            width: vwM(40);
-            height: 22px;
+            width: vhM(40);
+            height: vhM(22);
             background-color: #fff;
             box-sizing: border-box;
         }

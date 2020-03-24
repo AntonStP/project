@@ -6,7 +6,7 @@
   font-weight: 300;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(35);
+    font-size: 35px;
     line-height: 1.07;
   }
   @include TABLET() {
@@ -31,7 +31,7 @@
   line-height: 0.854;
   color: $PHONE-COLOR;
   @include MOBILE() {
-    font-size: vwM(23);
+    font-size: 23px;
     line-height: 1.446;
   }
   @include TABLET() {
@@ -54,7 +54,7 @@
   line-height: 1.446;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(14);
+    font-size: vhM(14);
   }
   @include TABLET() {
     font-size: vwT(14);
@@ -76,7 +76,7 @@
   line-height: 1.125;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(12);
+    font-size: vhM(13);
   }
   @include TABLET() {
     font-size: vwT(12);
@@ -97,7 +97,7 @@
   font-weight: normal;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(18);
+    font-size: 18px;
     line-height: 1;
   }
   @include TABLET() {
@@ -121,7 +121,7 @@
   font-weight: 500;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(18);
+    font-size: 18px;
     line-height: 1.15;
   }
   @include TABLET() {
@@ -146,7 +146,7 @@
   line-height: 1.168;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(16);
+    font-size: 16px;
   }
   @include TABLET() {
     font-size: vwT(16);
@@ -169,7 +169,7 @@
   line-height: 1.929;
   color: $TEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(10.5);
+    font-size: vhM(10.5);
     line-height: 1.2;
   }
   @include TABLET() {
@@ -192,7 +192,7 @@
   line-height: 2.25;
   color: $SUBTEXT-COLOR;
   @include MOBILE() {
-    font-size: vwM(10);
+    font-size: vhM(10);
     line-height: 1.3;
   }
   @include TABLET() {

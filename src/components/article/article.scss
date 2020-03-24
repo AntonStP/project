@@ -4,9 +4,9 @@
     padding: vhD(21) vhD(24);
     box-sizing: border-box;
     @include MOBILE {
-        width: vwM(300);
+        width: 100%;
         height: auto;
-        padding: 0px 14px;
+        padding: 0px vhM(14);
     }
     @include TABLET {
         width: 100%;
@@ -29,6 +29,7 @@
         @include MOBILE {
             height: 2.7em;
             padding-top: 0;
+            letter-spacing: 1.2;
         }
         @include TABLET { 
             height: vhTL(50);
@@ -47,6 +48,7 @@
         flex-wrap: wrap;
         align-content: flex-start;
         @include MOBILE {
+            max-width: 100%;
             display: block;
             height: 80%;
             padding-top: 0;
@@ -70,8 +72,9 @@
         margin-bottom: vhD(19);
         padding-right: vhD(33);
         @include MOBILE {
-            margin-bottom: 10px;
-            padding-right: 5px;
+            max-width: 100%;
+            margin-bottom: vhM(10);
+            padding-right: vhM(5);
             letter-spacing: 0.4;
             line-height: 1.47;
         }

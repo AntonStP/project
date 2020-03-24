@@ -5,9 +5,9 @@
     box-sizing: border-box;
     @extend .COPYRIGHT;
     @include MOBILE{  
-        min-width: vwM(150);
+        min-width: vhM(150);
         height: 85%; 
-        padding: 12px 0 0 19px;
+        padding: vhM(12) 0 0 vhM(19);
         box-sizing: border-box;   
     }  
     @include TABLET-L {  

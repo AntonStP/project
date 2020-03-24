@@ -9,7 +9,7 @@
         height: 15.3%;
         display: flex;
         justify-content: center;
-        padding: 19px 0 0 6px;
+        padding: vhM(19) 0 0 vhM(18);
         background-color: $MAIN-COLOR;
     } 
     @include TABLET {

@@ -2,9 +2,10 @@
     width: vhD(242);
     height: vhD(80);
     @include MOBILE {
-        width: 60%;
+        width: vhM(183);
+        height: vhM(60);
+
         align-self: flex-start;
-        padding: 17px;
         z-index: 2;
     }
     @include TABLET {
@@ -15,7 +16,6 @@
     @include TABLET-L {
         width: vhTL(182);
         height: vhTL(50);
-        padding: 0;
         z-index: 2;
     }
 }

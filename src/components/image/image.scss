@@ -2,8 +2,8 @@
     width: vhD(391.7);
     height: vhD(543);
     @include MOBILE {
-        width: vwM(300);
-        height: vhD(484);
+        width: vhM(235);
+        height: vhM(304);
     }
     @include TABLET {
         width: vwT(300);
@@ -20,8 +20,8 @@
         width: vhD(391.7);
         height: vhD(543);
         @include MOBILE {
-            width: vwM(235);
-            margin-top: -10px;
+            width: vhM(235);
+            margin-top: vhM(-30);
             opacity: 0.35;
         }
         @include TABLET {

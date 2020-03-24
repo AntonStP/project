@@ -9,7 +9,7 @@
     box-sizing: border-box;
     @include MOBILE {
         height: 15%;
-        padding-top: 13px;
+        padding-top: vhM(13);
         padding-left: 0;
         background-color: $MAIN-COLOR;
     } 
@@ -31,8 +31,8 @@
         background-color: $ASIDE-COLOR;
         align-self: center;
         @include MOBILE {
-            width: vwM(115);
-            height: 67%;
+            width: vhM(115);
+            height: 38px;
         } 
         @include TABLET {
             width: vwT(77);
@@ -59,7 +59,7 @@
         color: white;
         background-color: #b3aaaf;
         @include MOBILE {
-            width: vwM(155);
+            width: vhM(155);
         } 
         @include TABLET {
             width: vwT(128);

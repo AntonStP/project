@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: $MAIN-COLOR;
     @include MOBILE {
+        width: 90%;
         padding-top: 0;
         padding-left: 0;
         background-color: #fff;
