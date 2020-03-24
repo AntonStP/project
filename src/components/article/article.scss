@@ -1,8 +1,7 @@
 .article {
-
-    width: 69%;
-    height: vhD(705);
-    padding: 21px 24px;
+    width: vhD(871);
+    height: vhD(605);
+    padding: vhD(21) vhD(24);
     box-sizing: border-box;
     @include MOBILE {
         width: vwM(300);
@@ -12,35 +11,37 @@
     @include TABLET {
         width: 100%;
         height: auto;
-        padding: 0 0 0 97px;
+        padding: 0 0 0 vwT(81);
     }
     @include TABLET-L {
         height: auto;
-        padding: 0 0 0 65px;
+        padding: 0 0 0 vhTL(69);
     }
+
 
     &__heading {
         @extend .HEADING;
-        max-width: 100%;
+        max-width: vhD(871);
         height: vhD(100);
-        padding: 25px 0;
-        letter-spacing: 1.11px;
+        padding: vhD(25) 0;
+        letter-spacing: vhD(1.11);
         box-sizing: border-box;
         @include MOBILE {
             height: 2.7em;
             padding-top: 0;
         }
         @include TABLET { 
-            height: 50px;
+            height: vhTL(50);
             padding: 0;
             letter-spacing: 0.8;
         }
     }
 
+
     &__content-wrapper {
-        width: 100%;
-        height: vhD(530);
-        padding-top: 22px;
+        max-width: vhD(871);
+        height: vhD(450);
+        padding-top: vhD(22);
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -51,22 +52,23 @@
             padding-top: 0;
         }
         @include TABLET { 
-            height: 400px;
-            padding-top: 12px;
+            height: vwT(380);
+            padding-top: vwT(12);
         }
         @include TABLET-L { 
             height: vhTL(412);
-            padding-top: 12px;
+            padding-top: vhTL(12);
         }
     }
 
+
     &__paragraph {
         @extend .ARTICLE-CONTENT;
-        max-width: 329px;
-        color: #000000; 
-        letter-spacing: 0.5px;
-        margin-bottom: 19px;
-        padding-right: 33px;
+        max-width: vhD(329);
+        color: #000; 
+        letter-spacing: vhD(0.5);
+        margin-bottom: vhD(19);
+        padding-right: vhD(33);
         @include MOBILE {
             margin-bottom: 10px;
             padding-right: 5px;
@@ -74,23 +76,24 @@
             line-height: 1.47;
         }
         @include TABLET { 
-            max-width: 250px;
-            padding-right: 75px;
-            margin-bottom: 16px;
+            max-width: vwT(250);
+            padding-right: vwT(75);
+            margin-bottom: vwT(16);
             letter-spacing: 0.4;
             line-height: 1.49;
         }
         @include TABLET-L { 
-            max-width: 250px;
-            padding-right: 23px;
-            margin-bottom: 16px;
+            max-width: vhTL(250);
+            padding-right: vhTL(23);
+            margin-bottom: vhTL(16);
             letter-spacing: 0.4;
             line-height: 1.49;
         }
 
+
         a{
             text-decoration: none;
-            border-bottom: 1px solid rgba(49, 36, 42,.4);
+            border-bottom: vhD(1) solid rgba(49, 36, 42,.4);
             color: rgba(49, 36, 42,.8);
             @include HOVER() {
                 &:hover {

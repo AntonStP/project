@@ -1,10 +1,10 @@
 .download {
-
-    width: 85%;
+    width: vhD(210);
     height: vhD(45);
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 6px;
+    margin-bottom: vhD(2);
+    padding: vhD(4) 0 0 vhD(5);
     @include MOBILE {
         width: vwM(150);
         height: 85%;
@@ -18,38 +18,58 @@
         margin-bottom: 0;
     }
 
+
     &__icon {   
-        width: 30%;
-        height: vhD(45);
-        background: url("../image/icon-pdf.png");
-        background-repeat: no-repeat;
-        background-position: right;
+        width: vhD(48);
+        height: vhD(35);
         @include MOBILE {
             width: vwM(30);
             box-sizing: border-box;
             background-size: contain;
         } 
         @include TABLET {
-            width: 27%;
+            width: vwT(50);
+            height: vwT(31);
         }
         @include TABLET-L {
-            width: 40%;
+            width: vhTL(40);
             transform: scale(0.75);
             background-position: right;
         }
     }
 
+
     &__link-load{
-        width: 100%;
+        width: vhD(200);
         height: vhD(45);
-        padding: 10px 14px;
+        padding: vhD(6) vhD(14);
         box-sizing: border-box;
+        @include MOBILE {
+            width: vwM(71);
+            height: 70%;
+            letter-spacing: 0.8;
+            margin-left: 14px;
+            padding: 2px 0 1px 1px;
+            box-sizing: border-box;
+            border-bottom: 1px dotted $PHONE-COLOR;
+        }  
+        @include TABLET {
+            padding-top: vwT(2);
+            padding-left: vwT(17);
+        }  
+        @include TABLET-L {
+            width: vhTL(170);
+            margin-left: 0;
+            padding-left: vhTL(5);
+        }     
+        
         br {
             display: none;
             @include MOBILE {
                 display: block;   
             } 
         }
+
         a {
             @extend .DOWNLOAD;
             text-decoration: none;
@@ -63,25 +83,7 @@
             @include MOBILE {
                 border-bottom: none;  
             }                
-        }
-        @include MOBILE {
-            width: vwM(71);
-            height: 70%;
-            letter-spacing: 0.8;
-            margin-left: 14px;
-            padding: 2px 0 1px 1px;
-            box-sizing: border-box;
-            border-bottom: 1px dotted $PHONE-COLOR;
-        }  
-        @include TABLET {
-            padding-top: 15px;
-            padding-left: 17px;
-        }  
-        @include TABLET-L {
-            width: 170px;
-            margin-left: 0;
-            padding-left: 5px;
-        }         
+        }        
     }
     
 }

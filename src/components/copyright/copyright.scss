@@ -1,7 +1,7 @@
 .footer__copyright {
-    min-width: 68%;
-    height: 40%;
-    padding: 7px 0 0 7px;
+    min-width: vhD(197);
+    height: vhD(40);
+    padding: vhD(7) 0 0 vhD(7);
     box-sizing: border-box;
     @extend .COPYRIGHT;
     @include MOBILE{  
@@ -9,10 +9,12 @@
         height: 85%; 
         padding: 12px 0 0 19px;
         box-sizing: border-box;   
-    }    
+    }  
     @include TABLET-L {  
-        padding-left: 12px;       
+        padding-left: vhTL(12);       
     } 
+
+    
     br {
         display: none;
         @include MOBILE{

@@ -1,6 +1,5 @@
 .image {
-
-    width: 31%;
+    width: vhD(391.7);
     height: vhD(543);
     @include MOBILE {
         width: vwM(300);
@@ -8,17 +7,18 @@
     }
     @include TABLET {
         width: vwT(300);
-        height: 380px;
+        height: vwT(380);
     }
     @include TABLET-L {
-        width: 340px;
+        width: vhTL(340);
         height: vhTL(400);
         margin-top: -3.5%;
     }
 
+    
     img {
-        width: 100%;
-        height: 100%;
+        width: vhD(391.7);
+        height: vhD(543);
         @include MOBILE {
             width: vwM(235);
             margin-top: -10px;
@@ -26,10 +26,10 @@
         }
         @include TABLET {
             width: vwT(300);
-            height: 380px;
+            height: vwT(380);
         }
         @include TABLET-L {
-            width: 335px;
+            width: vhTL(335);
             height: vhTL(400);
         }
     }

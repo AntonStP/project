@@ -4,9 +4,8 @@
     background-color: $ASIDE-COLOR;
     display: flex;
     justify-content: center;
-    padding-left: 7px;
-    flex-shrink: 22;
-    padding-top: 4px;
+    padding-left: vhD(7);
+    padding-top: vhD(4);
     box-sizing: border-box;
     @include MOBILE {
         height: 15%;
@@ -15,16 +14,19 @@
         background-color: $MAIN-COLOR;
     } 
     @include TABLET {
-        padding-left: 4px;
+        padding-left: vwT(9);
     }
     @include TABLET-L {
-        height: vhTL(80);
+        height: vhTL(100);
+        padding-left: vhTL(14);
     }
+
+
     &__button {
         @extend .BUTTON;
-        width: 25%;
+        width: vhD(72.5);
         min-height: vhD(35);
-        border: 1px solid;
+        border: vhD(1) solid;
         border-color: rgb(179, 170, 175);
         background-color: $ASIDE-COLOR;
         align-self: center;
@@ -33,12 +35,12 @@
             height: 67%;
         } 
         @include TABLET {
-            width: vwT(80);
-            height: 40px;
+            width: vwT(77);
+            height: vwT(40);
         }
         @include TABLET-L {
             height: vhTL(30);
-            width: 70px;
+            width: vhTL(57);
         }
         &:hover {
             background-color: #6d5b66;
@@ -47,33 +49,27 @@
         }
         &:active {
             background-color: #7d5b66;
-            margin-top: 2px;
-        }
+            margin-top: vhD(2);
+        }   
     }
 
+    
     &__button_selected {
-        width: 41.5%;
+        width: vhD(115);
         color: white;
         background-color: #b3aaaf;
         @include MOBILE {
             width: vwM(155);
         } 
         @include TABLET {
-            width: vwT(130);
-            height: 40px;
+            width: vwT(128);
+            height: vwT(40);
         }
         @include TABLET-L {
-            width: 105px;
+            width: vhTL(93);
             height: vhTL(30);
         }
-        &:hover {
-            background-color: #6d5b66;
-        }
-        &:active {
-            background-color: #7d5b66;
-            margin-top: 2px;
-        }
     }
-    
+
 }
 

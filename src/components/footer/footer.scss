@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     height: vhD(130);
-    padding: 20px 0 20px 47px;
+    padding: vhD(20) 0 vhD(20) vhD(47);
     box-sizing: border-box;
     background-color: #f8f7f7;
     @include MOBILE {
@@ -13,10 +13,10 @@
         background-color: $MAIN-COLOR;
     } 
     @include TABLET {
-        padding: 40px 10px 0 70px;
+        padding: vwT(30) vwT(10) 0 vwT(55);
     }
     @include TABLET-L {
-        height: vhTL(128);
-        padding: 20px 10px 0 15px;
+        height: vhTL(108);
+        padding: vhTL(19) vhTL(10) 0 vhTL(33);
     }
 }

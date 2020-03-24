@@ -1,8 +1,10 @@
 .right-wrapper {
-    
     width: 18.6%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    z-index: $right-wrapper_z;
+    transition: transform .7s ease-in-out;
     @include MOBILE {
         position: absolute;
         top: 0;
@@ -10,40 +12,32 @@
         width: vwM(320);
         height: 100%;
         padding: 10px;
-        box-sizing: border-box;
         background-color: #fff;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
         @include menuChecked {
             transform: translateX(0);
-            z-index: $right-wrapper_z;
         }
     }
     @include TABLET {
         width: vwT(320);
         min-height: 96%;
         height: 96%;
-        box-sizing: border-box;
         position: absolute;
-        right: 20px;
-        box-shadow: -20px 0 15px -8px rgba(0, 0, 0,.15);
-        z-index: $right-wrapper_z;
-        transition: transform .7s ease-in-out;
+        right: vwT(20);
+        box-shadow: vwT(-20) 0 vwT(15) vwT(-8) rgba(0, 0, 0,.15);
         transform: translate(150%);
         @include menuChecked {
             transform: translateX(0);
         }
     }
     @include TABLET-L {
-        width: 220px;
+        width: vhTL(220);
         min-height: 94.79%;
         height: 94.79%;
-        box-sizing: border-box;
         position: absolute;
-        right: 20px;
-        box-shadow: -20px 0 15px -8px rgba(0, 0, 0,.15);
-        z-index: $right-wrapper_z;
-        transition: transform .7s ease-in-out;
+        right: vhTL(20);
+        box-shadow: vhTL(-20) 0 vhTL(15) vhTL(-8) rgba(0, 0, 0,.15);
         transform: translate(150%);
         @include menuChecked {
             transform: translateX(0%);
@@ -52,27 +46,28 @@
     
 }
 
+
 .label-exit {
     display: none;
     position: absolute;
-    top: 30px;
-    right: 20px;
-    width: 18px;
-    height: 18px;
+    top: vhD(30);
+    right: vhD(20);
+    width: vhD(18);
+    height: vhD(18);
     &::after {
         content: '';
-        width: 16px;
-        height: 1px;
-        top: 7px;
+        width: vhD(18);
+        height: vhD(1);
+        top: vhD(7);
         position: absolute;
         transform: rotate(45deg);
         background-color: #616161;
     }
     &::before {
         content: '';
-        width: 16px;
-        height: 1px;
-        top: 7px;
+        width: vhD(18);
+        height: vhD(1);
+        top: vhD(7);
         position: absolute;
         transform: rotate(-45deg);
         background-color: #616161;

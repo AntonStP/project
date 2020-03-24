@@ -1,27 +1,27 @@
 .selector-lang {
-
-    width: 80px;
-    height: vhD(155);
+    width: vhD(80);
+    height: vhD(35);
     position: relative;
-    background-color: $MAIN-COLOR;
-    padding: 60px 0 0 14px;
+    padding: vhD(4) 0 0 vhD(6);
     box-sizing: border-box;
+    background-color: $MAIN-COLOR;
     @include MOBILE {
         width: vwM(46);
         padding: 8px 0;
         background-color: #fff;
     }
     @include TABLET {
-        width: 55px;
-        height: vwT(180);
-        padding: 60px 0 0 0;
+        width: vwT(55);
+        height: vwT(30);
+        padding: vwT(6) 0 0 0;
     }
     @include TABLET-L {
-        width: 55px;
+        width: vhTL(55);
         height: vhTL(24);
         padding: 0;
     }
     
+
     &__input {
         display: none;
         &:checked ~ .list {      
@@ -38,12 +38,13 @@
         }  
     }
 
+
     &__label {
         width: 90%;
         height: vhD(21);
         display: block;
         position: relative;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 vhD(10);
         box-sizing: border-box;
         @extend .LANG;
         background-color: $MAIN-COLOR;
@@ -53,7 +54,6 @@
             &:hover {
                 cursor: pointer;
                 color: #8f7585;
-                font-size: 17.1px;
             }    
         }
         @include MOBILE {
@@ -63,26 +63,25 @@
         }
         @include TABLET {
             width: vwT(45);
-            height: 15px;
+            height: vwT(15);
         }
         @include TABLET-L {
             width: 83%;
             height: vhTL(24);
-            padding: 6px 0 0 5px;
+            padding: vhTL(6) 0 0 vhTL(5);
             box-sizing: border-box;
             &:hover {
                 cursor: pointer;
                 color: $TEXT-COLOR;
-                font-size: 13px;
             } 
         }
         &::before {
             content: '';    
             position: absolute; 
-            top: 48%; 
-            left: 33px;
-            width: 8px;
-            height: 1.4px;
+            top: vhD(10); 
+            left: vhD(33);
+            width: vhD(8);
+            height: vhD(1.4);
             background: #7c7b7b;
             transform: rotate(50deg);
             transition: transform .1s ease-in-out;
@@ -92,23 +91,24 @@
                 left: 30px;
             }
             @include TABLET {
-                width: 6px;
-                top: 40%;
-                left: 27px;
+                width: vwT(6);
+                height: vwT(1.3);
+                top: vwT(6);
+                left: vwT(30);
             }
             @include TABLET-L {
-                width: 6px;
-                top: 45%;
-                left: 22.5px;
+                width: vhTL(6);
+                top: vhTL(11);
+                left: vhTL(23);
             }
         }
         &::after {
             content: '';    
             position: absolute; 
-            top: 48%; 
-            left: 37.8px;
-            width: 8px;
-            height: 1.4px;
+            top: vhD(10); 
+            left: vhD(37.8);
+            width: vhD(8);
+            height: vhD(1.4);
             background: #7c7b7b;
             transform: rotate(-50deg);
             transition: transform .1s ease-in-out;
@@ -118,26 +118,27 @@
                 left: 34px;
             }
             @include TABLET {
-                width: 6px;
-                top: 40%;
-                left: 30.5px;
+                width: vwT(6);
+                height: vwT(1.3);
+                top: vwT(6);
+                left: vwT(33);
             }
             @include TABLET-L {
-                width: 6px;
-                top: 45%;
-                left: 27px;
+                width: vhTL(6);
+                top: vhTL(11);
+                left: vhTL(27);
             }
         }
     }
-
-   
+    
 }
+
 
 .list {
     @extend .LANG;
     width: 90%;
     height: vhD(68);
-    padding: 3px 0 0 10px;
+    padding: vhD(3) 0 0 vhD(10);
     box-sizing: border-box;
     background-color: #fff;
     text-transform: uppercase;
@@ -158,10 +159,11 @@
     }
     @include TABLET-L {
         width: 83%;
-        height: vhTL(65 );
-        padding: 3px 0 0 5px;
+        height: vhTL(45);
+        padding: 0 0 0 vhTL(5);
     }
 
+    
     &__item {
         user-select: none;
         @include HOVER() {
@@ -180,11 +182,10 @@
             margin-bottom: 5px;
         }
         @include TABLET-L {
-            margin-bottom: 10px;
+            margin-bottom: vhTL(2);
         }
         
     }
 }
-
 
 

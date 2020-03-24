@@ -1,4 +1,4 @@
-@function vwM($size) {
+@function vhM($size) {
   @return ($size * 100) / $DES-W-MOB * 1vh;
 }
 

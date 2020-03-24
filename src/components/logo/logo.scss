@@ -1,7 +1,6 @@
 .logo {
-    width: 19.2%;
+    width: vhD(242);
     height: vhD(80);
-    padding: 56px 55px 0 55px;
     @include MOBILE {
         width: 60%;
         align-self: flex-start;
@@ -9,14 +8,12 @@
         z-index: 2;
     }
     @include TABLET {
-        width: 180px;
-        height: vhTL(46);
-        align-self: flex-end;
-        padding: 0 0 0 10px;
+        width: vwT(180);
+        height: vwT(56);
         z-index: 2;
     }
     @include TABLET-L {
-        width: 182px;
+        width: vhTL(182);
         height: vhTL(50);
         padding: 0;
         z-index: 2;

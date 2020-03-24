@@ -5,7 +5,7 @@
     height: 100%;
     position: relative;
     overflow-x: auto;
-    padding: 20px;
+    padding: vhD(20);
     display: flex;
     box-sizing: border-box;
     @include MOBILE {
@@ -22,6 +22,7 @@
         overflow: hidden;
     }
 
+    
     &__input {
         display: none;
     }

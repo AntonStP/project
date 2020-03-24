@@ -1,9 +1,11 @@
 .header {
     width: 100%;
     height: vhD(155);
-    background-color: $MAIN-COLOR;
     display: flex;
     justify-content: space-between;
+    padding: vhD(56) 0 0 vhD(55);
+    box-sizing: border-box;
+    background-color: $MAIN-COLOR;
     @include MOBILE {
         width: vwM(300);
         height: auto;
@@ -14,19 +16,18 @@
     }
     @include TABLET {
         height: vwT(100);
-        padding: 0 90px 0 40px;
-        box-sizing: border-box;
+        padding: vwT(35) vwT(25) 0 vwT(35);
     }
     @include TABLET-L {
         height: vhTL(160);
-        padding: 34px 103px 0 34px;
-        box-sizing: border-box;
+        padding: vhTL(34) vhTL(60) 0 vhTL(34);
     }
 }
 
+
 .header-menu {
-    min-width: 31%;
-    height: vhD(155);
+    min-width: vhD(391.7);
+    height: vhD(105);
     display: flex;
     justify-content: flex-end;
     @include MOBILE {
@@ -41,9 +42,10 @@
         box-sizing: border-box;
         background-color: #fff;
     }
-    @include TABLET-L {
-        height: vhTL(90);
-        
+    @include TABLET {
+        width: vwT(300);
+        height: vwT(40);  
+        justify-content: center; 
     }
     @include TABLET-L {
         height: vhTL(24);
@@ -52,10 +54,10 @@
     
 
     &__vertical-line {
-        width: 1px;
+        width: vhD(1);
         height: vhD(40);
         background-color: rgba(76,52,64,.4);
-        margin: 50px 18px 50px 22px;
+        margin: vhD(-6) vhD(16) vhD(50) vhD(24);
         @include MOBILE {
             width: vwM(1);
             height: 29px;
@@ -63,11 +65,11 @@
         }
         @include TABLET {
             height: vwT(32);
-            margin: 50px 20px 5px 20px;
+            margin: vwT(-6) vwT(10) vwT(5) vwT(20);
         }
         @include TABLET-L {
             height: vhTL(25);
-            margin: 0 20px 5px 10px;
+            margin: 0 vhTL(20) vhTL(5) vhTL(10);
         }
         
     }

@@ -18,34 +18,44 @@
     width: 100%;
     height: vhD(585);
     background-color: $ASIDE-COLOR;
-    padding: 62px 25px 3px 56px;
+    padding: vhD(62) vhD(25) vhD(3) vhD(56);
     box-sizing: border-box;
-    flex-shrink: 1;
     @include MOBILE {
         height: 85%;
         padding: 25px 30px 0 14px;
         background-color: $MAIN-COLOR;
     }
     @include TABLET {
-        padding: 64px 75px 0 75px;
+        padding: vwT(64) vwT(75) 0 vwT(60);
     }
     @include TABLET-L {
         height: vhTL(520);
-        padding: 44px 32px 0 44px;
+        padding: vhTL(44) vhTL(32) 0 vhTL(44);
         background-color: $ASIDE-COLOR;
     }
 
+
     &__item {
-        
         max-height: vhD(42);
         position: relative;
-        letter-spacing: -0.3px;
-        margin-bottom: 31px;
-
+        letter-spacing: vhD(-0.3);
+        margin-bottom: vhD(31);
+        @include MOBILE {
+            margin-bottom: 33px;
+            letter-spacing: 0.11px;
+        } 
+        @include TABLET {
+            margin-bottom: vwT(45);
+            letter-spacing: vwT(0.11);
+        } 
+        @include TABLET-L {
+            margin-bottom: vhTL(35);
+            letter-spacing: vhTL(0.11)
+        } 
         &:after{
             content: "";
             position: absolute;
-            bottom: -4px;
+            bottom: vhD(-4);
             left: 0;
             width: 90%;
             height: vhD(9);
@@ -56,21 +66,8 @@
                 width: 90%;
                 height: 8px;
             }
-
         }
 
-        @include MOBILE {
-            margin-bottom: 33px;
-            letter-spacing: 0.11px;
-        } 
-        @include TABLET {
-            margin-bottom: 45px;
-            letter-spacing: 0.11px;
-        } 
-        @include TABLET-L {
-            margin-bottom: 35px;
-            letter-spacing: 0.11px;
-        } 
 
         //изменение слов в 5 item в моб. и деск. версии
         &_letter-active, br {
@@ -79,6 +76,7 @@
                 display: inline;
             }
         }
+
         &_letter-disable {
             @include MOBILE {
                 display: none;
@@ -87,48 +85,48 @@
 
         &_active {
             position: relative;
-
             &:after{
                 opacity: 1;
             }
         }
+
     }
 
+    
     &__link {
         @extend .MENU-ITEM;
         text-decoration: none;
         display: inline-block;
         white-space: pre-wrap;
         transition: .3s ease-in-out;
-        @include item-hover {
-            font-weight: 500;
-            // letter-spacing: 0.2;
-            color: rgba(126, 117, 121,.9);
-        }
         @include MOBILE {
             line-height: 1.104;
         }
-
+        @include item-hover {
+            color: rgba(126, 117, 121,.9);
+        }
         @include item-active() {
             @extend .MENU-ITEM_SELECTED;
-            // letter-spacing: 0.2px;
             color: rgba(126, 117, 121,.9);
             @include MOBILE {
                 letter-spacing: 0.15;
             }
         }
     }
+
+    
     &__separate-line {
-        width:  63px;
+        width:  vhD(63);
         height: vhD(0.6);
         background-color: rgba(126, 117, 121,.2);
-        margin: 45px 0 31px 0;
+        margin: vhD(45) 0 vhD(30) 0;
         @include MOBILE {
             margin: 43px 0 26px 0;
             width: vwM(50);
         }
         @include TABLET-L {
-            width: 50px;
+            width: vhTL(50);
         }
     }
+    
 }

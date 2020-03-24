@@ -1,9 +1,8 @@
 .number{
     width: 66%;
-    height: 100%;
-    background-color: $MAIN-COLOR;
-    padding-top: 56px;
+    height: vhD(35);
     box-sizing: border-box;
+    background-color: $MAIN-COLOR;
     @include MOBILE {
         padding-top: 0;
         padding-left: 0;
@@ -11,14 +10,15 @@
     }
     @include TABLET {
         width: vwT(190);
-        height: 30px;
+        height: vwT(30);
     }
     @include TABLET-L {
-        width: 200px;
+        width: vhTL(200);
         height: vhTL(24);
         padding-top: 0;
         z-index: 2;
     }
+
 
     p {
         @extend .PHONE-NUMBER;
@@ -27,9 +27,8 @@
             padding-left: 0;
             letter-spacing: 0.4;
         }
-       
         @include TABLET-L {
-            padding-top: 2px;
+            padding-top: vhTL(2);
             z-index: 2;
         }
      
